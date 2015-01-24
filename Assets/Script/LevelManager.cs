@@ -53,7 +53,9 @@ public class LevelManager : MonoBehaviour
 	void Update() 
 	{
 		float deltaTime = Time.deltaTime;
-		if(gameOverTimer.Tick(deltaTime))
+		bool gameOver = Input.GetButtonDown("Cancel");
+
+		if(gameOver || gameOverTimer.Tick(deltaTime))
 		{
 			Director.Instance.UnloadLevel();
 		}

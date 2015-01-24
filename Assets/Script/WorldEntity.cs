@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WorldEntity : MonoBehaviour {
+public class WorldEntity : GameEntity {
 
 	public int entityID = -1;
 	public string entityName = string.Empty;
@@ -82,7 +82,7 @@ public class WorldEntity : MonoBehaviour {
 
 		if( edata.drawable )
 		{
-			renderer.enabled = true;
+			renderer.enabled = edata.collisionState != CollisionState.DISABL;
 		}
 		if( edata.collidable )
 		{  
@@ -93,5 +93,23 @@ public class WorldEntity : MonoBehaviour {
 				case CollisionState.DISABL: collider2D.enabled = false; break;
 			}
 		}
+	}
+
+	public void OnCollisionEnter(Collision collision)
+	{
+		GameEntity other = collision.gameObject.GetComponent<GameEntity>();
+		switch( edata.entityType )
+		{
+			case EntityType.COIN: CoinCollision(other); break;
+			defualt: break;
+		}
+	}
+
+	public void CoinCollision(GameEntity other)
+	{
+		Debug.Log("Coin collision");
+		SaveToData();
+		edata.collisionState = CollisionState.DISABL;
+		LoadFromData();
 	}
 }
