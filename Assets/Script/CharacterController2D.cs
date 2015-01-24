@@ -136,7 +136,9 @@ public class CharacterController2D : MonoBehaviour
     void HorizontalMove(ref Vector3 delta, ref Vector2 origin2D)
     {
         bool goingRight = delta.x > 0f;
-        RaycastHit2D hit = Physics2D.BoxCast(origin2D, thisCollider.size, 0f, new Vector2(delta.normalized.x, 0), Mathf.Abs(delta.x), platformMask.value);
+        LayerMask mask = platformMask;
+        mask &= ~oneWayPlatformMask;
+        RaycastHit2D hit = Physics2D.BoxCast(origin2D, thisCollider.size, 0f, new Vector2(delta.normalized.x, 0), Mathf.Abs(delta.x), mask.value);
         if( hit )
         {
             if( !HandleHorizontalSlope(ref delta, Vector2.Angle(hit.normal, Vector2.up)) )
