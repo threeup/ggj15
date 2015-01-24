@@ -12,19 +12,20 @@ public enum EntityType
 	COIN = 4,
 }
 
-public enum EntityState
+public enum CollisionState
 {
-	NONE = 0,
-	MOVING = 1,
-	ACTIVE = 2,
-	DISABL = 3,
+	DISABL = 0,
+	ACTIVE = 1,
+	MOVING = 2,
 }
 
 [System.Serializable]
 public struct EntityData
 {
 	public EntityType entityType;
-	public EntityState entityState;
+	public CollisionState collisionState;
+	public bool collidable;
+	public bool drawable;
 	public Vector2 position;
 	
 }

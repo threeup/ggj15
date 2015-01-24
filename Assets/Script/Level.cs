@@ -79,8 +79,8 @@ public class Level : MonoBehaviour
 
 		//Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector3.zero, 10000f, mask);
 
-		WorldEntity[] entities = FindObjectsOfType<WorldEntity>();
-		foreach(WorldEntity worldEntity in entities)
+		WorldEntity[] scannedEntities = FindObjectsOfType<WorldEntity>();
+		foreach(WorldEntity worldEntity in scannedEntities)
 		{
 			if( (worldEntity.gameObject.layer | mask) == 0 )
 			{
@@ -103,8 +103,8 @@ public class Level : MonoBehaviour
 		int actormask = 1 << LayerMask.NameToLayer ("Actor");
 		int mask = worldmask | actormask;
 
-		WorldEntity[] entities = FindObjectsOfType<WorldEntity>();
-		foreach(WorldEntity worldEntity in entities)
+		WorldEntity[] scannedEntities = FindObjectsOfType<WorldEntity>();
+		foreach(WorldEntity worldEntity in scannedEntities)
 		{
 			if( (worldEntity.gameObject.layer | mask) == 0 )
 			{
@@ -113,6 +113,7 @@ public class Level : MonoBehaviour
 			}
 #if UNITY_EDITOR
 			PrefabUtility.DisconnectPrefabInstance(worldEntity.gameObject);
+			worldEntity.gameObject.name = worldEntity.gameObject.name.Replace("Prefab", ""); 
 #endif			
 			worldEntity.entityID = this.levelUID*1000 + this.nextUID;
 			this.nextUID++;
@@ -125,8 +126,8 @@ public class Level : MonoBehaviour
 		int actormask = 1 << LayerMask.NameToLayer ("Actor");
 		int mask = worldmask | actormask;
 
-		WorldEntity[] entities = FindObjectsOfType<WorldEntity>();
-		foreach(WorldEntity worldEntity in entities)
+		WorldEntity[] scannedEntities = FindObjectsOfType<WorldEntity>();
+		foreach(WorldEntity worldEntity in scannedEntities)
 		{
 			if( (worldEntity.gameObject.layer | mask) == 0 )
 			{

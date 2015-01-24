@@ -8,7 +8,6 @@ public class WorldEntity : MonoBehaviour {
 	private Transform thisTransform;
 	public EntityData edata;
 
-	public bool IsDrawable { get { return edata.entityState != EntityState.NONE; } }
 
 	void Awake()
 	{
@@ -22,7 +21,7 @@ public class WorldEntity : MonoBehaviour {
 			entityName = "WORLD-"+this.gameObject.name+"_"+this.GetHashCode();
 		}
 		this.name = entityName;
-		if( LevelManager.Instance != null && IsDrawable )
+		if( LevelManager.Instance != null && edata.drawable )
 		{
 			renderer.enabled = false;
 		}
@@ -50,9 +49,12 @@ public class WorldEntity : MonoBehaviour {
 
 	public void Deactivate()
 	{
-		if( IsDrawable )
+		if( edata.drawable )
 		{
 			renderer.enabled = false;
+		}
+		if( edata.collidable )
+		{
 			collider2D.enabled = false;
 		}
 	}
@@ -60,15 +62,15 @@ public class WorldEntity : MonoBehaviour {
 	public void SaveToData()
 	{
 		edata.position = new Vector2(thisTransform.position.x, thisTransform.position.y);
-		if( IsDrawable )
+		if( edata.collidable )
 		{
 			if( collider2D.enabled )
 			{
-				edata.entityState = EntityState.ACTIVE;
+				edata.collisionState = CollisionState.ACTIVE;
 			}
 			else
 			{
-				edata.entityState = EntityState.DISABL;
+				edata.collisionState = CollisionState.DISABL;
 			}
 		}
 	}
@@ -78,12 +80,18 @@ public class WorldEntity : MonoBehaviour {
 		Vector3 position = new Vector3(edata.position.x, edata.position.y, 0f);
 		thisTransform.position = position;
 
-		switch(edata.entityState)
+		if( edata.drawable )
 		{
-			case EntityState.NONE: break;
-			case EntityState.MOVING: renderer.enabled = true;  collider2D.enabled = true; break;
-			case EntityState.ACTIVE: renderer.enabled = true;  collider2D.enabled = true; break;
-			case EntityState.DISABL: renderer.enabled = false; collider2D.enabled = false; break;
+			renderer.enabled = true;
+		}
+		if( edata.collidable )
+		{  
+			switch(edata.collisionState)
+			{
+				case CollisionState.MOVING: collider2D.enabled = true; break;
+				case CollisionState.ACTIVE: collider2D.enabled = true; break;
+				case CollisionState.DISABL: collider2D.enabled = false; break;
+			}
 		}
 	}
 }
