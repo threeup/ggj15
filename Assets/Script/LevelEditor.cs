@@ -12,6 +12,12 @@ public class LevelEditor : Editor
         DrawDefaultInspector();
         
         Level level = (Level)target;
+        if(GUILayout.Button("Align"))
+        {
+        	level.ScanAlign();
+        	level.ScanAlign();
+        	//twice is nice
+        }
         if(GUILayout.Button("Assign UID"))
         {
         	level.ResetUID();

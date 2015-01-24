@@ -1,4 +1,7 @@
 ﻿using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using System.Collections;
 using System.Collections.Generic;
 
@@ -108,8 +111,34 @@ public class Level : MonoBehaviour
 				//what is this?
 				continue;
 			}
+#if UNITY_EDITOR
+			PrefabUtility.DisconnectPrefabInstance(worldEntity.gameObject);
+#endif			
 			worldEntity.entityID = this.levelUID*1000 + this.nextUID;
 			this.nextUID++;
+		}
+	}
+
+	public void ScanAlign()
+	{
+		int worldmask = 1 << LayerMask.NameToLayer ("World");
+		int actormask = 1 << LayerMask.NameToLayer ("Actor");
+		int mask = worldmask | actormask;
+
+		WorldEntity[] entities = FindObjectsOfType<WorldEntity>();
+		foreach(WorldEntity worldEntity in entities)
+		{
+			if( (worldEntity.gameObject.layer | mask) == 0 )
+			{
+				//what is this?
+				continue;
+			}
+			Vector3 pos = worldEntity.transform.position;
+			float snapTo = 1f;
+			pos.x = Mathf.Round(pos.x*snapTo)/snapTo;
+			pos.y = Mathf.Round(pos.y*snapTo)/snapTo;
+			pos.z = Mathf.Round(pos.z*snapTo)/snapTo;
+			worldEntity.transform.position = pos;
 		}
 	}
 }
