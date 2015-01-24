@@ -8,11 +8,18 @@ public class NavAgent : MonoBehaviour
     [SerializeField]
     Vector3 velocity;
     [SerializeField]
+    Vector3 acceleration;
+    [SerializeField]
     float scalar = 0.256f;
     [SerializeField]
     float jumpVelocity = 100f;
     [SerializeField]
+    float walkSpeed = 10f;
+    [SerializeField]
     bool isGrounded;
+
+    public AnimationCurve walkSpeedMultiplier = new AnimationCurve(new Keyframe(0f, 0f), new Keyframe(1f, 1f));
+    Vector3 walkVelocity;
 
     CharacterController2D thisController;
 
@@ -27,9 +34,10 @@ public class NavAgent : MonoBehaviour
 
     void FixedUpdate()
     {
-        velocity += gravity;
+        acceleration = gravity;
+        velocity += acceleration;
 
-        thisController.Move(velocity * Time.deltaTime * scalar);
+        thisController.Move((velocity + walkVelocity) * Time.deltaTime * scalar);
 
         if( thisController.CollideBelow || thisController.CollideAbove )
             velocity.y = 0f;
@@ -37,6 +45,15 @@ public class NavAgent : MonoBehaviour
             velocity.x = 0f;
 
         isGrounded = thisController.IsGrounded;
+        if( isGrounded )
+        {
+            // Grounded
+        }
+    }
+
+    public void Walk(float moveX)
+    {
+        walkVelocity = Vector3.right * Mathf.Sign(moveX) * walkSpeedMultiplier.Evaluate(Mathf.Abs(moveX)) * walkSpeed;
     }
 
     public void Jump()
