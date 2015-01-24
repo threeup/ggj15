@@ -6,29 +6,25 @@ public class UIManager : MonoBehaviour
 
 	public delegate void UIMethod(int index);
 
-	public UIMethod HandleStartButton;
+	public UIMethod HandleLevelSelect;
 
 	private bool inputEnabled;
+
+	public Canvas menuCanvas;
 
 	void Awake()
 	{
 		DontDestroyOnLoad(this);
+		menuCanvas.gameObject.SetActive(false);
 	}
 
-	public void PlayFirstScreen()
+	public void SetMenuVisible(bool val)
 	{
-		inputEnabled = true;
+		menuCanvas.gameObject.SetActive(val);
 	}
 	
-	void Update() 
+	public void LevelSelect(int index)
 	{
-		if( inputEnabled )
-		{
-			if( Input.GetButtonDown ("Fire1")) 
-			{
-				inputEnabled = false;
-				HandleStartButton(0);
-			}
-		} 
+		HandleLevelSelect(index);
 	}
 }

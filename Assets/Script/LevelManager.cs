@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
 	public Dictionary<string, LevelData> storedLevelData = new Dictionary<string, LevelData>();
 	private Level currentLevel;
 	private LevelData currentLevelData;
+	private BasicTimer gameOverTimer = new BasicTimer(300f);
 
 	void Awake()
 	{
@@ -42,7 +43,7 @@ public class LevelManager : MonoBehaviour
 			GameObject go = new GameObject(level.LevelID+"Data");
 			go.transform.parent = this.transform;
 			currentLevelData = go.AddComponent<LevelData>();
-			currentLevelData.entityDataMap = ScanLevelElements();
+			currentLevelData.entityDataMap = Level.ScanGatherData();
 			storedLevelData.Add(level.LevelID, currentLevelData);
 		}
 		level.ApplyLevelData(currentLevelData);
@@ -51,49 +52,20 @@ public class LevelManager : MonoBehaviour
 	
 	void Update() 
 	{
-		
-	}
-
-	public void FinishLevel()
-	{
-		Debug.Log("Finished "+currentLevel);
-
-	}
-
-	public Dictionary<string, EntityData> ScanLevelElements()
-	{
-		Dictionary<string, EntityData>  entityDataMap = new Dictionary<string, EntityData>();
-		int worldmask = 1 << LayerMask.NameToLayer ("World");
-		int actormask = 1 << LayerMask.NameToLayer ("Actor");
-		int mask = worldmask | actormask;
-
-		/*Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector3.zero, 10000f, mask);
-		foreach( Collider2D collider2D in colliders )
+		float deltaTime = Time.deltaTime;
+		if(gameOverTimer.Tick(deltaTime))
 		{
-			WorldEntity worldEntity = collider2D.GetComponent<WorldEntity>();
-			if( worldEntity != null )
-			{
-				worldEntity.SaveToData();
-				entityDataMap.Add( worldEntity.entityID, worldEntity.edata);
-			}
-			collider2D.enabled = false;
-		}*/
-		WorldEntity[] entities = FindObjectsOfType<WorldEntity>();
-		foreach(WorldEntity worldEntity in entities)
-		{
-			if( (worldEntity.gameObject.layer | mask) == 0 )
-			{
-				//what is this?
-				continue;
-			}
-			if( worldEntity != null )
-			{
-				worldEntity.SaveToData();
-				entityDataMap.Add( worldEntity.entityID, worldEntity.edata);
-				worldEntity.Deactivate();
-			}
+			Director.Instance.UnloadLevel();
 		}
-		return entityDataMap;
 	}
+
+	public void Purge()
+	{
+		currentLevel.Purge();
+		currentLevel = null;
+
+	}
+
+	
 
 }

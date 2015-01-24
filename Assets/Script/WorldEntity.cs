@@ -3,7 +3,8 @@ using System.Collections;
 
 public class WorldEntity : MonoBehaviour {
 
-	public string entityID = string.Empty;
+	public int entityID = -1;
+	public string entityName = string.Empty;
 	private Transform thisTransform;
 	public EntityData edata;
 
@@ -14,13 +15,13 @@ public class WorldEntity : MonoBehaviour {
 		thisTransform = this.transform;
 		if( thisTransform.parent != null )
 		{
-			entityID = gameObject.name+"_"+this.GetHashCode();
+			entityName = gameObject.name+"_"+this.GetHashCode();
 		}
 		else
 		{
-			entityID = "WORLD-"+this.gameObject.name+"_"+this.GetHashCode();
+			entityName = "WORLD-"+this.gameObject.name+"_"+this.GetHashCode();
 		}
-		this.name = entityID;
+		this.name = entityName;
 		if( LevelManager.Instance != null && IsDrawable )
 		{
 			renderer.enabled = false;
@@ -40,6 +41,11 @@ public class WorldEntity : MonoBehaviour {
 	void Update () 
 	{
 	
+	}
+
+	public void Destroy()
+	{
+		Destroy(gameObject);
 	}
 
 	public void Deactivate()
