@@ -24,19 +24,28 @@ public class LevelManager : MonoBehaviour
 	public void RegisterLevel(Level level)
 	{
 		currentLevel = level;
+	}
+
+	public void RegisterToLevel(WorldEntity entity)
+	{
+		currentLevel.AddWorldEntity(entity);
+	}
+
+	public void CheckLevelData(Level level)
+	{
 		if( storedLevelData.ContainsKey(level.LevelID) )
 		{
 			currentLevelData = storedLevelData[level.LevelID];
-			level.ApplyLevelData(currentLevelData);
 		}
 		else
 		{
 			GameObject go = new GameObject(level.LevelID+"Data");
 			go.transform.parent = this.transform;
 			currentLevelData = go.AddComponent<LevelData>();
-			currentLevelData.levelElements = ScanLevelElements();
+			currentLevelData.entityDataMap = ScanLevelElements();
 			storedLevelData.Add(level.LevelID, currentLevelData);
 		}
+		level.ApplyLevelData(currentLevelData);
 	}
 
 	
@@ -48,44 +57,43 @@ public class LevelManager : MonoBehaviour
 	public void FinishLevel()
 	{
 		Debug.Log("Finished "+currentLevel);
+
 	}
 
-	public List<LevelElement> ScanLevelElements()
+	public Dictionary<string, EntityData> ScanLevelElements()
 	{
-		List<LevelElement> levelElements = new List<LevelElement>();
+		Dictionary<string, EntityData>  entityDataMap = new Dictionary<string, EntityData>();
 		int worldmask = 1 << LayerMask.NameToLayer ("World");
 		int actormask = 1 << LayerMask.NameToLayer ("Actor");
 		int mask = worldmask | actormask;
 
-		Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector3.zero, 10000f, mask);
-		foreach( Collider2D collider in colliders )
+		/*Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector3.zero, 10000f, mask);
+		foreach( Collider2D collider2D in colliders )
 		{
-			WorldEntity worldEntity = collider.GetComponent<WorldEntity>();
+			WorldEntity worldEntity = collider2D.GetComponent<WorldEntity>();
 			if( worldEntity != null )
 			{
-				levelElements.Add( ConvertToLevelElement(worldEntity) );
+				worldEntity.SaveToData();
+				entityDataMap.Add( worldEntity.entityID, worldEntity.edata);
+			}
+			collider2D.enabled = false;
+		}*/
+		WorldEntity[] entities = FindObjectsOfType<WorldEntity>();
+		foreach(WorldEntity worldEntity in entities)
+		{
+			if( (worldEntity.gameObject.layer | mask) == 0 )
+			{
+				//what is this?
+				continue;
+			}
+			if( worldEntity != null )
+			{
+				worldEntity.SaveToData();
+				entityDataMap.Add( worldEntity.entityID, worldEntity.edata);
+				worldEntity.Deactivate();
 			}
 		}
-		return levelElements;
+		return entityDataMap;
 	}
 
-	public static LevelElement ConvertToLevelElement(WorldEntity e)
-	{
-		LevelElement element = new LevelElement();
-		if( e.isMoving )
-		{
-			element.entityState = EntityState.MOVING;
-		} 
-		else if( e.isActive )
-		{
-			element.entityState = EntityState.ACTIVE;
-		}
-		else
-		{
-			element.entityState = EntityState.DISABLED;
-		}
-		element.entityType = e.entityType;
-		element.position = new Vector2(e.transform.position.x, e.transform.position.z);
-		return element;
-	}
 }

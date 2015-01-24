@@ -5,21 +5,23 @@ using System.Collections.Generic;
 
 public enum EntityType
 {
-	BRICK,
-	COINBRICK,
-	ENEMY,
-	COIN,
+	CONTAINER = 0,
+	BRICK = 1,
+	COINBRICK = 2,
+	ENEMY = 3,
+	COIN = 4,
 }
 
 public enum EntityState
 {
-	MOVING,
-	ACTIVE,
-	DISABLED,
+	NONE = 0,
+	MOVING = 1,
+	ACTIVE = 2,
+	DISABL = 3,
 }
 
 [System.Serializable]
-public struct LevelElement
+public struct EntityData
 {
 	public EntityType entityType;
 	public EntityState entityState;

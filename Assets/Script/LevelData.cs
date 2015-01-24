@@ -6,7 +6,7 @@ public class LevelData : MonoBehaviour
 {
 
 
-	public List<LevelElement> levelElements = new List<LevelElement>();
+	public Dictionary<string, EntityData> entityDataMap = new Dictionary<string, EntityData>();
 
 	
 }
