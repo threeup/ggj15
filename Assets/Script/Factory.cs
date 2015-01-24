@@ -10,6 +10,6 @@ public class Factory : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 }
