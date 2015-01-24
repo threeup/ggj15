@@ -183,7 +183,7 @@ public class CharacterController2D : MonoBehaviour
     {
         bool goingUp = delta.y > 0f;
         LayerMask mask = platformMask;
-        if( goingUp && !WasGrounded )
+        if( goingUp )
             mask &= ~oneWayPlatformMask;
 
         RaycastHit2D hit = Physics2D.BoxCast(origin2D, thisCollider.size, 0f, new Vector2(0, delta.normalized.y), Mathf.Abs(delta.y), mask.value);
