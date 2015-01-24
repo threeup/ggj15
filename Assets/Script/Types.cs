@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public enum EntityType
 {
 	BRICK,
+	COINBRICK,
 	ENEMY,
 	COIN,
 }
@@ -17,6 +18,7 @@ public enum EntityState
 	DISABLED,
 }
 
+[System.Serializable]
 public struct LevelElement
 {
 	public EntityType entityType;
