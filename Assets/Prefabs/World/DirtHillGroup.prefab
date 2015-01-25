@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 423306}
   - 212: {fileID: 21223306}
   - 114: {fileID: 11423306}
-  - 61: {fileID: 6123306}
   m_Layer: 9
   m_Name: Dirt
   m_TagString: Untagged
@@ -28,7 +27,6 @@ GameObject:
   - 4: {fileID: 423302}
   - 212: {fileID: 21223302}
   - 114: {fileID: 11423302}
-  - 61: {fileID: 6123302}
   m_Layer: 9
   m_Name: Dirt
   m_TagString: Untagged
@@ -46,7 +44,6 @@ GameObject:
   - 4: {fileID: 423304}
   - 212: {fileID: 21223304}
   - 114: {fileID: 11423304}
-  - 61: {fileID: 6123304}
   m_Layer: 9
   m_Name: Dirt
   m_TagString: Untagged
@@ -64,7 +61,6 @@ GameObject:
   - 4: {fileID: 423308}
   - 212: {fileID: 21223308}
   - 114: {fileID: 11423308}
-  - 61: {fileID: 6123308}
   m_Layer: 9
   m_Name: Dirt
   m_TagString: Untagged
@@ -276,50 +272,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 423310}
   m_RootOrder: 1
---- !u!61 &6123302
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123304}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
---- !u!61 &6123304
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123306}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
---- !u!61 &6123306
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123302}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
---- !u!61 &6123308
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123308}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
 --- !u!61 &6123310
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -379,10 +331,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!114 &11423304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -398,10 +351,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!114 &11423306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -417,10 +371,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!114 &11423308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -436,10 +391,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!114 &11423310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -455,10 +411,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!114 &11423312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -474,10 +431,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!114 &11423314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -493,10 +451,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!114 &11423316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -512,10 +471,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!114 &11423318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -531,10 +491,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &21223302
 SpriteRenderer:
   m_ObjectHideFlags: 1

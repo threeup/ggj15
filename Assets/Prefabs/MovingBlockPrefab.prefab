@@ -83,16 +83,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainRenderer: {fileID: 21250488}
   defaultSprite: {fileID: 21300000, guid: d39217cc36ac3ba4da22134fa53bf46c, type: 3}
+  canScale: 0
+  mainTransform: {fileID: 450486}
   idleSet:
   - sprite: {fileID: 21300000, guid: d39217cc36ac3ba4da22134fa53bf46c, type: 3}
     hasTween: 1
-    translation: {x: 1, y: 0, z: 0}
-    rotation: {x: 0, y: 0, z: 0}
-    scale: {x: 1, y: 1, z: 1}
-    duration: 4
-  - sprite: {fileID: 21300000, guid: d39217cc36ac3ba4da22134fa53bf46c, type: 3}
-    hasTween: 1
-    translation: {x: 0, y: 1, z: 0}
+    translation: {x: 4, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     duration: 4
@@ -123,10 +119,13 @@ MonoBehaviour:
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     duration: .100000001
-  mainTransform: {fileID: 450486}
   srcTranslation: {x: 0, y: 0, z: 0}
   srcRotation: {x: 0, y: 0, z: 0}
   srcScale: {x: 0, y: 0, z: 0}
+  baseScale: {x: 0, y: 0, z: 0}
+  curTranslation: {x: 0, y: 0, z: 0}
+  curRotation: {x: 0, y: 0, z: 0}
+  curScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11450486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -142,10 +141,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &21250488
 SpriteRenderer:
   m_ObjectHideFlags: 1

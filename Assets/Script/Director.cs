@@ -61,6 +61,7 @@ public class Director : MonoBehaviour
 		{
 			this.mainCharacter = mainCharacter;
 			camFollow.followTarget = mainCharacter;
+			camFollow.Center();
 		}
 	}
 	

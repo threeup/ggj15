@@ -21,3 +21,5 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelect.unity
   - enabled: 1
     path: Assets/Scenes/StoreScreen.unity
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity

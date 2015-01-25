@@ -161,9 +161,11 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
   scalar: 1
-  walkSpeed: 4
+  walkSpeed: 1
   jumpSpeed: 14
   jumpButtonTime: .100000001
+  slideSpeed: 5
+  slideTime: .5
   flapSpeed: 10
   terminalVelocity: 20
   startGrounded: 1
@@ -198,6 +200,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
   isGrounded: 0
+  canWalk: 1
+  isSliding: 0
 --- !u!114 &11422330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -209,6 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fdb0f58b7d8e1547b66f332778ba368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slideDeadzone: .5
 --- !u!114 &11422332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,10 +229,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 3
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
   faction: 3
   invincible: 0
   thisNavAgent: {fileID: 0}
@@ -235,6 +241,7 @@ MonoBehaviour:
   - {fileID: 11475294}
   wingFrontSpriter: {fileID: 0}
   wingBackSpriter: {fileID: 0}
+  slideSpriter: {fileID: 0}
 --- !u!114 &11468176
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -4,18 +4,17 @@ using System.Collections;
 public class CameraFollow : MonoBehaviour {
 
 	public GameEntity followTarget = null;
-	private Bounds bounds;
-	private float rightEdge;
-	private float speed = 3f;
+	public Bounds bounds;
+	public float rightEdge;
+	public float speed = 3f;
 
 	void Awake()
 	{
-		bounds = new Bounds(Vector3.zero, new Vector3(10f,5f));
+		bounds = new Bounds(Vector3.zero, new Vector3(1f,1f));
 	}
 	
 	void Update () 
 	{
-
 		float deltaTime = Time.deltaTime;
 		if( followTarget != null )
 		{
@@ -38,5 +37,12 @@ public class CameraFollow : MonoBehaviour {
 			}
 		}
 		bounds.center = this.transform.position;
+	}
+	public void Center()
+	{
+		Vector3 start = this.transform.position;
+		start.x = followTarget.transform.position.x;
+		start.y = followTarget.transform.position.y;
+		this.transform.position = start;
 	}
 }
