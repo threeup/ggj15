@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Weapon : MonoBehaviour
 {
+    public AudioClip fireSound;
     private float launchSpeed = 200f;
     public GameObject launchNode;
     public GameObject projectilePrefab;
@@ -28,6 +29,8 @@ public class Weapon : MonoBehaviour
         {
             rigidbody.AddForce(launchVector*launchSpeed);
         }
+
+        audio.PlayOneShot(fireSound);
     }
 
 }

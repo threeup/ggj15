@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6187758}
   - 50: {fileID: 5078292}
   - 114: {fileID: 11469656}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: ProjectilePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 4: {fileID: 487760}
   - 212: {fileID: 21287758}
   - 114: {fileID: 11487760}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

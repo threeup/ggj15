@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7613ab7c832f1944583edcc41dd49a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireSound: {fileID: 8300000, guid: fb6e9cedf6e26a8489f68fb2ee7371dd, type: 3}
   launchNode: {fileID: 173674}
   projectilePrefab: {fileID: 187758, guid: 2372f94ad200c4040b99e7fdbd6a0535, type: 2}
   owner: {fileID: 0}
@@ -530,7 +531,7 @@ MonoBehaviour:
     drawable: 0
     position: {x: 0, y: 0, z: 0}
   faction: 2
-  invincible: 1
+  invincible: 0
   thisNavAgent: {fileID: 0}
   spriters: []
 --- !u!114 &11486602
