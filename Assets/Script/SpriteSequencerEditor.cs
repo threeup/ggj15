@@ -22,7 +22,7 @@ public class SpriteSequencerEditor : Editor
         	spriter.secondarySet[0] = new SpriteData(spriter.defaultSprite);
         	spriter.disabledSet = new SpriteData[1];
         	spriter.disabledSet[0] = new SpriteData(spriter.defaultSprite);
-
+        	EditorUtility.SetDirty(spriter);
         }
     }
 }
