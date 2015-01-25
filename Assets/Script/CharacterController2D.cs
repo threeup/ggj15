@@ -223,7 +223,6 @@ public class CharacterController2D : MonoBehaviour
         RaycastHit2D hit = Physics2D.BoxCast(origin2D, thisCollider.size, thisTransform.rotation.z, delta.normalized, delta.magnitude, mask.value);
         if( hit )
         {
-            Debug.Log("DiagonalMove: " + hit.normal);
             if( hit.normal.x < 0f )
             {
                 delta.x = (hit.point.x - thisCollider.size.x * 0.5f - skin) - origin2D.x;
