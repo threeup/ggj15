@@ -19,14 +19,23 @@ public class Player : MonoBehaviour
 
     void OnDeath()
     {
+        audio.PlayOneShot(deathSound);
+        SpriteRenderer renderer = GetComponentInChildren<SpriteRenderer>();
+        if( renderer != null )
+            renderer.enabled = false;
+        Collider2D[] colliders = GetComponentsInChildren<Collider2D>();
+        for( int i = 0; i < colliders.Length; ++i )
+        {
+            colliders[i].enabled = false;
+        }
+
         StartCoroutine("DeathRoutine");
     }
     
     IEnumerator DeathRoutine()
     {
         // GameOver
-        audio.PlayOneShot(deathSound);
+        yield return new WaitForSeconds(2f);
         GameObject.Destroy(gameObject);
-        yield break;
     }
 }
