@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21208208}
   - 114: {fileID: 11408208}
   - 114: {fileID: 11408210}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: GoombaSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

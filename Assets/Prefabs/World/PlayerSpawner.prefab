@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21269936}
   - 114: {fileID: 11469938}
   - 114: {fileID: 11469936}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: PlayerSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -5,6 +5,10 @@ public class Coin : Item
 {
     public override void OnEnter(Collider2D other)
     {
-        GameObject.Destroy(transform.parent.gameObject);
+        ActorEntity actor = other.GetComponent<ActorEntity>();
+        if( actor != null )
+        {
+            GameObject.Destroy(transform.parent.gameObject);
+        }
     }
 }

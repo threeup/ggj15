@@ -20,6 +20,12 @@ public class ItemBlock : MonoBehaviour
                 go.transform.position = spawnPoint.position;
 
 
+                Rigidbody2D rigidbody = go.GetComponentInChildren<Rigidbody2D>();
+                if( rigidbody != null )
+                {
+                    rigidbody.AddForce(new Vector2(Random.Range(-150f, 150f), Random.Range(100f, 200f)));
+                }
+
                 ++hitCount;
 
                 if( hitCount == numOfHits )

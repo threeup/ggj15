@@ -109,7 +109,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!4 &26790999
 Transform:
   m_ObjectHideFlags: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &105900580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -401,7 +401,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &224601682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -460,7 +460,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!4 &240047696
 Transform:
   m_ObjectHideFlags: 0
@@ -538,7 +538,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &302706556
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -623,7 +623,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &310554863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -708,7 +708,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &359737852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -793,7 +793,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &390264743
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -919,7 +919,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!1 &512310014
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +982,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!4 &544327881
 Transform:
   m_ObjectHideFlags: 0
@@ -1034,7 +1034,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!4 &602969190
 Transform:
   m_ObjectHideFlags: 0
@@ -1112,7 +1112,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!114 &637220354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e996d56165edc124c9cbb0b711beed33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 140676, guid: dde060fb11da09b4ea961de15b5426b6, type: 2}
+  itemPrefab: {fileID: 140676, guid: 374a940eaeb959e49b67cbd47a2e6b97, type: 2}
   spawnPoint: {fileID: 512310015}
   numOfHits: 1
   normalState: {fileID: 1352800940}
@@ -1181,7 +1181,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!1 &704848501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,7 +1294,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &717098337
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1379,7 +1379,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &732231922
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1464,7 +1464,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &758969853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1600,7 +1600,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &770521655
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1675,7 +1675,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!1 &809432373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,7 +1727,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!1 &877953736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,7 +1830,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!1 &963223296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,7 +1892,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &963223300
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1965,7 +1965,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1006908887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2062,7 +2062,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1032731683
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2147,7 +2147,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!114 &1097931208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2160,7 +2160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e996d56165edc124c9cbb0b711beed33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 140676, guid: dde060fb11da09b4ea961de15b5426b6, type: 2}
+  itemPrefab: {fileID: 140676, guid: 374a940eaeb959e49b67cbd47a2e6b97, type: 2}
   spawnPoint: {fileID: 55222193}
   numOfHits: 1
   normalState: {fileID: 704848501}
@@ -2226,7 +2226,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1194103242
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2311,7 +2311,7 @@ MonoBehaviour:
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1216476472
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2344,7 +2344,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1224625505}
   - 212: {fileID: 1224625508}
-  - 114: {fileID: 1224625507}
   - 61: {fileID: 1224625506}
   - 50: {fileID: 1224625510}
   - 114: {fileID: 1224625509}
@@ -2377,28 +2376,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: .649999976, y: .870000005}
   m_Center: {x: 0, y: 0}
---- !u!114 &1224625507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11440678, guid: dde060fb11da09b4ea961de15b5426b6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1224625504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entityID: 1026
-  entityName: 
-  edata:
-    entityType: 4
-    collisionState: 2
-    collidable: 1
-    drawable: 1
-    position: {x: 0, y: 0}
 --- !u!212 &1224625508
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2492,14 +2471,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1027
+  entityID: 1026
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1264916695
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2563,14 +2542,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1028
+  entityID: 1027
   entityName: 
   edata:
     entityType: 0
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!4 &1279397428
 Transform:
   m_ObjectHideFlags: 0
@@ -2641,14 +2620,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1029
+  entityID: 1028
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1282564758
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2753,14 +2732,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1030
+  entityID: 1029
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1334386624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2889,14 +2868,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1031
+  entityID: 1030
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1400824890
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2963,14 +2942,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1032
+  entityID: 1031
   entityName: 
   edata:
     entityType: 0
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!1 &1427336901
 GameObject:
   m_ObjectHideFlags: 0
@@ -3052,14 +3031,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1033
+  entityID: 1032
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1429587210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3137,14 +3116,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1034
+  entityID: 1033
   entityName: 
   edata:
     entityType: 1
     collisionState: 0
     collidable: 0
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1446965683
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3222,14 +3201,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1035
+  entityID: 1034
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1487238025
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3295,14 +3274,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1036
+  entityID: 1035
   entityName: 
   edata:
     entityType: 1
     collisionState: 0
     collidable: 0
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1535721818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3392,14 +3371,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1037
+  entityID: 1036
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1553780102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3467,14 +3446,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1038
+  entityID: 1037
   entityName: 
   edata:
     entityType: 3
     collisionState: 2
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1571225515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3564,14 +3543,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1039
+  entityID: 1038
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1576652790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3623,14 +3602,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1040
+  entityID: 1039
   entityName: 
   edata:
     entityType: 0
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!4 &1689114236
 Transform:
   m_ObjectHideFlags: 0
@@ -3675,14 +3654,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1041
+  entityID: 1040
   entityName: 
   edata:
     entityType: 0
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!4 &1758279499
 Transform:
   m_ObjectHideFlags: 0
@@ -3740,14 +3719,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1042
+  entityID: 1041
   entityName: 
   edata:
     entityType: 3
     collisionState: 2
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1938724045
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3888,14 +3867,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1043
+  entityID: 1042
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1963524185
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3961,14 +3940,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1044
+  entityID: 1043
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &1969232705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4034,6 +4013,7 @@ MonoBehaviour:
   LevelID: Level1
   levelUID: 1
   entities: []
+  mainCharacterEntity: {fileID: 0}
 --- !u!4 &1973964629
 Transform:
   m_ObjectHideFlags: 0
@@ -4100,14 +4080,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1045
+  entityID: 1044
   entityName: 
   edata:
     entityType: 1
     collisionState: 0
     collidable: 0
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &2017130922
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4185,14 +4165,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1046
+  entityID: 1045
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &2043176403
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4270,14 +4250,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1047
+  entityID: 1046
   entityName: 
   edata:
     entityType: 2
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!114 &2103913649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4290,7 +4270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e996d56165edc124c9cbb0b711beed33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 140676, guid: dde060fb11da09b4ea961de15b5426b6, type: 2}
+  itemPrefab: {fileID: 140676, guid: 374a940eaeb959e49b67cbd47a2e6b97, type: 2}
   spawnPoint: {fileID: 1286281709}
   numOfHits: 1
   normalState: {fileID: 877953736}
@@ -4349,14 +4329,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1048
+  entityID: 1047
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &2119438079
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4434,14 +4414,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1049
+  entityID: 1048
   entityName: 
   edata:
     entityType: 1
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!212 &2132369647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4507,14 +4487,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1050
+  entityID: 1049
   entityName: 
   edata:
     entityType: 2
     collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!114 &2132970409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4527,7 +4507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e996d56165edc124c9cbb0b711beed33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 140676, guid: dde060fb11da09b4ea961de15b5426b6, type: 2}
+  itemPrefab: {fileID: 140676, guid: 374a940eaeb959e49b67cbd47a2e6b97, type: 2}
   spawnPoint: {fileID: 1427336902}
   numOfHits: 1
   normalState: {fileID: 766158260}
