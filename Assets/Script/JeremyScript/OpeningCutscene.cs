@@ -9,6 +9,7 @@ public class OpeningCutscene : MonoBehaviour {
 	public Image wordBubbleVisual;
 	public float textSpeed;
 	public GameObject bubble;
+	public AudioSource talkingNoise;
 
 	//Used for fade in/out
 	private bool fadeFromBlack = false;
@@ -49,6 +50,10 @@ public class OpeningCutscene : MonoBehaviour {
 				{
 					mouthOpen=false;
 					shopkeeper.sprite=closedMouth;
+					if(talkingNoise.isPlaying==false)
+					{
+						talkingNoise.Play();
+					}
 				}else{
 					mouthOpen=true;
 					shopkeeper.sprite = openMouth;
@@ -57,6 +62,7 @@ public class OpeningCutscene : MonoBehaviour {
 		}else{
 			mouthOpen=false;
 			shopkeeper.sprite=closedMouth;
+			talkingNoise.Stop();
 		}
 		if(fadeFromBlack==true)
 		{
