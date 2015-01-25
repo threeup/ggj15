@@ -33,7 +33,6 @@ public class NavAgent : MonoBehaviour
     bool startGrounded = true;
 
     public AnimationCurve walkSpeedMultiplier = new AnimationCurve(new Keyframe(0f, 0f), new Keyframe(1f, 1f));
-    public AnimationCurve jumpSpeedMultiplier = new AnimationCurve(new Keyframe(0f, 0.01f), new Keyframe(1f, 0.066f));
     public bool isGrounded;
     public bool canWalk = true;
     public bool isSliding;
@@ -129,7 +128,7 @@ public class NavAgent : MonoBehaviour
         while( time < jumpButtonTime )
         {
             if( thisInputAgent.JumpDown && !thisController.State.CollideAbove )
-                AddVelocity(Vector3.up * jumpSpeedMultiplier.Evaluate(time / jumpButtonTime) * jumpSpeed);
+                AddVelocity(Vector3.up * Time.deltaTime * 2f * jumpSpeed);
 
             time += Time.deltaTime;
 
@@ -189,7 +188,7 @@ public class NavAgent : MonoBehaviour
         while( time < jumpButtonTime )
         {
             if( thisInputAgent.JumpDown && !thisController.State.CollideAbove )
-                AddVelocity(Vector3.up * jumpSpeedMultiplier.Evaluate(time / jumpButtonTime) * flapSpeed);
+                AddVelocity(Vector3.up * Time.deltaTime * 2f * flapSpeed);
             
             time += Time.deltaTime;
             
