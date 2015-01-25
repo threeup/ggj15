@@ -75,7 +75,7 @@ public class Level : MonoBehaviour
 			}
 			else
 			{
-				Debug.Log("didnt save"+entity);
+				//Debug.Log("didnt save"+entity);
 			}
 			entity.gameObject.SetActive(false);
 		}
@@ -86,7 +86,7 @@ public class Level : MonoBehaviour
 			entities[i].FinishDestroy();
 		}
 		entities.Clear();
-		Debug.LogWarning("Finish Purge");
+		//Debug.LogWarning("Finish Purge");
 		Destroy(gameObject);
 
 	}

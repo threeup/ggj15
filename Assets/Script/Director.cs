@@ -22,10 +22,11 @@ public class Director : MonoBehaviour
 	public GameEntity mainCharacter;
 	private int mainScore = 0;
 	public int MainScore { get { return mainScore; } }
-	private int mainStartHealth = 3;
+	private int mainStartHealth = 1;
 	public int MainStartHealth { get { return mainStartHealth; } }
 
 
+	private BasicTimer unloadSceneTimer = null;
 	private BasicTimer gameOverTimer = new BasicTimer(300f);
 
 	public StoreProductChanger productChanger;
@@ -53,16 +54,19 @@ public class Director : MonoBehaviour
 		{
 			hasSeenIntro = true;
 			Application.LoadLevelAdditive( "Cutscene" );
+			unloadSceneTimer = new BasicTimer(0.25f);
 		}
 		else if( !hasSeenTitle)
 		{
 			hasSeenTitle = true;
 			Application.LoadLevelAdditive( "Title" );	
+			unloadSceneTimer = new BasicTimer(0.25f);
 		}
 		else
 		{
 			isInLevelSelect = true;
 			uiMgr.SetOverworldVisible(true);
+			Debug.Log("next scene overowrld");
 			//uiMgr.SetMenuVisible(true);
 		}
 		uiMgr.SetHudVisible(false);
@@ -71,11 +75,15 @@ public class Director : MonoBehaviour
 
 	public void UnloadLevel()
 	{	
+		Debug.Log("UnloadLevel");
 		levelMgr.SaveAndPurge();
 		isInLevelSelect = true;
 		uiMgr.SetOverworldVisible(true);
 		//uiMgr.SetMenuVisible(true);
 		uiMgr.SetHudVisible(false);
+		camFollow.followTarget = null;
+		camFollow.Center();
+		
 		isInGame = false;
 	}
 
@@ -93,6 +101,7 @@ public class Director : MonoBehaviour
 			uiMgr.SetStoreVisible(true);
 			return;
 		}
+		uiMgr.SetStoreVisible(false);
 		isInGame = true;
 		levelMgr.LoadLevel( index );
 		isInLevelSelect = false;
@@ -123,6 +132,7 @@ public class Director : MonoBehaviour
 	{
 		if( this.mainCharacter == hitActor )
 		{
+			mainStartHealth++;
 			gameOverTimer.SetMin(0.5f);
 		}
 	}
@@ -141,10 +151,19 @@ public class Director : MonoBehaviour
 		{
 			UnloadLevel();
 		}
+
+		if( unloadSceneTimer != null && unloadSceneTimer.Tick(deltaTime) )
+		{
+			unloadSceneTimer = null;	
+		}
 	}
 
 	public void UnloadScene()
 	{
+		if( unloadSceneTimer != null )
+		{
+			return;
+		}
 		Application.LoadLevel( "Blank" );
 		NextScreen();
 	}

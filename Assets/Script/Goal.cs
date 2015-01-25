@@ -12,6 +12,7 @@ public class Goal : Item
         {
             audio.PlayOneShot(pickupSound);
             Director.Instance.ActorHitGoal(actor);
+            this.collider2D.enabled = false;
         }
     }
 

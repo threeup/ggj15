@@ -41,8 +41,16 @@ public class CameraFollow : MonoBehaviour {
 	public void Center()
 	{
 		Vector3 start = this.transform.position;
-		start.x = followTarget.transform.position.x;
-		start.y = followTarget.transform.position.y;
+		if( followTarget != null )
+		{
+			start.x = followTarget.transform.position.x;
+			start.y = followTarget.transform.position.y;
+		}
+		else
+		{
+			start.x = 0f;
+			start.y = 0f;
+		}
 		this.transform.position = start;
 	}
 }
