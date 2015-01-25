@@ -4,6 +4,9 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController2D), typeof(NavAgent))]
 public class InputAgent : MonoBehaviour
 {
+    [SerializeField]
+    float slideDeadzone = 0.5f;
+
     NavAgent thisNavAgent;
     Brain thisBrain;
     Weapon thisWeapon;
@@ -39,7 +42,7 @@ public class InputAgent : MonoBehaviour
 
         if( thisNavAgent.isGrounded && doJump )
         {
-            if( moveY < 0f && thisNavAgent.CanSlide )
+            if( moveY < -slideDeadzone && thisNavAgent.CanSlide )
                 thisNavAgent.Slide();
             else
                 thisNavAgent.Jump();
