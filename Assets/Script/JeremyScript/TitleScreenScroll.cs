@@ -25,7 +25,7 @@ public class TitleScreenScroll : MonoBehaviour {
 	void Awake()
 	{
 		self= this.gameObject;
-		Debug.Log (self);
+		//Debug.Log (self);
 	}
 
 	// Update is called once per frame

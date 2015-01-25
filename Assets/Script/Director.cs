@@ -14,6 +14,7 @@ public class Director : MonoBehaviour
 	public bool mainMusicPlaying = false;
 
 	public bool hasSeenIntro = false;
+	public bool hasSeenTitle = false;
 	public bool isInGame = false;
 	public bool isInLevelSelect = false;
 	public bool isInStore = false;
@@ -52,6 +53,11 @@ public class Director : MonoBehaviour
 		{
 			hasSeenIntro = true;
 			Application.LoadLevelAdditive( "Cutscene" );
+		}
+		else if( !hasSeenTitle)
+		{
+			hasSeenTitle = true;
+			Application.LoadLevelAdditive( "Title" );	
 		}
 		else
 		{
