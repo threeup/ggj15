@@ -15,6 +15,7 @@ public class Director : MonoBehaviour
 
 	public bool hasSeenIntro = false;
 	public bool isInGame = false;
+	public bool isInLevelSelect = false;
 
 	public GameEntity mainCharacter;
 	private int mainScore = 0;
@@ -39,6 +40,7 @@ public class Director : MonoBehaviour
 
 	void Start() 
 	{
+		uiMgr.SetMenuVisible(false);
 		NextScreen();
 	}
 
@@ -51,8 +53,9 @@ public class Director : MonoBehaviour
 		}
 		else
 		{
+			isInLevelSelect = true;
 			uiMgr.SetOverworldVisible(true);
-			uiMgr.SetMenuVisible(true);
+			//uiMgr.SetMenuVisible(true);
 		}
 		uiMgr.SetHudVisible(false);
 		uiMgr.HudUpdate();
@@ -61,18 +64,24 @@ public class Director : MonoBehaviour
 	public void UnloadLevel()
 	{	
 		levelMgr.SaveAndPurge();
+		isInLevelSelect = true;
 		uiMgr.SetOverworldVisible(true);
-		uiMgr.SetMenuVisible(true);
+		//uiMgr.SetMenuVisible(true);
 		uiMgr.SetHudVisible(false);
 		isInGame = false;
 	}
 
 	public void LoadLevel(int index)
 	{
+		if( index == -1 )
+		{
+			return;
+		}
 		isInGame = true;
 		levelMgr.LoadLevel( index );
+		isInLevelSelect = false;
 		uiMgr.SetOverworldVisible(false);
-		uiMgr.SetMenuVisible(false);
+		//uiMgr.SetMenuVisible(false);
 		uiMgr.SetHudVisible(true);
 		uiMgr.HudUpdate();
 		if( !mainMusicPlaying )
@@ -106,6 +115,11 @@ public class Director : MonoBehaviour
 	{
 		float deltaTime = Time.deltaTime;
 		bool gameOver = isInGame && Input.GetButtonDown("Cancel");
+		bool levelSelect = isInLevelSelect && Input.GetButtonDown("Jump");
+		if( levelSelect )
+		{
+			LoadLevel(uiMgr.overworldMgr.CurrentLevelNumber());
+		}
 
 		if(gameOver || gameOverTimer.Tick(deltaTime))
 		{

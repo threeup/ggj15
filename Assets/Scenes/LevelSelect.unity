@@ -399,17 +399,7 @@ MonoBehaviour:
   - {fileID: 1285778783}
   - {fileID: 1499875285}
   - {fileID: 606935251}
-  levelNames:
-  - StoreScreen
-  - Level1
-  - Level2
-  - _NOLEVEL
-  - Level3
-  - Level4
-  - Level5
-  - _NOLEVEL
-  - Level6
-  - Level7
+  levelNumbers: 000000000100000002000000ffffffff030000000400000005000000ffffffff0600000007000000
   moveSpeed: 3
   character: {fileID: 1454642903}
   currentWaypoint: 0
@@ -486,7 +476,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 3}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1024, y: 768}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &728635538
@@ -511,6 +501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf65a51f13daee64ebe5dba5b3008cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  path: {fileID: 727803568}
+  desiredWaypoint: 0
 --- !u!1 &767044891
 GameObject:
   m_ObjectHideFlags: 0

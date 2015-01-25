@@ -4,7 +4,7 @@ using System.Collections;
 public class LevelSelectPath : MonoBehaviour {
 
 	public GameObject[] wayPoints;
-	public string[] levelNames;
+	public int[] levelNumbers;
 	public float moveSpeed;
 	public GameObject character;
 
@@ -144,7 +144,7 @@ public class LevelSelectPath : MonoBehaviour {
 	{
 		if(go==false)
 		{
-			Application.LoadLevel(levelNames[currentWaypoint]);
+			Application.LoadLevel(levelNumbers[currentWaypoint]);
 		}
 	}
 }
