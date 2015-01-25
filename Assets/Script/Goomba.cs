@@ -19,8 +19,6 @@ public class Goomba : MonoBehaviour
         {
             NavAgent otherNavAgent = other.GetComponent<NavAgent>();
             BoxCollider2D box = (BoxCollider2D)other;
-            Vector2 otherOrigin2D = Utilities.Vector3ToVector2(box.transform.position);
-            Vector3 otherExtents = box.bounds.extents;
 
             if( box.bounds.min.y > thisTransform.position.y )
             {
