@@ -26,6 +26,10 @@ public class Goomba : MonoBehaviour
                 otherNavAgent.SetVelocityY(0f);
                 otherNavAgent.Jump();
             }
+            else if( otherNavAgent.isSliding )
+            {
+                thisActor.Damage();
+            }
             else
             {
                 if( thisActor != null )

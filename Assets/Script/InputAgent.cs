@@ -20,6 +20,7 @@ public class InputAgent : MonoBehaviour
     void Update()
     {
         float moveX = 0f;
+        float moveY = 0f;
         bool doJump = false;
         bool doFire = false;
         if( thisBrain != null )
@@ -29,6 +30,7 @@ public class InputAgent : MonoBehaviour
         else
         {
             moveX = Input.GetAxis("Horizontal");
+            moveY = Input.GetAxis("Vertical");
             doJump = Input.GetButtonDown("Jump");
             doFire = Input.GetButtonDown("Fire1");
         }
@@ -36,7 +38,12 @@ public class InputAgent : MonoBehaviour
         thisNavAgent.Walk(moveX);
 
         if( thisNavAgent.isGrounded && doJump )
-            thisNavAgent.Jump();
+        {
+            if( moveY < 0f && thisNavAgent.CanSlide )
+                thisNavAgent.Slide();
+            else
+                thisNavAgent.Jump();
+        }
 
         if( !thisNavAgent.isGrounded && doJump && thisNavAgent.CanFlap )
             thisNavAgent.Flap();

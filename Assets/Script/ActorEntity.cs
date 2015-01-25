@@ -24,7 +24,9 @@ public class ActorEntity : GameEntity
     public SpriteSequencer wingFrontSpriter;
     public SpriteSequencer wingBackSpriter;
 
-    public bool HasWings { get { return maxHealth >= 3; } }
+    public bool FacingRight { get { return activeSpriter.baseScale.x > 0f; } }
+    public bool HasShell { get { return Health >= 2; } }
+    public bool HasWings { get { return Health >= 3; } }
 	
 	public override void Awake()
 	{
