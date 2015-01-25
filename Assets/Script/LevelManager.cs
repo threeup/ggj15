@@ -8,7 +8,6 @@ public class LevelManager : MonoBehaviour
 	public Dictionary<string, LevelData> storedLevelData = new Dictionary<string, LevelData>();
 	private Level currentLevel;
 	private LevelData currentLevelData;
-	private BasicTimer gameOverTimer = new BasicTimer(300f);
 
 	void Awake()
 	{
@@ -47,19 +46,6 @@ public class LevelManager : MonoBehaviour
 			storedLevelData.Add(level.LevelID, currentLevelData);
 		}
 		level.ApplyLevelData(currentLevelData);
-	}
-
-
-	
-	void Update() 
-	{
-		float deltaTime = Time.deltaTime;
-		bool gameOver = Input.GetButtonDown("Cancel");
-
-		if(gameOver || gameOverTimer.Tick(deltaTime))
-		{
-			Director.Instance.UnloadLevel();
-		}
 	}
 
 	public void SaveAndPurge()

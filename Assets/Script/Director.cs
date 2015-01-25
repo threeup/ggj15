@@ -19,6 +19,9 @@ public class Director : MonoBehaviour
 	private int mainStartHealth = 3;
 	public int MainStartHealth { get { return mainStartHealth; } }
 
+	
+	private BasicTimer gameOverTimer = new BasicTimer(300f);
+
 	public StoreProductChanger productChanger;
 
 	void Awake()
@@ -67,10 +70,24 @@ public class Director : MonoBehaviour
 			camFollow.Center();
 		}
 	}
+
+	public void ActorHitGoal(GameEntity hitActor)
+	{
+		if( this.mainCharacter == hitActor )
+		{
+			gameOverTimer.SetMin(0.5f);
+		}
+	}
 	
 	void Update() 
 	{
-		
+		float deltaTime = Time.deltaTime;
+		bool gameOver = Input.GetButtonDown("Cancel");
+
+		if(gameOver || gameOverTimer.Tick(deltaTime))
+		{
+			UnloadLevel();
+		}
 	}
 
 	public void AddCoin(GameEntity actor, int amount)
