@@ -15,7 +15,6 @@ GameObject:
   - 114: {fileID: 11422330}
   - 114: {fileID: 11422332}
   - 114: {fileID: 11422324}
-  - 114: {fileID: 11423100}
   - 114: {fileID: 11468176}
   m_Layer: 11
   m_Name: Goomba
@@ -214,21 +213,6 @@ MonoBehaviour:
   faction: 3
   health: 1
   invincible: 0
---- !u!114 &11423100
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 122324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 709edc243625cd54eba13aed2747e8bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  right: 1
-  left: 1
-  above: 0
-  below: 1
 --- !u!114 &11468176
 MonoBehaviour:
   m_ObjectHideFlags: 1

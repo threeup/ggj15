@@ -14,7 +14,7 @@ public class ActorEntity : GameEntity
     public Faction faction;
     public int health = 2;
     public bool invincible;
-	
+
 	public override void Awake()
 	{
 		base.Awake();

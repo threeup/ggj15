@@ -41,12 +41,27 @@ public class NavAgent : MonoBehaviour
 
         CharacterController2D.CollisionState collisionState = thisController.Move((velocity + walkVelocity) * Time.deltaTime * scalar);
 
-        if( collisionState.CollideBelow || collisionState.CollideAbove )
-            velocity.y = 0f;
         if( collisionState.CollideRight || collisionState.CollideLeft )
-            velocity.x = 0f;
+            SetVelocityX(0f);
+        if( collisionState.CollideBelow || collisionState.CollideAbove )
+            SetVelocityY(0f);
 
         isGrounded = collisionState.IsGrounded;
+    }
+
+    public void SetVelocityX(float val)
+    {
+        velocity.x = val;
+    }
+
+    public void SetVelocityY(float val)
+    {
+        velocity.y = val;
+    }
+
+    public void AddVelocity(Vector3 vel)
+    {
+        velocity += vel;
     }
 
     public void Walk(float moveX)
@@ -56,7 +71,7 @@ public class NavAgent : MonoBehaviour
 
     public void Jump()
     {
-        velocity += Vector3.up * jumpVelocity;
+        AddVelocity(Vector3.up * jumpVelocity);
         BroadcastMessage("OnJump", SendMessageOptions.DontRequireReceiver);
     }
 }
