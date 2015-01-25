@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 440676}
   - 114: {fileID: 11440676}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: CoinPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 212: {fileID: 21240678}
   - 114: {fileID: 11440678}
   - 61: {fileID: 6140678}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 140678}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11440676

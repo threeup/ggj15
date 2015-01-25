@@ -16,6 +16,7 @@ public class GameEntity : MonoBehaviour {
 		edata.collidable = this.collider != null;
 		if( LevelManager.Instance != null && edata.drawable )
 		{
+			//default everything to off when we start, level data decides if it is visible or not
 			renderer.enabled = false;
 		}
 	}
@@ -70,17 +71,6 @@ public class GameEntity : MonoBehaviour {
 	public void SaveToData()
 	{
 		edata.position = new Vector2(thisTransform.position.x, thisTransform.position.y);
-		if( edata.collidable )
-		{
-			if( collider2D.enabled )
-			{
-				edata.collisionState = CollisionState.ACTIVE;
-			}
-			else
-			{
-				edata.collisionState = CollisionState.DISABL;
-			}
-		}
 	}
 
 	public void LoadFromData()
