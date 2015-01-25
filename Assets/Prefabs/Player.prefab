@@ -131,8 +131,8 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
   scalar: .256000012
-  jumpVelocity: 75
-  walkSpeed: 10
+  jumpVelocity: 82
+  walkSpeed: 15
   walkSpeedMultiplier:
     serializedVersion: 2
     m_Curve:

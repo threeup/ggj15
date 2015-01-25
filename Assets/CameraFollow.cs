@@ -4,9 +4,14 @@ using System.Collections;
 public class CameraFollow : MonoBehaviour {
 
 	public GameEntity followTarget = null;
-	private float leftEdge;
+	private Bounds bounds;
 	private float rightEdge;
 	private float speed = 3f;
+
+	void Awake()
+	{
+		bounds = new Bounds(Vector3.zero, new Vector3(10f,5f));
+	}
 	
 	void Update () 
 	{
@@ -15,16 +20,23 @@ public class CameraFollow : MonoBehaviour {
 		if( followTarget != null )
 		{
 
-			if( followTarget.transform.position.x > rightEdge )
+			if( followTarget.transform.position.x > bounds.max.x )
 			{
 				this.transform.position = this.transform.position + Vector3.right*speed*deltaTime;
 			}
-			if( followTarget.transform.position.x < leftEdge )
+			if( followTarget.transform.position.x < bounds.min.x )
 			{
 				this.transform.position = this.transform.position - Vector3.right*speed*deltaTime;
 			}
+			if( followTarget.transform.position.y > bounds.max.y )
+			{
+				this.transform.position = this.transform.position + Vector3.up*speed*deltaTime;
+			}
+			if( followTarget.transform.position.y < bounds.min.y )
+			{
+				this.transform.position = this.transform.position - Vector3.up*speed*deltaTime;
+			}
 		}
-		leftEdge = this.transform.position.x - 5f;
-		rightEdge = this.transform.position.x + 5f;
+		bounds.center = this.transform.position;
 	}
 }
