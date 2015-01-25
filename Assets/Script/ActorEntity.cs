@@ -27,6 +27,7 @@ public class ActorEntity : GameEntity
     public SpriteSequencer wingFrontSpriter;
     public SpriteSequencer wingBackSpriter;
     public SpriteSequencer slideSpriter;
+    private bool shouldRender = true;
 
     private bool isSetup = false;
 
@@ -143,13 +144,27 @@ public class ActorEntity : GameEntity
 
     public void Update()
     {
+    	UpdateRender();
+    }
+
+    public void SetShouldRender(bool isVis)
+    {
+    	shouldRender = isVis;
+    }
+
+    void UpdateRender()
+    {
 		activeSpriter.SetFacingRight(thisNavAgent.WalkVelocity.x);
         bool sliding = thisNavAgent.IsSliding;
         if( slideSpriter != null )
         {
-            activeSpriter.mainRenderer.enabled = !sliding;   
-            slideSpriter.mainRenderer.enabled = sliding;
+            activeSpriter.mainRenderer.enabled = !sliding && shouldRender;   
+            slideSpriter.mainRenderer.enabled = sliding && shouldRender;
         } 
+        else
+        {
+        	activeSpriter.mainRenderer.enabled = shouldRender;
+        }
         if( wingFrontSpriter != null )
         {
             wingFrontSpriter.SetFacingRight(thisNavAgent.WalkVelocity.x);
