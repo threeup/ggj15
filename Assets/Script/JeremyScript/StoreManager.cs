@@ -19,15 +19,21 @@ public class StoreManager : MonoBehaviour {
 	private float time;
 
 	//used for the product
-	public Image storeProduct;
-	public Text productName;
-	public Text productPrice;
+	public StoreProductChanger product;
 
 	public string[] phraseList;
 
 	public void Start()
 	{
 		bubble.SetActive(false);
+		//Figure out which state to be in, then set the product to the right state.
+		product.updateProduct();
+		if(product.currentState==StoreProductChanger.StoreStates.intro)
+		{
+			//Start the intro conversation
+			Speak (0);
+			Invoke ("SecondText", 8.0f);
+		}
 	}
 
 	// Update is called once per frame
@@ -56,6 +62,37 @@ public class StoreManager : MonoBehaviour {
 	{
 		bubble.SetActive(true);
 		wordBubbleText.beginWriting(phraseList[phraseNum], textSpeed);
+	}
+
+	public void SecondText()
+	{
+		Speak (1);
+		Invoke ("ThirdText", 13.0f);
+	}
+
+	public void ThirdText()
+	{
+		Speak (2);
+		Invoke ("FourthText", 10.0f);
+	}
+
+	public void FourthText()
+	{
+		Speak (3);
+	}
+
+	public void BackToLevelSelect()
+	{
+		Application.LoadLevel("LevelSelect");
+	}
+
+	public void BuyButton()
+	{
+		//Buy code goes here
+		if(product.currentState==StoreProductChanger.StoreStates.intro || product.currentState==StoreProductChanger.StoreStates.noProduct || product.currentState==StoreProductChanger.StoreStates.noProduct2 || product.currentState==StoreProductChanger.StoreStates.finished)
+		{
+			Speak (11);
+		}
 	}
 
 }
