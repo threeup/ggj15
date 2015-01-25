@@ -57,5 +57,6 @@ public class NavAgent : MonoBehaviour
     public void Jump()
     {
         velocity += Vector3.up * jumpVelocity;
+        BroadcastMessage("OnJump", SendMessageOptions.DontRequireReceiver);
     }
 }
