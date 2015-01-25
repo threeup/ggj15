@@ -139,11 +139,13 @@ public class CharacterController2D : MonoBehaviour
                 {
                     delta.x = (hit.point.x - thisCollider.size.x * 0.5f - skin) - origin2D.x;
                     collisionState.SetFlag(CollisionFlags.Right);
+                    SendSideCollisionEvent();
                 }
                 else
                 {
                     delta.x = (hit.point.x + thisCollider.size.x * 0.5f + skin) - origin2D.x;
                     collisionState.SetFlag(CollisionFlags.Left);
+                    SendSideCollisionEvent();
                 }
             }
             collisionState.collisions.Add(hit);
@@ -227,11 +229,13 @@ public class CharacterController2D : MonoBehaviour
             {
                 delta.x = (hit.point.x - thisCollider.size.x * 0.5f - skin) - origin2D.x;
                 collisionState.SetFlag(CollisionFlags.Right);
+                SendSideCollisionEvent();
             }
             else if( hit.normal.x > 0f )
             {
                 delta.x = (hit.point.x + thisCollider.size.x * 0.5f + skin) - origin2D.x;
                 collisionState.SetFlag(CollisionFlags.Left);
+                SendSideCollisionEvent();
             }
             else if( hit.normal.y < 0f )
             {
@@ -256,5 +260,10 @@ public class CharacterController2D : MonoBehaviour
             Move(Vector3.down);
 			timeout--;
         } while( !collisionState.IsGrounded && timeout > 0 );
+    }
+
+    public void SendSideCollisionEvent()
+    {
+        BroadcastMessage("SideCollide", true, SendMessageOptions.DontRequireReceiver);
     }
 }
