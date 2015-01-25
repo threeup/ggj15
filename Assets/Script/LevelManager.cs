@@ -49,6 +49,7 @@ public class LevelManager : MonoBehaviour
 		level.ApplyLevelData(currentLevelData);
 	}
 
+
 	
 	void Update() 
 	{

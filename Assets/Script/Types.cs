@@ -10,6 +10,7 @@ public enum EntityType
 	COINBRICK = 2,
 	ENEMY = 3,
 	COIN = 4,
+	MAINCHARACTER = 5,
 }
 
 public enum CollisionState
@@ -26,6 +27,6 @@ public struct EntityData
 	public CollisionState collisionState;
 	public bool collidable;
 	public bool drawable;
-	public Vector2 position;
+	public Vector3 position;
 	
 }

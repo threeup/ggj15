@@ -13,6 +13,7 @@ public class Level : MonoBehaviour
 	private int nextUID;
 
 	public List<GameEntity> entities;
+	public GameEntity mainCharacterEntity;
 
 	void Awake()
 	{
@@ -29,6 +30,8 @@ public class Level : MonoBehaviour
 		if( LevelManager.Instance != null )
 		{
 			LevelManager.Instance.CheckLevelData(this);
+			yield return new WaitForSeconds(0.1f);
+			Director.Instance.SetAction(true, mainCharacterEntity);
 		}
 	}
 
@@ -40,6 +43,10 @@ public class Level : MonoBehaviour
 	public void AddEntity(GameEntity entity)
 	{
 		entities.Add(entity);
+		if( entity.edata.entityType == EntityType.MAINCHARACTER )
+		{
+			mainCharacterEntity = entity;	
+		}
 	}
 
 	public void Purge()
@@ -66,6 +73,7 @@ public class Level : MonoBehaviour
 			}
 			entity.edata = levelData.entityDataMap[entity.entityID];
 			entity.LoadFromData();
+			
 
 		}
 		for( int i=0; i<entities.Count; ++i )

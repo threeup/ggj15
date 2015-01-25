@@ -163,11 +163,11 @@ MonoBehaviour:
   entityID: -1
   entityName: 
   edata:
-    entityType: 0
-    collisionState: 0
+    entityType: 5
+    collisionState: 1
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!114 &11486602
 MonoBehaviour:
   m_ObjectHideFlags: 1

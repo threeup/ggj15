@@ -7,6 +7,7 @@ public class Director : MonoBehaviour
 
 	public UIManager uiMgr;
 	public LevelManager levelMgr;
+	public CameraFollow camFollow;
 
 	void Awake()
 	{
@@ -30,6 +31,14 @@ public class Director : MonoBehaviour
 	{
 		levelMgr.LoadLevel( index );
 		uiMgr.SetMenuVisible(false);
+	}
+
+	public void SetAction(bool val, GameEntity primaryEntity)
+	{
+		if( val )
+		{
+			camFollow.followTarget = primaryEntity;
+		}
 	}
 	
 	void Update() 

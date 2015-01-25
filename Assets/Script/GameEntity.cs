@@ -70,17 +70,16 @@ public class GameEntity : MonoBehaviour {
 
 	public void SaveToData()
 	{
-		edata.position = new Vector2(thisTransform.position.x, thisTransform.position.y);
+		edata.position = thisTransform.position;
 	}
 
 	public void LoadFromData()
 	{
-		Vector3 position = new Vector3(edata.position.x, edata.position.y, 0f);
-		thisTransform.position = position;
+		thisTransform.position = edata.position;
 
 		if( edata.drawable )
 		{
-			renderer.enabled = edata.collisionState != CollisionState.DISABL;
+			renderer.enabled = true;
 		}
 		if( edata.collidable )
 		{  
