@@ -38,7 +38,6 @@ public class GameEntity : MonoBehaviour {
 
 	public void FinishDestroy()
 	{
-		Debug.Log("Destroyed"+this);
 		Destroy(gameObject);
 	}
 

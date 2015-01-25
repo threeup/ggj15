@@ -67,7 +67,7 @@ public class LevelManager : MonoBehaviour
 		{
 			gameObject.name = "TRASH-"+gameObject.name;
 			gameObject.transform.parent = currentLevel.gameObject.transform;
-			gameObject.transform.position = 999f*Vector3.one;
+			gameObject.transform.position = gameObject.transform.position+999f*Vector3.up;
 		}
 		
 	}

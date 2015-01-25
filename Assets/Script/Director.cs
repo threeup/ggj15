@@ -9,7 +9,7 @@ public class Director : MonoBehaviour
 	public UIManager uiMgr;
 	public LevelManager levelMgr;
 	public CameraFollow camFollow;
-	public AudioClip introOverWorldCap;
+	public AudioClip introOverWorldClip;
 	public AudioClip musicClip;
 	public bool mainMusicPlaying = false;
 
@@ -24,6 +24,8 @@ public class Director : MonoBehaviour
 	public int MainScore { get { return mainScore; } }
 	private int mainStartHealth = 1;
 	public int MainStartHealth { get { return mainStartHealth; } }
+	private int mainUpgradeCost = 5;
+	public int MainUpgradeCost { get { return mainUpgradeCost; } }
 
 
 	private BasicTimer unloadSceneTimer = null;
@@ -133,6 +135,14 @@ public class Director : MonoBehaviour
 		if( this.mainCharacter == hitActor )
 		{
 			mainStartHealth++;
+			gameOverTimer.SetMin(0.5f);
+		}
+	}
+
+	public void ActorDied(GameEntity deadActor)
+	{
+		if( this.mainCharacter == deadActor )
+		{
 			gameOverTimer.SetMin(0.5f);
 		}
 	}
