@@ -60,8 +60,8 @@ public class ActorEntity : GameEntity
             BroadcastMessage("OnDeath", SendMessageOptions.DontRequireReceiver);
     }
 
-    public void OnDeath()
+    void OnDeath()
     {
-        GameObject.Destroy(gameObject);
+        collider2D.enabled = false;
     }
 }

@@ -78,7 +78,6 @@ public class CharacterController2D : MonoBehaviour
     //Rigidbody2D thisRigidbody;
     CollisionState collisionState = new CollisionState();
 
-
     void Awake()
     {
         thisGameObject = gameObject;

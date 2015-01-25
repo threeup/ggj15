@@ -16,6 +16,7 @@ GameObject:
   - 114: {fileID: 11422332}
   - 114: {fileID: 11422324}
   - 114: {fileID: 11423100}
+  - 114: {fileID: 11468176}
   m_Layer: 11
   m_Name: Goomba
   m_TagString: Untagged
@@ -211,7 +212,7 @@ MonoBehaviour:
     drawable: 0
     position: {x: 0, y: 0, z: 0}
   faction: 3
-  health: 2
+  health: 1
   invincible: 0
 --- !u!114 &11423100
 MonoBehaviour:
@@ -222,6 +223,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 709edc243625cd54eba13aed2747e8bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  right: 1
+  left: 1
+  above: 0
+  below: 1
+--- !u!114 &11468176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee763e960ca31234ca5e431ecf9b1012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11475294
@@ -265,6 +281,10 @@ MonoBehaviour:
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     duration: .100000001
+  mainTransform: {fileID: 0}
+  srcTranslation: {x: 0, y: 0, z: 0}
+  srcRotation: {x: 0, y: 0, z: 0}
+  srcScale: {x: 0, y: 0, z: 0}
 --- !u!212 &21222324
 SpriteRenderer:
   m_ObjectHideFlags: 1
