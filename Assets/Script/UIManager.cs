@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
 	public Canvas menuCanvas;
 	public Canvas hudCanvas;
 	public Text coinCount;
+	public Text maxHealth;
 
 	public UIOverworldManager overworldMgr = null;
 	public UIStoreManager storeMgr = null;
@@ -55,5 +56,12 @@ public class UIManager : MonoBehaviour
 	public void HudUpdate()
 	{
 		coinCount.text = Director.Instance.MainScore+" COINS";
+		switch(Director.Instance.MainStartHealth)
+		{
+			case 1: maxHealth.text = "TURTLE";	break;
+			case 2: maxHealth.text = "SHELL TURTLE";	break;
+			case 3: maxHealth.text = "FLYING TURTLE";	break;
+		}
+		
 	}
 }

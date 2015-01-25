@@ -26,6 +26,10 @@ public class Spawner : MonoBehaviour {
 		{
 			canSpawn = true;
 		}
+		if( worldEntity.edata.childEntityType == EntityType.MAINCHARACTER )
+		{
+			canSpawn = true;
+		}
 		if( canSpawn )
 		{
 			GameObject go = GameObject.Instantiate(spawnPrefab, this.transform.position, Quaternion.identity) as GameObject;	

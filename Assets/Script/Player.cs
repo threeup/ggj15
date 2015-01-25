@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
     {
         // GameOver
         yield return new WaitForSeconds(2f);
-        GameEntity ge = GetComponent<GameEntity>();
+        ActorEntity ge = GetComponent<ActorEntity>();
         Director.Instance.ActorDied(ge);
         LevelManager.Instance.Trash(gameObject);
         

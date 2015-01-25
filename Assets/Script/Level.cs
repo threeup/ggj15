@@ -13,7 +13,7 @@ public class Level : MonoBehaviour
 	private int nextUID;
 
 	public List<GameEntity> entities;
-	public GameEntity mainCharacterEntity;
+	public ActorEntity mainCharacterEntity;
 
 	public Vector3 startCamera;
 
@@ -55,7 +55,7 @@ public class Level : MonoBehaviour
 		entities.Add(entity);
 		if( entity.edata.entityType == EntityType.MAINCHARACTER )
 		{
-			mainCharacterEntity = entity;	
+			mainCharacterEntity = entity as ActorEntity;	
 		}
 	}
 	public void SaveAndPurge(LevelData levelData)

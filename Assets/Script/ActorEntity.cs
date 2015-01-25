@@ -55,12 +55,8 @@ public class ActorEntity : GameEntity
         {
             slideSpriter.mainRenderer.enabled = false;
         }
-
-        if( edata.entityType == EntityType.MAINCHARACTER)
-        {
-        	wingsHealth = 3;
-            SetupParameters(Director.Instance.MainStartHealth, 1f);
-        }
+        SetupParameters(1, 1f);
+        
 		this.name = entityName;
 	}	
 
@@ -70,8 +66,12 @@ public class ActorEntity : GameEntity
 		{
 			return;
 		}
-		maxHealth = health;
-		SetHealth(maxHealth);
+        if( edata.entityType == EntityType.MAINCHARACTER)
+        {
+            wingsHealth = 3;
+            health = Director.Instance.MainStartHealth;
+        }
+		SetMaxHealth(health);
 
 		thisNavAgent.ModifyWalkSpeed(walkMultiplier);
 
@@ -113,6 +113,12 @@ public class ActorEntity : GameEntity
 
         if( health == 0 )
             BroadcastMessage("OnDeath", SendMessageOptions.DontRequireReceiver);
+    }
+
+    public void SetMaxHealth(int newMax)
+    {
+        maxHealth = newMax;
+        SetHealth(maxHealth);
     }
 
     public void SetHealth(int newHealth)

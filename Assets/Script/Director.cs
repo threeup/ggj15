@@ -29,7 +29,7 @@ public class Director : MonoBehaviour
 
 	public DirectorState dState = DirectorState.CUTSCENE;
 
-	public GameEntity mainCharacter;
+	public ActorEntity mainCharacter;
 	private int mainScore = 0;
 	public int MainScore { get { return mainScore; } }
 	private int mainStartHealth = 1;
@@ -151,7 +151,7 @@ public class Director : MonoBehaviour
 		uiMgr.HudUpdate();
 	}
 
-	public void SetAction(bool val, GameEntity mainCharacter)
+	public void SetAction(bool val, ActorEntity mainCharacter)
 	{
 		if( val )
 		{
@@ -161,16 +161,15 @@ public class Director : MonoBehaviour
 		}
 	}
 
-	public void ActorHitGoal(GameEntity hitActor)
+	public void ActorHitGoal(ActorEntity hitActor)
 	{
 		if( this.mainCharacter == hitActor )
 		{
-			mainStartHealth++;
 			gameOverTimer.SetMin(0.5f);
 		}
 	}
 
-	public void ActorDied(GameEntity deadActor)
+	public void ActorDied(ActorEntity deadActor)
 	{
 		if( this.mainCharacter == deadActor )
 		{
@@ -186,6 +185,18 @@ public class Director : MonoBehaviour
 		if( levelSelect )
 		{
 			LoadLevel(uiMgr.overworldMgr.CurrentLevelNumber());
+		}
+
+		bool cheat = dState == DirectorState.GAME && Input.GetButtonDown("Fire3");
+		if( cheat )
+		{
+			mainStartHealth++;
+			if( mainCharacter != null )
+			{
+				mainCharacter.SetMaxHealth(mainStartHealth);
+			}
+		
+			uiMgr.HudUpdate();
 		}
 
 		if(gameOver || gameOverTimer.Tick(deltaTime))
