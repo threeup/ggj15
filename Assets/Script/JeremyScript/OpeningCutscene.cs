@@ -42,6 +42,12 @@ public class OpeningCutscene : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		bool gameOver = Input.GetButtonDown("Cancel");
+		if( gameOver || fadeToBlack )
+		{
+			Director.Instance.UnloadScene();
+			return;
+		}
 		if(wordBubbleText.finished==false)
 		{
 			time+=Time.deltaTime;

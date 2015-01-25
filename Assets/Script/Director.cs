@@ -13,13 +13,16 @@ public class Director : MonoBehaviour
 	public AudioClip musicClip;
 	public bool mainMusicPlaying = false;
 
+	public bool hasSeenIntro = false;
+	public bool isInGame = false;
+
 	public GameEntity mainCharacter;
 	private int mainScore = 0;
 	public int MainScore { get { return mainScore; } }
 	private int mainStartHealth = 3;
 	public int MainStartHealth { get { return mainStartHealth; } }
 
-	
+
 	private BasicTimer gameOverTimer = new BasicTimer(300f);
 
 	public StoreProductChanger productChanger;
@@ -34,7 +37,20 @@ public class Director : MonoBehaviour
 
 	void Start() 
 	{
-		uiMgr.SetMenuVisible(true);
+		NextScreen();
+	}
+
+	public void NextScreen()
+	{
+		if( !hasSeenIntro )
+		{
+			hasSeenIntro = true;
+			Application.LoadLevelAdditive( "Cutscene" );
+		}
+		else
+		{
+			uiMgr.SetMenuVisible(true);
+		}
 		uiMgr.SetHudVisible(false);
 		uiMgr.HudUpdate();
 	}
@@ -44,10 +60,12 @@ public class Director : MonoBehaviour
 		levelMgr.SaveAndPurge();
 		uiMgr.SetMenuVisible(true);
 		uiMgr.SetHudVisible(false);
+		isInGame = false;
 	}
 
 	public void LoadLevel(int index)
 	{
+		isInGame = true;
 		levelMgr.LoadLevel( index );
 		uiMgr.SetMenuVisible(false);
 		uiMgr.SetHudVisible(true);
@@ -82,12 +100,18 @@ public class Director : MonoBehaviour
 	void Update() 
 	{
 		float deltaTime = Time.deltaTime;
-		bool gameOver = Input.GetButtonDown("Cancel");
+		bool gameOver = isInGame && Input.GetButtonDown("Cancel");
 
 		if(gameOver || gameOverTimer.Tick(deltaTime))
 		{
 			UnloadLevel();
 		}
+	}
+
+	public void UnloadScene()
+	{
+		Application.LoadLevel( "Blank" );
+		NextScreen();
 	}
 
 	public void AddCoin(GameEntity actor, int amount)
