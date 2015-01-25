@@ -12,4 +12,9 @@ public static class Utilities
     {
         return new Vector3(vec.x, vec.y, 0);
     }
+
+    public static float Decimal(float val)
+    {
+        return val - Mathf.Floor(val);
+    }
 }

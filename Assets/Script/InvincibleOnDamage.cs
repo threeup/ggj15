@@ -7,6 +7,7 @@ public class InvincibleOnDamage : MonoBehaviour
     float invincibleTime;
 
     ActorEntity thisActor;
+    SpriteRenderer thisRenderer;
     float time;
 
     void Awake()
@@ -14,6 +15,8 @@ public class InvincibleOnDamage : MonoBehaviour
         thisActor = GetComponent<ActorEntity>();
         if( thisActor == null )
             Debug.LogWarning("InvincibleOnDamage: Missing ActorEntity");
+
+        thisRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     void OnDamage()
@@ -29,9 +32,23 @@ public class InvincibleOnDamage : MonoBehaviour
         while( time < invincibleTime )
         {
             time += Time.deltaTime;
+
+            if( thisRenderer != null )
+            {
+                float dec = Utilities.Decimal(time);
+                if( dec < 0.25f || (dec > 0.5f && dec < 0.75f) )
+                    thisRenderer.enabled = false;
+                else
+                    thisRenderer.enabled = true;
+            }
+
             yield return null;
         }
 
         thisActor.invincible = false;
+        if( thisRenderer != null )
+        {
+            thisRenderer.enabled = true;
+        }
     }
 }

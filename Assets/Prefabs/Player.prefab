@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d95dd214a743c44a9446bd1ca052a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invincibleTime: 3
+  invincibleTime: 2
 --- !u!114 &11456694
 MonoBehaviour:
   m_ObjectHideFlags: 1
