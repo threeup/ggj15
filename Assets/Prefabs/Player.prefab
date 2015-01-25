@@ -103,9 +103,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainRenderer: {fileID: 21269334}
   defaultSprite: {fileID: 21300000, guid: 722a2297037bd7545a018ad0c5e6c12c, type: 3}
-  walkSet:
-  - {fileID: 21300000, guid: 722a2297037bd7545a018ad0c5e6c12c, type: 3}
-  - {fileID: 21300000, guid: 8f578bb67b1343045b6637674eae6200, type: 3}
+  idleSet:
+  - sprite: {fileID: 21300000, guid: 722a2297037bd7545a018ad0c5e6c12c, type: 3}
+    hasTween: 0
+    translation: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    duration: .100000001
+  primarySet:
+  - sprite: {fileID: 21300000, guid: 722a2297037bd7545a018ad0c5e6c12c, type: 3}
+    hasTween: 0
+    translation: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    duration: .100000001
+  secondarySet:
+  - sprite: {fileID: 21300000, guid: 722a2297037bd7545a018ad0c5e6c12c, type: 3}
+    hasTween: 0
+    translation: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    duration: .100000001
+  disabledSet:
+  - sprite: {fileID: 21300000, guid: 722a2297037bd7545a018ad0c5e6c12c, type: 3}
+    hasTween: 0
+    translation: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    duration: .100000001
 --- !u!114 &11427790
 MonoBehaviour:
   m_ObjectHideFlags: 1
