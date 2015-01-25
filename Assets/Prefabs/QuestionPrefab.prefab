@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e996d56165edc124c9cbb0b711beed33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 140676, guid: 374a940eaeb959e49b67cbd47a2e6b97, type: 2}
+  itemPrefab: {fileID: 184532, guid: cf3d547e7c4c36e4b95c56821ce74169, type: 2}
   spawnPoint: {fileID: 491186}
   numOfHits: 1
   spriter: {fileID: 11459390}

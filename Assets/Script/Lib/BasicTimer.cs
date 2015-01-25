@@ -54,7 +54,10 @@ public class BasicTimer
     {
         timeVal = Mathf.Min(val, timeVal);
     }
-
+    public void SetMax(float val)
+    {
+        timeVal = Mathf.Max(val, timeVal);
+    }
     public override string ToString()
     {
         return timeVal.ToString() + " " + isPaused;

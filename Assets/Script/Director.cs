@@ -10,6 +10,9 @@ public class Director : MonoBehaviour
 	public LevelManager levelMgr;
 	public CameraFollow camFollow;
 
+	public GameEntity mainCharacter;
+	public int mainScore = 0;
+
 	void Awake()
 	{
 		Instance = this;
@@ -21,30 +24,46 @@ public class Director : MonoBehaviour
 	void Start() 
 	{
 		uiMgr.SetMenuVisible(true);
+		uiMgr.SetHudVisible(false);
+		uiMgr.HudUpdate();
 	}
 
 	public void UnloadLevel()
 	{	
 		levelMgr.Purge();
 		uiMgr.SetMenuVisible(true);
+		uiMgr.SetHudVisible(false);
 	}
 
 	public void LoadLevel(int index)
 	{
 		levelMgr.LoadLevel( index );
 		uiMgr.SetMenuVisible(false);
+		uiMgr.SetHudVisible(true);
+		uiMgr.HudUpdate();
 	}
 
-	public void SetAction(bool val, GameEntity primaryEntity)
+	public void SetAction(bool val, GameEntity mainCharacter)
 	{
 		if( val )
 		{
-			camFollow.followTarget = primaryEntity;
+			this.mainCharacter = mainCharacter;
+			camFollow.followTarget = mainCharacter;
 		}
 	}
 	
 	void Update() 
 	{
 		
+	}
+
+	public void AddCoin(GameEntity actor, int amount)
+	{
+		if( actor == mainCharacter )
+		{
+			mainScore += amount;
+
+			uiMgr.HudUpdate();
+		}
 	}
 }

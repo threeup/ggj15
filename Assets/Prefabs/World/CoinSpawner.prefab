@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e0691efdab6d24db9835ff24e18252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPrefab: {fileID: 140676, guid: dde060fb11da09b4ea961de15b5426b6, type: 2}
+  spawnPrefab: {fileID: 184532, guid: cf3d547e7c4c36e4b95c56821ce74169, type: 2}
   worldEntity: {fileID: 0}
 --- !u!212 &21204216
 SpriteRenderer:

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class UIManager : MonoBehaviour 
@@ -11,6 +12,8 @@ public class UIManager : MonoBehaviour
 	private bool inputEnabled;
 
 	public Canvas menuCanvas;
+	public Canvas hudCanvas;
+	public Text coinCount;
 
 	void Awake()
 	{
@@ -22,9 +25,19 @@ public class UIManager : MonoBehaviour
 	{
 		menuCanvas.gameObject.SetActive(val);
 	}
+
+	public void SetHudVisible(bool val)
+	{
+		hudCanvas.gameObject.SetActive(val);
+	}
 	
 	public void LevelSelect(int index)
 	{
 		HandleLevelSelect(index);
+	}
+
+	public void HudUpdate()
+	{
+		coinCount.text = Director.Instance.mainScore+" COINS";
 	}
 }

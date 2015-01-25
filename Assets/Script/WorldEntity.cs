@@ -21,14 +21,4 @@ public class WorldEntity : GameEntity {
 
 
 
-	public void OnCollisionEnter(Collision collision)
-	{
-		GameEntity other = collision.gameObject.GetComponent<GameEntity>();
-		switch( edata.entityType )
-		{
-			default: break;
-		}
-		Debug.Log(this+"Hit"+other);
-	}
-
 }

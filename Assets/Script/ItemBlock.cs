@@ -23,6 +23,7 @@ public class ItemBlock : MonoBehaviour
                 Rigidbody2D rigidbody = go.GetComponentInChildren<Rigidbody2D>();
                 if( rigidbody != null )
                 {
+                    rigidbody.gravityScale = 0.5f;
                     rigidbody.AddForce(new Vector2(Random.Range(-150f, 150f), Random.Range(100f, 200f)));
                 }
 
