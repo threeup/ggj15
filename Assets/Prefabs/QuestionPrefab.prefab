@@ -206,7 +206,7 @@ MonoBehaviour:
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1.10000002, y: 1, z: 1.10000002}
     duration: .100000001
-  - sprite: {fileID: 21300000, guid: a4b851a229f8c0445b9c44ca23726719, type: 3}
+  - sprite: {fileID: 21300000, guid: 90b5f346d703070489481c5391359134, type: 3}
     hasTween: 0
     translation: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
@@ -219,6 +219,10 @@ MonoBehaviour:
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     duration: .100000001
+  mainTransform: {fileID: 0}
+  srcTranslation: {x: 0, y: 0, z: 0}
+  srcRotation: {x: 0, y: 0, z: 0}
+  srcScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11491190
 MonoBehaviour:
   m_ObjectHideFlags: 1

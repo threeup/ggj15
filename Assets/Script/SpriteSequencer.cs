@@ -52,7 +52,7 @@ public class SpriteSequencer : MonoBehaviour {
 		{
 			mainTransform = this.transform;
 		}
-		srcTranslation = mainTransform.position;
+		srcTranslation = mainTransform.localPosition;
 		srcRotation = mainTransform.eulerAngles;
 		srcScale = mainTransform.localScale;
 	}
