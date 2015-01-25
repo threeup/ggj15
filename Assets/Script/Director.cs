@@ -13,7 +13,7 @@ public class Director : MonoBehaviour
 	public GameEntity mainCharacter;
 	private int mainScore = 0;
 	public int MainScore { get { return mainScore; } }
-	private int mainStartHealth = 2;
+	private int mainStartHealth = 3;
 	public int MainStartHealth { get { return mainStartHealth; } }
 
 	void Awake()

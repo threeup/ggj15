@@ -205,7 +205,7 @@ MonoBehaviour:
   entityID: -1
   entityName: 
   edata:
-    entityType: 0
+    entityType: 3
     collisionState: 0
     collidable: 0
     drawable: 0
@@ -213,7 +213,10 @@ MonoBehaviour:
   faction: 3
   invincible: 0
   thisNavAgent: {fileID: 0}
-  spriters: []
+  bodySpriters:
+  - {fileID: 11475294}
+  wingFrontSpriter: {fileID: 0}
+  wingBackSpriter: {fileID: 0}
 --- !u!114 &11468176
 MonoBehaviour:
   m_ObjectHideFlags: 1

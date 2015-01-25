@@ -20,26 +20,37 @@ public class ActorEntity : GameEntity
     public NavAgent thisNavAgent;
 
     private SpriteSequencer activeSpriter;
-    public SpriteSequencer[] spriters;
+    public SpriteSequencer[] bodySpriters;
+    public SpriteSequencer wingFrontSpriter;
+    public SpriteSequencer wingBackSpriter;
+
+    public bool HasWings { get { return maxHealth >= 3; } }
 	
 	public override void Awake()
 	{
 		base.Awake();
         thisNavAgent = GetComponent<NavAgent>();
 		entityName = "ACTOR-"+this.gameObject.name+"_"+this.GetHashCode();
-        spriters = GetComponentsInChildren<SpriteSequencer>();
-        if( spriters.Length > 1 )
+        if( bodySpriters.Length > 1 )
         {
-            for(int i=1; i<spriters.Length; ++i)
+            for(int i=1; i<bodySpriters.Length; ++i)
             {
-                SpriteSequencer spriter = spriters[i];
+                SpriteSequencer spriter = bodySpriters[i];
                 spriter.mainRenderer.enabled = false;
             }
         }
-        activeSpriter = spriters[0];
+        activeSpriter = bodySpriters[0];
         activeSpriter.mainRenderer.enabled = true;
-        maxHealth = Director.Instance.MainStartHealth;
-        SetHealth(maxHealth);
+        if( edata.entityType == EntityType.ENEMY )
+        {
+            maxHealth = 1;
+            SetHealth(maxHealth);
+        }
+        else if( edata.entityType == EntityType.MAINCHARACTER)
+        {
+            maxHealth = Director.Instance.MainStartHealth;
+            SetHealth(maxHealth);
+        }
 		this.name = entityName;
 	}
 
@@ -92,7 +103,7 @@ public class ActorEntity : GameEntity
 
         health = newHealth;
         activeSpriter.mainRenderer.enabled = false;
-        activeSpriter = spriters[Mathf.Clamp(health-1, 0, spriters.Length-1)];
+        activeSpriter = bodySpriters[Mathf.Clamp(health-1, 0, bodySpriters.Length-1)];
         activeSpriter.mainRenderer.enabled = true;
     }
 
@@ -104,7 +115,34 @@ public class ActorEntity : GameEntity
     public void Update()
     {
 		activeSpriter.SetFacingRight(thisNavAgent.WalkVelocity.x);
-        if( !thisNavAgent.isGrounded )
+        if( wingFrontSpriter != null )
+        {
+            wingFrontSpriter.SetFacingRight(thisNavAgent.WalkVelocity.x);
+            wingBackSpriter.SetFacingRight(thisNavAgent.WalkVelocity.x);
+        }
+        bool flying = !thisNavAgent.isGrounded;
+        if( HasWings )
+        {
+            if( flying )
+            {
+                wingFrontSpriter.SwitchState(wingFrontSpriter.secondarySet, true);
+                wingBackSpriter.SwitchState(wingBackSpriter.secondarySet, true);
+            }
+            else
+            {
+                wingFrontSpriter.SwitchState(wingFrontSpriter.idleSet, true);
+                wingBackSpriter.SwitchState(wingBackSpriter.idleSet, true);
+            }
+        }
+        else
+        {
+            if( wingFrontSpriter != null )
+            {
+                wingFrontSpriter.SwitchState(wingFrontSpriter.disabledSet, true);
+                wingBackSpriter.SwitchState(wingBackSpriter.disabledSet, true);
+            }
+        }
+        if( flying )
         {
             activeSpriter.SwitchState(activeSpriter.secondarySet, true);
         }
