@@ -39,8 +39,8 @@ public class Brick : MonoBehaviour
             Rigidbody2D[] rigidbodies = destroyedObject.GetComponentsInChildren<Rigidbody2D>();
             for( int i = 0; i < rigidbodies.Length; ++i )
             {
-                rigidbodies[i].gravityScale = 0.5f;
-                rigidbodies[i].AddForce(new Vector2(Random.Range(-75f, 75f), Random.Range(50f, 100f)));
+                rigidbodies[i].gravityScale = 0.75f;
+                rigidbodies[i].AddForce(new Vector2(Random.Range(-100f, 100f), Random.Range(50f, 100f)));
             }
             
             StartCoroutine("CollideRoutine");
