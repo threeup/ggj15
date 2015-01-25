@@ -10,6 +10,7 @@ public class OpeningCutscene : MonoBehaviour {
 	public float textSpeed;
 	public GameObject bubble;
 	public AudioSource talkingNoise;
+	public AudioSource music;
 
 	//Used for fade in/out
 	private bool fadeFromBlack = false;
@@ -80,7 +81,8 @@ public class OpeningCutscene : MonoBehaviour {
 		if(fadeToBlack==true)
 		{
 			Color a = blackFade.color;
-			a.a+=(fadeSpeed*Time.deltaTime);
+			a.a+=(fadeSpeed*Time.deltaTime/1.2f);
+			music.volume=0.5f-a.a;
 			if(a.a>=1.0f)
 			{
 				//Done
