@@ -58,9 +58,9 @@ public class CharacterController2D : MonoBehaviour
 
     const int NumLayers = 32;
 
-    [Range(0.001f, 0.3f)]
+    [Range(0.001f, 0.1f)]
     [SerializeField]
-    float skin = 0.02f;
+    float skin = 0.005f;
     [SerializeField]
     LayerMask platformMask;
     [SerializeField]

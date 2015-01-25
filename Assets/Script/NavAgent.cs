@@ -4,7 +4,7 @@ using System.Collections;
 public class NavAgent : MonoBehaviour
 {
     [SerializeField]
-    Vector3 gravity = new Vector3(0f, -4.9f, 0f);
+    Vector3 gravity = new Vector3(0f, -15f, 0f);
     [SerializeField]
 	Vector3 velocity;
 	public Vector3 Velocity { get { return velocity; } }
@@ -12,15 +12,17 @@ public class NavAgent : MonoBehaviour
     [SerializeField]
     Vector3 acceleration;
     [SerializeField]
-    float scalar = 0.256f;
+    float scalar = 1f;
     [SerializeField]
-    float walkSpeed = 20f;
+    float walkSpeed = 4f;
     [SerializeField]
-    float jumpSpeed = 120f;
+    float jumpSpeed = 14f;
     [SerializeField]
     float jumpButtonTime = 0.1f;
     [SerializeField]
-    float flapSpeed = 40f;
+    float flapSpeed = 10f;
+    [SerializeField]
+    float terminalVelocity = 20f;
     [SerializeField]
     bool startGrounded = true;
 
@@ -54,8 +56,10 @@ public class NavAgent : MonoBehaviour
 
     void FixedUpdate()
     {
-        acceleration = gravity;
+        acceleration = gravity * Time.deltaTime;
         AddVelocity(acceleration);
+        SetVelocityX(Mathf.Clamp(velocity.x, -terminalVelocity, terminalVelocity));
+        SetVelocityY(Mathf.Clamp(velocity.y, -terminalVelocity, terminalVelocity));
 
         CharacterController2D.CollisionState collisionState = thisController.Move((velocity + walkVelocity) * Time.deltaTime * scalar);
 

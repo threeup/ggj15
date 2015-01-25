@@ -646,13 +646,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d6eb2276559e540b26a2bc8e950e5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: {x: 0, y: -4.9000001, z: 0}
+  gravity: {x: 0, y: -15, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
-  scalar: .256000012
-  walkSpeed: 20
-  jumpSpeed: 120
+  scalar: 1
+  walkSpeed: 4
+  jumpSpeed: 14
   jumpButtonTime: .100000001
+  flapSpeed: 10
+  terminalVelocity: 20
   startGrounded: 1
   walkSpeedMultiplier:
     serializedVersion: 2
@@ -699,6 +701,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: d8f9aed96003ce340b1b569f79bd1d09, type: 3}
   hurtSound: {fileID: 8300000, guid: 8f0f651b897409c4eadbb2015ec51adc, type: 3}
   deathSound: {fileID: 8300000, guid: 1fe3d91866fe13143a785353e9494401, type: 3}
+  flapSound: {fileID: 8300000, guid: 434c3ab76868b5641a3289cd76a41400, type: 3}
 --- !u!114 &11473448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -738,7 +741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9bde5c4e8ed0c428ee42f9232bad0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skin: .0199999996
+  skin: .00499999989
   platformMask:
     serializedVersion: 2
     m_Bits: 256

@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9bde5c4e8ed0c428ee42f9232bad0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skin: .0199999996
+  skin: .00499999989
   platformMask:
     serializedVersion: 2
     m_Bits: 256
@@ -157,12 +157,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d6eb2276559e540b26a2bc8e950e5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: {x: 0, y: -4.9000001, z: 0}
+  gravity: {x: 0, y: -15, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
-  scalar: .256000012
-  jumpVelocity: 75
-  walkSpeed: 10
+  scalar: 1
+  walkSpeed: 4
+  jumpSpeed: 14
+  jumpButtonTime: .100000001
+  flapSpeed: 10
+  terminalVelocity: 20
   startGrounded: 1
   walkSpeedMultiplier:
     serializedVersion: 2
@@ -174,6 +177,21 @@ MonoBehaviour:
       tangentMode: 0
     - time: 1
       value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  jumpSpeedMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .00999999978
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: .0659999996
       inSlope: 0
       outSlope: 0
       tangentMode: 0
