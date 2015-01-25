@@ -27,9 +27,9 @@ public class LevelManager : MonoBehaviour
 		currentLevel = level;
 	}
 
-	public void RegisterToLevel(WorldEntity entity)
+	public void RegisterToLevel(GameEntity entity)
 	{
-		currentLevel.AddWorldEntity(entity);
+		currentLevel.AddEntity(entity);
 	}
 
 	public void CheckLevelData(Level level)

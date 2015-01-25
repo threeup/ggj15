@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -12,7 +12,7 @@ public class Level : MonoBehaviour
 
 	private int nextUID;
 
-	public List<WorldEntity> entities;
+	public List<GameEntity> entities;
 
 	void Awake()
 	{
@@ -37,7 +37,7 @@ public class Level : MonoBehaviour
 		nextUID = 0;
 	}
 
-	public void AddWorldEntity(WorldEntity entity)
+	public void AddEntity(GameEntity entity)
 	{
 		entities.Add(entity);
 	}
@@ -58,7 +58,7 @@ public class Level : MonoBehaviour
 	{
 		for( int i=entities.Count-1; i>=0; --i )
 		{
-			WorldEntity entity = entities[i];
+			GameEntity entity = entities[i];
 			if( !levelData.entityDataMap.ContainsKey(entity.entityID) )
 			{
 				Debug.LogError("What is "+entity);
@@ -67,6 +67,11 @@ public class Level : MonoBehaviour
 			entity.edata = levelData.entityDataMap[entity.entityID];
 			entity.LoadFromData();
 
+		}
+		for( int i=0; i<entities.Count; ++i )
+		{
+			GameEntity entity = entities[i];
+			entity.SendActivate();			
 		}
 	}
 
@@ -79,20 +84,18 @@ public class Level : MonoBehaviour
 
 		//Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector3.zero, 10000f, mask);
 
-		WorldEntity[] scannedEntities = FindObjectsOfType<WorldEntity>();
-		foreach(WorldEntity worldEntity in scannedEntities)
+		GameEntity[] scannedEntities = FindObjectsOfType<GameEntity>();
+		foreach(GameEntity gameEntity in scannedEntities)
 		{
-			if( (worldEntity.gameObject.layer | mask) == 0 )
+			if( (gameEntity.gameObject.layer | mask) == 0 )
 			{
 				//what is this?
+				Debug.Log("what is "+gameEntity);
 				continue;
 			}
-			if( worldEntity != null )
-			{
-				worldEntity.SaveToData();
-				entityDataMap.Add( worldEntity.entityID, worldEntity.edata);
-				worldEntity.Deactivate();
-			}
+			gameEntity.SaveToData();
+			entityDataMap.Add( gameEntity.entityID, gameEntity.edata);
+			gameEntity.SendDeactivate();
 		}
 		return entityDataMap;
 	}
@@ -103,19 +106,19 @@ public class Level : MonoBehaviour
 		int actormask = 1 << LayerMask.NameToLayer ("Actor");
 		int mask = worldmask | actormask;
 
-		WorldEntity[] scannedEntities = FindObjectsOfType<WorldEntity>();
-		foreach(WorldEntity worldEntity in scannedEntities)
+		GameEntity[] scannedEntities = FindObjectsOfType<GameEntity>();
+		foreach(GameEntity gameEntity in scannedEntities)
 		{
-			if( (worldEntity.gameObject.layer | mask) == 0 )
+			if( (gameEntity.gameObject.layer | mask) == 0 )
 			{
 				//what is this?
 				continue;
 			}
 #if UNITY_EDITOR
-			PrefabUtility.DisconnectPrefabInstance(worldEntity.gameObject);
-			worldEntity.gameObject.name = worldEntity.gameObject.name.Replace("Prefab", ""); 
+			PrefabUtility.DisconnectPrefabInstance(gameEntity.gameObject);
+			gameEntity.gameObject.name = gameEntity.gameObject.name.Replace("Prefab", ""); 
 #endif			
-			worldEntity.entityID = this.levelUID*1000 + this.nextUID;
+			gameEntity.entityID = this.levelUID*1000 + this.nextUID;
 			this.nextUID++;
 		}
 	}
@@ -126,20 +129,20 @@ public class Level : MonoBehaviour
 		int actormask = 1 << LayerMask.NameToLayer ("Actor");
 		int mask = worldmask | actormask;
 
-		WorldEntity[] scannedEntities = FindObjectsOfType<WorldEntity>();
-		foreach(WorldEntity worldEntity in scannedEntities)
+		GameEntity[] scannedEntities = FindObjectsOfType<GameEntity>();
+		foreach(GameEntity gameEntity in scannedEntities)
 		{
-			if( (worldEntity.gameObject.layer | mask) == 0 )
+			if( (gameEntity.gameObject.layer | mask) == 0 )
 			{
 				//what is this?
 				continue;
 			}
-			Vector3 pos = worldEntity.transform.position;
+			Vector3 pos = gameEntity.transform.position;
 			float snapTo = 1f;
 			pos.x = Mathf.Round(pos.x*snapTo)/snapTo;
 			pos.y = Mathf.Round(pos.y*snapTo)/snapTo;
 			pos.z = Mathf.Round(pos.z*snapTo)/snapTo;
-			worldEntity.transform.position = pos;
+			gameEntity.transform.position = pos;
 		}
 	}
 }
