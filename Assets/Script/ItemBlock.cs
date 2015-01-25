@@ -26,6 +26,7 @@ public class ItemBlock : MonoBehaviour
                     rigidbody.gravityScale = 0.5f;
                     rigidbody.AddForce(new Vector2(Random.Range(-150f, 150f), Random.Range(100f, 200f)));
                 }
+                go.collider2D.isTrigger = false;
 
                 ++hitCount;
 

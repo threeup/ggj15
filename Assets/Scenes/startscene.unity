@@ -814,7 +814,6 @@ MonoBehaviour:
   levelMgr: {fileID: 1995446973}
   camFollow: {fileID: 86271622}
   mainCharacter: {fileID: 0}
-  mainScore: 0
 --- !u!4 &1025792922
 Transform:
   m_ObjectHideFlags: 0

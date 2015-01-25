@@ -6,7 +6,9 @@ public class NavAgent : MonoBehaviour
     [SerializeField]
     Vector3 gravity = new Vector3(0f, -9.8f, 0f);
     [SerializeField]
-    Vector3 velocity;
+	Vector3 velocity;
+	public Vector3 Velocity { get { return velocity; } }
+    public Vector3 WalkVelocity { get { return walkVelocity; } }
     [SerializeField]
     Vector3 acceleration;
     [SerializeField]

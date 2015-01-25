@@ -11,7 +11,10 @@ public class Director : MonoBehaviour
 	public CameraFollow camFollow;
 
 	public GameEntity mainCharacter;
-	public int mainScore = 0;
+	private int mainScore = 0;
+	public int MainScore { get { return mainScore; } }
+	private int mainStartHealth = 2;
+	public int MainStartHealth { get { return mainStartHealth; } }
 
 	void Awake()
 	{

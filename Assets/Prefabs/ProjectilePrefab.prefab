@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1f70d52e05372b41a4972957d256c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 0}
   spriter: {fileID: 11487760}
   ttlTimer:
     timeVal: 5
@@ -134,6 +135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainRenderer: {fileID: 21287758}
   defaultSprite: {fileID: 21300000, guid: 9552d02fe985f224aac52d493041bac2, type: 3}
+  canScale: 1
+  mainTransform: {fileID: 487760}
   idleSet:
   - sprite: {fileID: 21300000, guid: 9552d02fe985f224aac52d493041bac2, type: 3}
     hasTween: 1
@@ -180,10 +183,13 @@ MonoBehaviour:
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     duration: .100000001
-  mainTransform: {fileID: 487760}
   srcTranslation: {x: 0, y: 0, z: 0}
   srcRotation: {x: 0, y: 0, z: 0}
   srcScale: {x: 0, y: 0, z: 0}
+  baseScale: {x: 0, y: 0, z: 0}
+  curTranslation: {x: 0, y: 0, z: 0}
+  curRotation: {x: 0, y: 0, z: 0}
+  curScale: {x: 0, y: 0, z: 0}
 --- !u!212 &21287758
 SpriteRenderer:
   m_ObjectHideFlags: 1

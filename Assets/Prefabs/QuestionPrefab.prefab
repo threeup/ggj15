@@ -179,6 +179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainRenderer: {fileID: 21259390}
   defaultSprite: {fileID: 21300000, guid: 4cebc1b004b9d25459a6cd277de08d2d, type: 3}
+  canScale: 1
+  mainTransform: {fileID: 0}
   idleSet:
   - sprite: {fileID: 21300000, guid: 4cebc1b004b9d25459a6cd277de08d2d, type: 3}
     hasTween: 0
@@ -219,10 +221,13 @@ MonoBehaviour:
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     duration: .100000001
-  mainTransform: {fileID: 0}
   srcTranslation: {x: 0, y: 0, z: 0}
   srcRotation: {x: 0, y: 0, z: 0}
   srcScale: {x: 0, y: 0, z: 0}
+  baseScale: {x: 0, y: 0, z: 0}
+  curTranslation: {x: 0, y: 0, z: 0}
+  curRotation: {x: 0, y: 0, z: 0}
+  curScale: {x: 0, y: 0, z: 0}
 --- !u!114 &11491190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -234,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e996d56165edc124c9cbb0b711beed33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 140676, guid: 374a940eaeb959e49b67cbd47a2e6b97, type: 2}
+  itemPrefab: {fileID: 188982, guid: cf3d547e7c4c36e4b95c56821ce74169, type: 2}
   spawnPoint: {fileID: 491186}
   numOfHits: 1
   spriter: {fileID: 11459390}

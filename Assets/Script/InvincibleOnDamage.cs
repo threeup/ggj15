@@ -21,7 +21,7 @@ public class InvincibleOnDamage : MonoBehaviour
 
     void OnDamage()
     {
-        if( thisActor.health > 0 )
+        if( thisActor.Health > 0 )
             StartCoroutine("InvincibleRoutine");
     }
 

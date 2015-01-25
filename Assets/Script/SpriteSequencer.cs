@@ -28,6 +28,11 @@ public class SpriteSequencer : MonoBehaviour {
 	public SpriteRenderer mainRenderer;
 	public Sprite defaultSprite;
 
+	private bool lastFacingRight = true;
+	public bool canScale = false;
+
+	public Transform mainTransform;
+
 	private SpriteData[] currentSet;
 
 	public SpriteData[] idleSet;
@@ -40,10 +45,15 @@ public class SpriteSequencer : MonoBehaviour {
 	private BasicTimer sequenceTimer = new BasicTimer(0.1f);
 	private BasicIndex currentIndex = new BasicIndex(0);
 
-	public Transform mainTransform;
 	public Vector3 srcTranslation;
 	public Vector3 srcRotation;
 	public Vector3 srcScale;
+	public Vector3 baseScale;
+
+	public Vector3 curTranslation;
+	public Vector3 curRotation;
+	public Vector3 curScale;
+
 
 	public void Awake()
 	{
@@ -55,15 +65,23 @@ public class SpriteSequencer : MonoBehaviour {
 		srcTranslation = mainTransform.localPosition;
 		srcRotation = mainTransform.eulerAngles;
 		srcScale = mainTransform.localScale;
+		baseScale = srcScale;
 	}
 
 	public void SwitchState(SpriteData[] nextSet, bool looping)
 	{
+		if( currentSet == nextSet )
+		{
+			return;
+		}
 		if( currentSet != null )
 		{
 			mainTransform.DOLocalMove(srcTranslation, 0.01f);
 			mainTransform.DOLocalRotate(srcRotation, 0.01f);
-			mainTransform.DOScale(srcScale, 0.01f);
+			if( canScale )
+			{
+				mainTransform.DOScale(srcScale, 0.01f);
+			}
 		}
 		currentSet = nextSet;
 
@@ -85,7 +103,7 @@ public class SpriteSequencer : MonoBehaviour {
 			bool hasTween = lastSpriteData.hasTween;
 			Vector3 translation = srcTranslation;
 			Vector3 rotation = srcRotation;
-			Vector3 scale = srcScale;
+			Vector3 scale = baseScale;
 			if( lastSpriteData.hasTween)
 			{
 				//translation = -lastSpriteData.translation;
@@ -105,7 +123,10 @@ public class SpriteSequencer : MonoBehaviour {
 			{
 				mainTransform.DOLocalMove(translation, spriteData.duration);
 				mainTransform.DOLocalRotate(rotation, spriteData.duration);
-				mainTransform.DOScale(scale, spriteData.duration);
+				if( canScale )
+				{
+					mainTransform.DOScale(scale, spriteData.duration);
+				}
 			}
 			lastSpriteData = spriteData;
 			sequenceTimer.TimeVal = spriteData.duration;
@@ -113,5 +134,24 @@ public class SpriteSequencer : MonoBehaviour {
 			
 		}
 
+
+	}
+
+
+	public void SetFacingRight(float velX)
+	{
+		if(Mathf.Abs(velX) < 0.1f)
+		{
+			return;
+		}
+		bool nextFacingRight = velX > 0f;
+		if( nextFacingRight == lastFacingRight)
+		{
+			return;
+		}
+		float facingVal =  (nextFacingRight ? 1f : -1f);
+		this.baseScale.x = this.srcScale.x * facingVal;
+		mainTransform.localScale = baseScale;
+		lastFacingRight = nextFacingRight;
 	}
 }

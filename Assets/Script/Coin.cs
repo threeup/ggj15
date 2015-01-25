@@ -12,9 +12,9 @@ public class Coin : Item
         {
             Director.Instance.AddCoin(actor, 1);
             audio.PlayOneShot(pickupSound);
-            SpriteRenderer renderer = GetComponentInChildren<SpriteRenderer>();
-            if( renderer != null )
-                renderer.enabled = false;
+            SpriteSequencer sequencer = GetComponentInChildren<SpriteSequencer>();
+            if( sequencer != null )
+                sequencer.mainRenderer.enabled = false;
             Collider2D[] colliders = GetComponentsInChildren<Collider2D>();
             for( int i = 0; i < colliders.Length; ++i )
             {
@@ -28,17 +28,17 @@ public class Coin : Item
     {
         yield return new WaitForSeconds(1f);
 
-        GameObject.Destroy(transform.parent.gameObject);
+        GameObject.Destroy(this.gameObject);
     }
 
     public void HandleProjectile(Vector3 dir)
 	{
 		if( this.rigidbody2D != null )
         {
-        	Debug.Log("dir"+dir);
         	dir.x = -dir.x*0.1f;
         	dir.y = -Mathf.Abs(dir.y);
             rigidbody2D.AddForce(dir*400f);
+            collider2D.isTrigger = false;
         }
 	}
 }

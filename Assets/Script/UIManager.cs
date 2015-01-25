@@ -38,6 +38,6 @@ public class UIManager : MonoBehaviour
 
 	public void HudUpdate()
 	{
-		coinCount.text = Director.Instance.mainScore+" COINS";
+		coinCount.text = Director.Instance.MainScore+" COINS";
 	}
 }
