@@ -40,17 +40,30 @@ public class SpriteSequencer : MonoBehaviour {
 	private BasicTimer sequenceTimer = new BasicTimer(0.1f);
 	private BasicIndex currentIndex = new BasicIndex(0);
 
+	public Transform mainTransform;
+	public Vector3 srcTranslation;
+	public Vector3 srcRotation;
+	public Vector3 srcScale;
+
 	public void Awake()
 	{
 		SwitchState(idleSet, true);
+		if( mainTransform == null )
+		{
+			mainTransform = this.transform;
+		}
+		srcTranslation = mainTransform.position;
+		srcRotation = mainTransform.eulerAngles;
+		srcScale = mainTransform.localScale;
 	}
 
 	public void SwitchState(SpriteData[] nextSet, bool looping)
 	{
 		if( currentSet != null )
 		{
-			this.transform.DOLocalMove(Vector3.zero, 0.01f);
-			this.transform.DOLocalRotate(Vector3.zero, 0.01f);
+			mainTransform.DOLocalMove(srcTranslation, 0.01f);
+			mainTransform.DOLocalRotate(srcRotation, 0.01f);
+			mainTransform.DOScale(srcScale, 0.01f);
 		}
 		currentSet = nextSet;
 
@@ -70,9 +83,9 @@ public class SpriteSequencer : MonoBehaviour {
 		if( sequenceTimer.Tick(deltaTime) )
 		{
 			bool hasTween = lastSpriteData.hasTween;
-			Vector3 translation = Vector3.zero;
-			Vector3 rotation = Vector3.zero;
-			Vector3 scale = Vector3.one;
+			Vector3 translation = srcTranslation;
+			Vector3 rotation = srcRotation;
+			Vector3 scale = srcScale;
 			if( lastSpriteData.hasTween)
 			{
 				//translation = -lastSpriteData.translation;
@@ -90,14 +103,15 @@ public class SpriteSequencer : MonoBehaviour {
 			}
 			if( hasTween )
 			{
-				this.transform.DOLocalMove(translation, spriteData.duration);
-				this.transform.DOLocalRotate(rotation, spriteData.duration);
-				this.transform.DOScale(scale, spriteData.duration);
+				mainTransform.DOLocalMove(translation, spriteData.duration);
+				mainTransform.DOLocalRotate(rotation, spriteData.duration);
+				mainTransform.DOScale(scale, spriteData.duration);
 			}
 			lastSpriteData = spriteData;
 			sequenceTimer.TimeVal = spriteData.duration;
 			currentIndex.Next();
 			
 		}
+
 	}
 }

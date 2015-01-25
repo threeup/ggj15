@@ -33,6 +33,10 @@ public class Level : MonoBehaviour
 			yield return new WaitForSeconds(0.1f);
 			Director.Instance.SetAction(true, mainCharacterEntity);
 		}
+		else
+		{
+			Application.LoadLevel( "startscene" );
+		}
 	}
 
 	public void ResetUID()
