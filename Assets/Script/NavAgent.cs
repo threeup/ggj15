@@ -15,6 +15,8 @@ public class NavAgent : MonoBehaviour
     float jumpVelocity = 100f;
     [SerializeField]
     float walkSpeed = 10f;
+    [SerializeField]
+    bool startGrounded = true;
 
     public AnimationCurve walkSpeedMultiplier = new AnimationCurve(new Keyframe(0f, 0f), new Keyframe(1f, 1f));
     public bool isGrounded;
@@ -28,7 +30,8 @@ public class NavAgent : MonoBehaviour
         if( thisController == null )
             Debug.LogWarning("NavAgent: Missing CharacterController2D");
 
-        thisController.WarpToGrounded();
+        if( startGrounded )
+            thisController.WarpToGrounded();
     }
 
     void FixedUpdate()
