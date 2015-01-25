@@ -14,6 +14,8 @@ public class ActorEntity : GameEntity
     public Faction faction;
     private int health = 0;
     private int maxHealth = 1;
+    private int shellHealth = 2;
+    private int wingsHealth = 2;
     public int Health { get { return health; } }
     public bool invincible;
 
@@ -29,8 +31,8 @@ public class ActorEntity : GameEntity
     private bool isSetup = false;
 
     public bool FacingRight { get { return activeSpriter.baseScale.x > 0f; } }
-    public bool HasShell { get { return Health >= 2; } }
-    public bool HasWings { get { return Health >= 3; } }
+    public bool HasShell { get { return Health >= shellHealth; } }
+    public bool HasWings { get { return Health >= wingsHealth; } }
 	
 	public override void Awake()
 	{
@@ -55,6 +57,7 @@ public class ActorEntity : GameEntity
 
         if( edata.entityType == EntityType.MAINCHARACTER)
         {
+        	wingsHealth = 3;
             SetupParameters(Director.Instance.MainStartHealth, 1f);
         }
 		this.name = entityName;
