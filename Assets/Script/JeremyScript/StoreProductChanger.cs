@@ -25,6 +25,7 @@ public class StoreProductChanger : MonoBehaviour {
 	public Image product;
 	public Text pName;
 	public Text price;
+	public int currentProductPrice;
 
 	public StoreStates currentState;
 
@@ -37,26 +38,32 @@ public class StoreProductChanger : MonoBehaviour {
 			product.sprite = empty;
 			pName.text = "SOLD\nOUT";
 			price.text = "";
+			currentProductPrice = -1;
 		}else if(currentState==StoreStates.noProduct){
 			product.sprite = empty;
 			pName.text = "SOLD\nOUT";
 			price.text = "";
+			currentProductPrice = -1;
 		}else if(currentState==StoreStates.shell){
 			product.sprite = product1Sprite;
 			pName.text = product1Name;
 			price.text = product1Price.ToString();
+			currentProductPrice = product1Price;
 		}else if(currentState==StoreStates.noProduct2){
 			product.sprite = empty;
 			pName.text = "SOLD\nOUT";
 			price.text = "";
+			currentProductPrice = -1;
 		}else if(currentState==StoreStates.wings){
 			product.sprite = product2Sprite;
 			pName.text = product2Name;
 			price.text = product2Price.ToString();
+			currentProductPrice = product2Price;
 		}else if(currentState==StoreStates.finished){
 			product.sprite = empty;
 			pName.text = "SOLD\nOUT";
 			price.text = "";
+			currentProductPrice = -1;
 		}
 	}
 }

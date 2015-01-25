@@ -161,12 +161,15 @@ public class Director : MonoBehaviour
 		}
 	}
 
-	public void ActorHitGoal(ActorEntity hitActor)
+	public bool ActorHitGoal(ActorEntity hitActor)
 	{
 		if( this.mainCharacter == hitActor )
 		{
 			gameOverTimer.SetMin(0.5f);
+			FinishLevel();
+			return true;
 		}
+		return false;
 	}
 
 	public void ActorDied(ActorEntity deadActor)
@@ -230,20 +233,41 @@ public class Director : MonoBehaviour
 		}
 	}
 
+	public bool PurchaseProgress(int coinCost)
+	{
+		if( mainScore > coinCost )
+		{
+			mainScore -= coinCost;
+			mainStartHealth++;
+			return true;
+		}
+		return false;
+	}
+
+	public void FinishLevel()
+	{
+		SetProgress(mainStartHealth, true);
+	}
+
 	public void SetProgress(int i, bool canBuy)
 	{
 		if(!canBuy)
 		{
 			productChanger.currentState = StoreProductChanger.StoreStates.noProduct;
-			return;
+			
 		}
-		switch(i)
+		else
 		{
-			case 0: productChanger.currentState = StoreProductChanger.StoreStates.intro; break;
-			case 1: productChanger.currentState = StoreProductChanger.StoreStates.shell; break;
-			case 2: productChanger.currentState = StoreProductChanger.StoreStates.wings; break;
-			case 3: productChanger.currentState = StoreProductChanger.StoreStates.finished; break;
+			switch(i)
+			{
+				case 0: productChanger.currentState = StoreProductChanger.StoreStates.intro; break;
+				case 1: productChanger.currentState = StoreProductChanger.StoreStates.shell; break;
+				case 2: productChanger.currentState = StoreProductChanger.StoreStates.wings; break;
+				case 3: productChanger.currentState = StoreProductChanger.StoreStates.finished; break;
+			}
 		}
+		productChanger.updateProduct();
+		Debug.Log("set progress"+i+" ="+productChanger.currentState);
 		
 	}
 }

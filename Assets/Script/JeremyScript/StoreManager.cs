@@ -25,6 +25,7 @@ public class StoreManager : MonoBehaviour {
 
 	public void Start()
 	{
+		Director.Instance.productChanger = product;
 		bubble.SetActive(false);
 		//Figure out which state to be in, then set the product to the right state.
 		product.updateProduct();
@@ -92,6 +93,10 @@ public class StoreManager : MonoBehaviour {
 		if(product.currentState==StoreProductChanger.StoreStates.intro || product.currentState==StoreProductChanger.StoreStates.noProduct || product.currentState==StoreProductChanger.StoreStates.noProduct2 || product.currentState==StoreProductChanger.StoreStates.finished)
 		{
 			Speak (11);
+		}
+		else
+		{
+			bool success = Director.Instance.PurchaseProgress(product.currentProductPrice);
 		}
 	}
 

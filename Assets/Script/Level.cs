@@ -80,13 +80,13 @@ public class Level : MonoBehaviour
 			entity.gameObject.SetActive(false);
 		}
 		Debug.LogWarning("Finish Save");
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(1.5f);
 		for( int i=entities.Count-1; i>=0; --i )
 		{
 			entities[i].FinishDestroy();
 		}
 		entities.Clear();
-		//Debug.LogWarning("Finish Purge");
+		Debug.LogWarning("Finish Purge");
 		Destroy(gameObject);
 
 	}

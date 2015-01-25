@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   product1Name: Shell
-  product1Price: 10
+  product1Price: 4
   product1Sprite: {fileID: 21300000, guid: 0d0d2f477bdd62749b93756278699821, type: 3}
   product2Name: Wings
   product2Price: 30
@@ -304,6 +304,7 @@ MonoBehaviour:
   product: {fileID: 159287176}
   pName: {fileID: 18520013}
   price: {fileID: 1881234349}
+  currentProductPrice: 0
   currentState: 0
 --- !u!1 &169738734
 GameObject:
