@@ -9,6 +9,7 @@ public class NavAgent : MonoBehaviour
 	Vector3 velocity;
 	public Vector3 Velocity { get { return velocity; } }
     public Vector3 WalkVelocity { get { return walkVelocity; } }
+    public bool IsSliding { get { return isSliding; } }
     [SerializeField]
     Vector3 acceleration;
     [SerializeField]

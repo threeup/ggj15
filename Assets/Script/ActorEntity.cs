@@ -23,6 +23,7 @@ public class ActorEntity : GameEntity
     public SpriteSequencer[] bodySpriters;
     public SpriteSequencer wingFrontSpriter;
     public SpriteSequencer wingBackSpriter;
+    public SpriteSequencer slideSpriter;
 
     public bool FacingRight { get { return activeSpriter.baseScale.x > 0f; } }
     public bool HasShell { get { return Health >= 2; } }
@@ -43,6 +44,10 @@ public class ActorEntity : GameEntity
         }
         activeSpriter = bodySpriters[0];
         activeSpriter.mainRenderer.enabled = true;
+        if( slideSpriter != null )
+        {
+            slideSpriter.mainRenderer.enabled = false;
+        }
         if( edata.entityType == EntityType.ENEMY )
         {
             maxHealth = 1;
@@ -117,12 +122,19 @@ public class ActorEntity : GameEntity
     public void Update()
     {
 		activeSpriter.SetFacingRight(thisNavAgent.WalkVelocity.x);
+        bool sliding = thisNavAgent.IsSliding;
+        if( slideSpriter != null )
+        {
+            activeSpriter.mainRenderer.enabled = !sliding;   
+            slideSpriter.mainRenderer.enabled = sliding;
+        } 
         if( wingFrontSpriter != null )
         {
             wingFrontSpriter.SetFacingRight(thisNavAgent.WalkVelocity.x);
             wingBackSpriter.SetFacingRight(thisNavAgent.WalkVelocity.x);
         }
-        bool flying = !thisNavAgent.isGrounded;
+
+        bool flying = !thisNavAgent.isGrounded && !sliding;
         if( HasWings )
         {
             if( flying )
