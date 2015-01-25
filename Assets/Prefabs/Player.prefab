@@ -51,6 +51,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &173674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 473674}
+  m_Layer: 11
+  m_Name: HandNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &186602
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +127,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 486602}
   m_RootOrder: 2
+--- !u!4 &473674
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173674}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486602}
+  m_RootOrder: 3
 --- !u!4 &486602
 Transform:
   m_ObjectHideFlags: 1
@@ -125,6 +152,7 @@ Transform:
   - {fileID: 413352}
   - {fileID: 413350}
   - {fileID: 413354}
+  - {fileID: 473674}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!50 &5086602
@@ -222,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7613ab7c832f1944583edcc41dd49a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchNode: {fileID: 0}
+  launchNode: {fileID: 173674}
   projectilePrefab: {fileID: 187758, guid: 2372f94ad200c4040b99e7fdbd6a0535, type: 2}
   owner: {fileID: 0}
 --- !u!114 &11413350
