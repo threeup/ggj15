@@ -21,7 +21,7 @@ public class UIOverworldManager : MonoBehaviour {
 	void Update () 
 	{
 		
-		if( path.go || !Director.Instance.isInLevelSelect)
+		if( path.go || Director.Instance.dState != Director.DirectorState.OVERWORLD)
 		{
 			//wait
 			return;

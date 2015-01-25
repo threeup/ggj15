@@ -4,6 +4,16 @@ using DG.Tweening;
 
 public class Director : MonoBehaviour 
 {
+
+	public enum DirectorState
+	{
+		CUTSCENE,
+		INTRO,
+		OVERWORLD,
+		STORE,
+		GAME,
+
+	}
 	public static Director Instance;
 
 	public UIManager uiMgr;
@@ -11,13 +21,13 @@ public class Director : MonoBehaviour
 	public CameraFollow camFollow;
 	public AudioClip introOverWorldClip;
 	public AudioClip musicClip;
+	public bool introMusicPlaying = false;
 	public bool mainMusicPlaying = false;
 
 	public bool hasSeenIntro = false;
 	public bool hasSeenTitle = false;
-	public bool isInGame = false;
-	public bool isInLevelSelect = false;
-	public bool isInStore = false;
+
+	public DirectorState dState = DirectorState.CUTSCENE;
 
 	public GameEntity mainCharacter;
 	private int mainScore = 0;
@@ -61,12 +71,13 @@ public class Director : MonoBehaviour
 		else if( !hasSeenTitle)
 		{
 			hasSeenTitle = true;
+			SetState(DirectorState.INTRO);
 			Application.LoadLevelAdditive( "Title" );	
 			unloadSceneTimer = new BasicTimer(0.25f);
 		}
 		else
 		{
-			isInLevelSelect = true;
+			SetState(DirectorState.OVERWORLD);
 			uiMgr.SetOverworldVisible(true);
 			Debug.Log("next scene overowrld");
 			//uiMgr.SetMenuVisible(true);
@@ -75,18 +86,46 @@ public class Director : MonoBehaviour
 		uiMgr.HudUpdate();
 	}
 
+	public void SetState(DirectorState dState)
+	{
+		if( this.dState == dState )
+		{
+			return;
+		}
+		this.dState = dState;
+		if( this.dState == DirectorState.GAME )
+		{
+			if( !mainMusicPlaying )
+			{
+				introMusicPlaying = false;
+				mainMusicPlaying = true;
+				audio.clip = musicClip;
+				audio.Play();
+			}
+		}
+		else
+		{
+			if( !introMusicPlaying )
+			{
+				introMusicPlaying = true;
+				mainMusicPlaying = false;
+				audio.clip = introOverWorldClip;
+				audio.Play();
+			}
+		}
+	}
+
 	public void UnloadLevel()
 	{	
 		Debug.Log("UnloadLevel");
 		levelMgr.SaveAndPurge();
-		isInLevelSelect = true;
 		uiMgr.SetOverworldVisible(true);
 		//uiMgr.SetMenuVisible(true);
 		uiMgr.SetHudVisible(false);
 		camFollow.followTarget = null;
 		camFollow.Center();
 		
-		isInGame = false;
+		SetState(DirectorState.OVERWORLD);
 	}
 
 	public void LoadLevel(int index)
@@ -97,27 +136,19 @@ public class Director : MonoBehaviour
 		}
 		if( index == 0 )
 		{
-			isInLevelSelect = false;
-			isInStore = true;
+			SetState(DirectorState.STORE);
 			uiMgr.SetOverworldVisible(false);
 			uiMgr.SetStoreVisible(true);
 			return;
 		}
 		uiMgr.SetStoreVisible(false);
-		isInGame = true;
+		SetState(DirectorState.GAME);
 		levelMgr.LoadLevel( index );
-		isInLevelSelect = false;
+		
 		uiMgr.SetOverworldVisible(false);
 		//uiMgr.SetMenuVisible(false);
 		uiMgr.SetHudVisible(true);
 		uiMgr.HudUpdate();
-		if( !mainMusicPlaying )
-		{
-
-			audio.clip = musicClip;
-			audio.Play();
-			mainMusicPlaying = true;
-		}
 	}
 
 	public void SetAction(bool val, GameEntity mainCharacter)
@@ -150,8 +181,8 @@ public class Director : MonoBehaviour
 	void Update() 
 	{
 		float deltaTime = Time.deltaTime;
-		bool gameOver = isInGame && Input.GetButtonDown("Cancel");
-		bool levelSelect = isInLevelSelect && Input.GetButtonDown("Jump");
+		bool gameOver = dState == DirectorState.GAME && Input.GetButtonDown("Cancel");
+		bool levelSelect = dState == DirectorState.OVERWORLD && Input.GetButtonDown("Jump");
 		if( levelSelect )
 		{
 			LoadLevel(uiMgr.overworldMgr.CurrentLevelNumber());

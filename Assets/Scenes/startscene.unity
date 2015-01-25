@@ -1070,13 +1070,13 @@ MonoBehaviour:
   uiMgr: {fileID: 1377641135}
   levelMgr: {fileID: 1995446973}
   camFollow: {fileID: 86271622}
-  introOverWorldCap: {fileID: 0}
+  introOverWorldClip: {fileID: 8300000, guid: 66449cbe79a5db94cac53830d0f5fe7e, type: 3}
   musicClip: {fileID: 8300000, guid: 5d81ca9ca29e43d46b9641017cce69d4, type: 3}
+  introMusicPlaying: 0
   mainMusicPlaying: 0
   hasSeenIntro: 0
-  isInGame: 0
-  isInLevelSelect: 0
-  isInStore: 0
+  hasSeenTitle: 0
+  dState: 0
   mainCharacter: {fileID: 0}
   productChanger: {fileID: 0}
 --- !u!4 &1025792922
