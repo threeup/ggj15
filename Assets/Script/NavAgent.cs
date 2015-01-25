@@ -26,7 +26,7 @@ public class NavAgent : MonoBehaviour
     [SerializeField]
     float slideTime = 0.5f;
     [SerializeField]
-    float flapSpeed = 10f;
+    float flapSpeed = 12f;
     [SerializeField]
     float terminalVelocity = 20f;
     [SerializeField]
@@ -37,13 +37,15 @@ public class NavAgent : MonoBehaviour
     public bool isGrounded;
     public bool canWalk = true;
     public bool isSliding;
+    public int maxNumFlaps = 1;
     public bool CanSlide { get { return thisActor.Health >= 2; } }
-    public bool CanFlap { get { return thisActor.HasWings; } }
+    public bool CanFlap { get { return thisActor.HasWings && numFlaps < maxNumFlaps; } }
 
-    Vector3 walkVelocity;
     ActorEntity thisActor;
     CharacterController2D thisController;
     InputAgent thisInputAgent;
+    Vector3 walkVelocity;
+    int numFlaps = 0;
 
     void Awake()
     {
@@ -78,6 +80,9 @@ public class NavAgent : MonoBehaviour
             SetVelocityY(0f);
 
         isGrounded = collisionState.IsGrounded;
+
+        if( isGrounded )
+            numFlaps = 0;
     }
 
     public void ModifyWalkSpeed(float scale)
@@ -176,6 +181,7 @@ public class NavAgent : MonoBehaviour
 
         SetVelocityY(0f);
         AddVelocity(Vector3.up * flapSpeed * 0.5f);
+        ++numFlaps;
         BroadcastMessage("OnFlap", SendMessageOptions.DontRequireReceiver);
         
         yield return null;

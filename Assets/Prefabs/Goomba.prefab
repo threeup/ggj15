@@ -168,7 +168,7 @@ MonoBehaviour:
   jumpButtonTime: .100000001
   slideSpeed: 2
   slideTime: .5
-  flapSpeed: 10
+  flapSpeed: 12
   terminalVelocity: 20
   startGrounded: 1
   walkSpeedMultiplier:
@@ -204,6 +204,7 @@ MonoBehaviour:
   isGrounded: 0
   canWalk: 1
   isSliding: 0
+  maxNumFlaps: 1
 --- !u!114 &11422330
 MonoBehaviour:
   m_ObjectHideFlags: 1

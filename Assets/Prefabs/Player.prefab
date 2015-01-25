@@ -742,7 +742,7 @@ MonoBehaviour:
   jumpButtonTime: .100000001
   slideSpeed: 10
   slideTime: .300000012
-  flapSpeed: 10
+  flapSpeed: 12
   terminalVelocity: 20
   startGrounded: 1
   walkSpeedMultiplier:
@@ -778,6 +778,7 @@ MonoBehaviour:
   isGrounded: 0
   canWalk: 1
   isSliding: 0
+  maxNumFlaps: 1
 --- !u!114 &11463402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -813,9 +814,11 @@ MonoBehaviour:
     position: {x: 0, y: 0, z: 0}
   spawned: {fileID: 0}
   spawner: {fileID: 0}
+  snapToBounds: 1
   faction: 2
   invincible: 0
   thisNavAgent: {fileID: 0}
+  thisBrain: {fileID: 0}
   bodySpriters:
   - {fileID: 11413352}
   - {fileID: 11407192}
