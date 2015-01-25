@@ -68,12 +68,12 @@ public class SpriteSequencer : MonoBehaviour {
 		baseScale = srcScale;
 	}
 
-	public void SwitchState(SpriteData[] nextSet, bool looping)
+	public bool SwitchState(SpriteData[] nextSet, bool looping)
 	{
 		if( currentSet == nextSet )
 		{
-			return;
-		}
+			return false;
+		} 
 		if( currentSet != null )
 		{
 			mainTransform.DOLocalMove(srcTranslation, 0.01f);
@@ -92,6 +92,7 @@ public class SpriteSequencer : MonoBehaviour {
 
 		currentIndex.SetMax(currentSet.Length-1);
 		currentIndex.SetLooping(looping);
+		return true;
 	}
 
 	public void Update()

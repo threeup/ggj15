@@ -22,7 +22,8 @@ public class Goomba : MonoBehaviour
 
             if( box.bounds.min.y > thisTransform.position.y )
             {
-                thisActor.Damage();
+                if( otherActor.IsEnemy(thisActor) )
+                    thisActor.Damage();
                 otherNavAgent.SetVelocityY(0f);
                 otherNavAgent.Jump();
             }
@@ -53,8 +54,6 @@ public class Goomba : MonoBehaviour
     IEnumerator DeathRoutine()
     {
         float time = 0f;
-
-        transform.localScale = new Vector3(1f, 0.1f);
 
         while( time < 1f )
         {

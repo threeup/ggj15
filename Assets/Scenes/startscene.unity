@@ -244,7 +244,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 219368935}
-  m_HideIfInvisible: 0
 --- !u!1 &314939635
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +305,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 314939635}
-  m_HideIfInvisible: 0
 --- !u!1 &345308609
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +371,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 345308609}
-  m_HideIfInvisible: 0
 --- !u!1 &529919522
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +420,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -440,6 +436,16 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
 --- !u!223 &529919526
 Canvas:
   m_ObjectHideFlags: 0
@@ -454,6 +460,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!1 &686886717
@@ -554,7 +561,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 686886717}
-  m_HideIfInvisible: 0
 --- !u!224 &686886721
 RectTransform:
   m_ObjectHideFlags: 0
@@ -641,7 +647,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 697719844}
-  m_HideIfInvisible: 0
 --- !u!1 &832950029
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
+  m_DragThreshold: 5
 --- !u!4 &832950033
 Transform:
   m_ObjectHideFlags: 0
@@ -782,7 +788,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 996229485}
-  m_HideIfInvisible: 0
 --- !u!1 &1025792920
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,9 +819,11 @@ MonoBehaviour:
   uiMgr: {fileID: 1377641135}
   levelMgr: {fileID: 1995446973}
   camFollow: {fileID: 86271622}
+  introOverWorldCap: {fileID: 0}
   musicClip: {fileID: 8300000, guid: 5d81ca9ca29e43d46b9641017cce69d4, type: 3}
   mainMusicPlaying: 0
   mainCharacter: {fileID: 0}
+  productChanger: {fileID: 0}
 --- !u!4 &1025792922
 Transform:
   m_ObjectHideFlags: 0
@@ -839,7 +846,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .216000006
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1054,7 +1061,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1581641102}
-  m_HideIfInvisible: 0
 --- !u!224 &1581641106
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1102,7 +1108,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -1119,6 +1124,16 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
 --- !u!223 &1773926201
 Canvas:
   m_ObjectHideFlags: 0
@@ -1133,6 +1148,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!224 &1773926202
@@ -1309,4 +1325,3 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2029494496}
-  m_HideIfInvisible: 0

@@ -15,6 +15,8 @@ public class Level : MonoBehaviour
 	public List<GameEntity> entities;
 	public GameEntity mainCharacterEntity;
 
+	public Vector3 startCamera;
+
 	void Awake()
 	{
 		if( LevelManager.Instance != null )
@@ -172,6 +174,10 @@ public class Level : MonoBehaviour
 			if( (gameEntity.gameObject.layer | mask) == 0 )
 			{
 				//what is this?
+				continue;
+			}
+			if( !gameEntity.snapToBounds )
+			{
 				continue;
 			}
 			Vector3 pos = gameEntity.transform.position;

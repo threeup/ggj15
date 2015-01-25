@@ -6,6 +6,8 @@ public class Spawner : MonoBehaviour {
 	public GameObject spawnPrefab;
 	public WorldEntity worldEntity;
 	private bool canSpawn = true;
+	public int spawnHealth = 1;
+	public int spawnWalkVelocityMultiplier = 1;
 
 	public void Awake()
 	{
@@ -29,6 +31,11 @@ public class Spawner : MonoBehaviour {
 			GameObject go = GameObject.Instantiate(spawnPrefab, this.transform.position, Quaternion.identity) as GameObject;	
 			GameEntity ge = go.GetComponent<GameEntity>();
 			this.worldEntity.AssociateSpawn(ge);
+			ActorEntity actor = ge as ActorEntity;
+			if( actor != null )
+			{
+				actor.SetupParameters(spawnHealth, spawnWalkVelocityMultiplier);
+			}
 			ge.SendActivate();
 		}
 		else

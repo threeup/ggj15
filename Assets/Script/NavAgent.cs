@@ -10,6 +10,7 @@ public class NavAgent : MonoBehaviour
 	public Vector3 Velocity { get { return velocity; } }
     public Vector3 WalkVelocity { get { return walkVelocity; } }
     public bool IsSliding { get { return isSliding; } }
+    public bool IsGrounded { get { return isGrounded; } }
     [SerializeField]
     Vector3 acceleration;
     [SerializeField]
@@ -77,6 +78,11 @@ public class NavAgent : MonoBehaviour
             SetVelocityY(0f);
 
         isGrounded = collisionState.IsGrounded;
+    }
+
+    public void ModifyWalkSpeed(float scale)
+    {
+        walkSpeed *= scale;
     }
 
     public void SetVelocityX(float val)

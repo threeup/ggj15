@@ -9,6 +9,7 @@ public class GameEntity : MonoBehaviour {
 	public EntityData edata;
 	public GameEntity spawned = null;
 	public GameEntity spawner = null;
+	public bool snapToBounds = true;
 
 	public virtual void Awake()
 	{
