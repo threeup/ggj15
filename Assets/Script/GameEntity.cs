@@ -13,9 +13,7 @@ public class GameEntity : MonoBehaviour {
 	public virtual void Awake()
 	{
 		thisTransform = this.transform;
-		edata.drawable = this.renderer != null;
-		edata.collidable = this.collider != null;
-		if( LevelManager.Instance != null && edata.drawable )
+		if( LevelManager.Instance != null && this.renderer != null )
 		{
 			//default everything to off when we start, level data decides if it is visible or not
 			renderer.enabled = false;
@@ -37,8 +35,9 @@ public class GameEntity : MonoBehaviour {
 	
 	}
 
-	public void Destroy()
+	public void FinishDestroy()
 	{
+		Debug.Log("Destroyed"+this);
 		Destroy(gameObject);
 	}
 
@@ -49,11 +48,11 @@ public class GameEntity : MonoBehaviour {
 
 	public void Deactivate()
 	{
-		if( edata.drawable )
+		if( this.renderer != null )
 		{
 			renderer.enabled = false;
 		}
-		if( edata.collidable )
+		if( this.collider2D != null )
 		{
 			collider2D.enabled = false;
 		}
@@ -68,8 +67,7 @@ public class GameEntity : MonoBehaviour {
 	{
 		if( spawned != null )
 		{
-			this.edata = spawned.edata;
-			Debug.Log(this+" "+spawned+" copied edata"+edata.collisionState);
+			this.edata.collisionState = spawned.edata.collisionState;
 		}
 		GrabPosition();
 	}
@@ -83,11 +81,11 @@ public class GameEntity : MonoBehaviour {
 	{
 		thisTransform.position = edata.position;
 
-		if( edata.drawable )
+		if( this.renderer != null )
 		{
 			renderer.enabled = true;
 		}
-		if( edata.collidable )
+		if( this.collider2D != null )
 		{  
 			switch(edata.collisionState)
 			{
@@ -102,7 +100,7 @@ public class GameEntity : MonoBehaviour {
 	{
 		this.spawned = spawned;
 		spawned.spawner = this;
-		spawned.edata = this.edata;
+		spawned.edata.collisionState = this.edata.collisionState;
 	}
 
 	

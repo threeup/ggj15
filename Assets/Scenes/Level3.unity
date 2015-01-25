@@ -128,14 +128,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1000
+  entityID: 1004
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &5325482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -213,14 +214,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1001
+  entityID: 1005
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &7116175
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -298,14 +300,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1002
+  entityID: 1006
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &9390013
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -357,14 +360,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1003
+  entityID: 1007
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &13541578
 Transform:
   m_ObjectHideFlags: 0
@@ -380,7 +384,7 @@ Transform:
   - {fileID: 888712638}
   - {fileID: 324370808}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
 --- !u!1 &16137149
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,14 +439,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1004
+  entityID: 1008
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &16137153
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -520,14 +525,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1005
+  entityID: 1009
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &17966866
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -605,14 +611,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1006
+  entityID: 1010
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &20121014
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -690,14 +697,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1007
+  entityID: 1011
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &23920565
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -775,14 +783,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1008
+  entityID: 1012
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &33039075
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -860,14 +869,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1009
+  entityID: 1013
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &34176224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -945,14 +955,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1010
+  entityID: 1014
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &62255435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1030,14 +1041,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1011
+  entityID: 1015
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &74583461
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1115,14 +1127,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1012
+  entityID: 1016
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &78678585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1200,14 +1213,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1013
+  entityID: 1017
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &81407882
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1285,14 +1299,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1014
+  entityID: 1018
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &82458030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1370,14 +1385,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1015
+  entityID: 1019
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &83647026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1455,14 +1471,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1016
+  entityID: 1020
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &94968901
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1540,14 +1557,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1017
+  entityID: 1021
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &99786232
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1625,14 +1643,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1018
+  entityID: 1022
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &102887066
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1698,14 +1717,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1019
+  entityID: 1023
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &105900580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1795,14 +1815,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1020
+  entityID: 1024
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &110536071
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1880,14 +1901,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1021
+  entityID: 1025
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &127027738
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1965,14 +1987,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1022
+  entityID: 1026
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &147078787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2050,14 +2073,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1023
+  entityID: 1027
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &147286054
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2123,14 +2147,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1024
+  entityID: 1028
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &154067216
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2220,14 +2245,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1025
+  entityID: 1029
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &156082060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2305,14 +2331,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1026
+  entityID: 1030
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &159497021
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2390,14 +2417,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1027
+  entityID: 1031
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &166553296
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2475,14 +2503,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1028
+  entityID: 1032
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &171301995
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2560,14 +2589,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1029
+  entityID: 1033
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &171409558
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2645,14 +2675,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1030
+  entityID: 1034
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &171696278
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2730,14 +2761,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1031
+  entityID: 1035
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &175302561
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2815,14 +2847,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1032
+  entityID: 1036
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &179859988
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2876,7 +2909,7 @@ Transform:
   - {fileID: 7116172}
   - {fileID: 1062961442}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
 --- !u!114 &186239890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2889,14 +2922,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1033
+  entityID: 1037
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &187015140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2951,14 +2985,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1034
+  entityID: 1038
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &187015144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3036,14 +3071,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1035
+  entityID: 1039
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &192353161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3121,14 +3157,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1036
+  entityID: 1040
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &193360701
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3206,14 +3243,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1037
+  entityID: 1041
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &193993244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3291,14 +3329,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1038
+  entityID: 1042
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &205097192
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3364,14 +3403,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1039
+  entityID: 1043
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &223376324
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3461,14 +3501,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1040
+  entityID: 1044
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &224601682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3534,14 +3575,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1041
+  entityID: 1045
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &232006824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3631,14 +3673,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1042
+  entityID: 1046
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &232463538
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3716,14 +3759,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1043
+  entityID: 1047
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &233079080
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3801,14 +3845,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1044
+  entityID: 1048
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &244461313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3886,14 +3931,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1045
+  entityID: 1049
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &250635929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3971,14 +4017,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1046
+  entityID: 1050
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &269118393
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4044,14 +4091,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1047
+  entityID: 1051
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &273286537
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4141,14 +4189,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1048
+  entityID: 1052
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &276612210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4226,14 +4275,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1049
+  entityID: 1053
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &289387682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4257,6 +4307,94 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a4b851a229f8c0445b9c44ca23726719, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &297459337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 117690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 297459341}
+  - 212: {fileID: 297459340}
+  - 114: {fileID: 297459339}
+  - 114: {fileID: 297459338}
+  m_Layer: 9
+  m_Name: QuestionSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &297459338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11417692, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 297459337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e0691efdab6d24db9835ff24e18252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPrefab: {fileID: 117666, guid: 757cfc1406a3e4949a9956931becb678, type: 2}
+  worldEntity: {fileID: 0}
+--- !u!114 &297459339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11417690, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 297459337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityID: 1000
+  entityName: 
+  edata:
+    entityType: 6
+    childEntityType: 2
+    collisionState: 1
+    position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
+--- !u!212 &297459340
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21217690, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 297459337}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4cebc1b004b9d25459a6cd277de08d2d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &297459341
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 417690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 297459337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1 &307660280
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,14 +4449,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1050
+  entityID: 1054
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &307660284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4396,14 +4535,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1051
+  entityID: 1055
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &309958432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4481,14 +4621,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1052
+  entityID: 1056
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &310554863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4554,14 +4695,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1053
+  entityID: 1057
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &316240201
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4651,14 +4793,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1054
+  entityID: 1058
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &324370811
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4736,14 +4879,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1055
+  entityID: 1059
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &325328106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4809,14 +4953,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1056
+  entityID: 1060
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &326798318
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4883,7 +5028,7 @@ Transform:
   - {fileID: 326798319}
   - {fileID: 1938297852}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
 --- !u!114 &327832151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4896,14 +5041,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1057
+  entityID: 1061
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &327854002
 GameObject:
   m_ObjectHideFlags: 0
@@ -4958,14 +5104,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1058
+  entityID: 1062
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &327854006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5028,7 +5175,7 @@ Transform:
   - {fileID: 2133817897}
   - {fileID: 619108869}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 32
 --- !u!114 &328715072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5041,14 +5188,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1059
+  entityID: 1063
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &351673321
 GameObject:
   m_ObjectHideFlags: 0
@@ -5103,14 +5251,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1060
+  entityID: 1064
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &351673325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5188,14 +5337,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1061
+  entityID: 1065
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &359737852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5273,14 +5423,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1062
+  entityID: 1066
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &362690130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5358,14 +5509,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1063
+  entityID: 1067
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &367914332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5443,14 +5595,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1064
+  entityID: 1068
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &368273567
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5528,14 +5681,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1065
+  entityID: 1069
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &380756190
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5613,14 +5767,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1066
+  entityID: 1070
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &382021054
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5698,14 +5853,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1067
+  entityID: 1071
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &384468621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5783,14 +5939,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1068
+  entityID: 1072
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &394930702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5814,93 +5971,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a4b851a229f8c0445b9c44ca23726719, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &397136711
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 117690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 397136715}
-  - 212: {fileID: 397136714}
-  - 114: {fileID: 397136713}
-  - 114: {fileID: 397136712}
-  m_Layer: 9
-  m_Name: QuestionSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &397136712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11417692, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 397136711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43e0691efdab6d24db9835ff24e18252, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPrefab: {fileID: 117666, guid: 757cfc1406a3e4949a9956931becb678, type: 2}
-  worldEntity: {fileID: 0}
---- !u!114 &397136713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11417690, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 397136711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entityID: 1069
-  entityName: 
-  edata:
-    entityType: 6
-    collisionState: 1
-    collidable: 1
-    drawable: 1
-    position: {x: 0, y: 0, z: 0}
---- !u!212 &397136714
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21217690, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 397136711}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4cebc1b004b9d25459a6cd277de08d2d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &397136715
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 417690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 397136711}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 45
 --- !u!1 &404005523
 GameObject:
   m_ObjectHideFlags: 0
@@ -5955,14 +6025,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1070
+  entityID: 1073
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &404005527
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6040,14 +6111,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1071
+  entityID: 1074
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &416133913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6113,14 +6185,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1072
+  entityID: 1075
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &418297478
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6210,14 +6283,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1073
+  entityID: 1076
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &421871951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6295,14 +6369,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1074
+  entityID: 1077
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &422495116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6380,14 +6455,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1075
+  entityID: 1078
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &423532338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6465,14 +6541,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1076
+  entityID: 1079
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &426084369
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6496,93 +6573,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a4b851a229f8c0445b9c44ca23726719, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &438251984
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 117690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 438251988}
-  - 212: {fileID: 438251987}
-  - 114: {fileID: 438251986}
-  - 114: {fileID: 438251985}
-  m_Layer: 9
-  m_Name: QuestionSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &438251985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11417692, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 438251984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43e0691efdab6d24db9835ff24e18252, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPrefab: {fileID: 117666, guid: 757cfc1406a3e4949a9956931becb678, type: 2}
-  worldEntity: {fileID: 0}
---- !u!114 &438251986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11417690, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 438251984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entityID: 1077
-  entityName: 
-  edata:
-    entityType: 6
-    collisionState: 1
-    collidable: 1
-    drawable: 1
-    position: {x: 0, y: 0, z: 0}
---- !u!212 &438251987
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21217690, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 438251984}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4cebc1b004b9d25459a6cd277de08d2d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &438251988
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 417690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 438251984}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 43
 --- !u!1 &439017357
 GameObject:
   m_ObjectHideFlags: 0
@@ -6637,14 +6627,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1078
+  entityID: 1080
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &439017361
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6722,14 +6713,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1079
+  entityID: 1081
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &444257626
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6807,14 +6799,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1080
+  entityID: 1082
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &448322424
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6892,14 +6885,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1081
+  entityID: 1083
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &479783497
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6977,14 +6971,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1082
+  entityID: 1084
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &480414779
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7062,14 +7057,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1083
+  entityID: 1085
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &486363653
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7093,93 +7089,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a4b851a229f8c0445b9c44ca23726719, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &489358124
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 117690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 489358128}
-  - 212: {fileID: 489358127}
-  - 114: {fileID: 489358126}
-  - 114: {fileID: 489358125}
-  m_Layer: 9
-  m_Name: QuestionSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &489358125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11417692, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489358124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43e0691efdab6d24db9835ff24e18252, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPrefab: {fileID: 117666, guid: 757cfc1406a3e4949a9956931becb678, type: 2}
-  worldEntity: {fileID: 0}
---- !u!114 &489358126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11417690, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489358124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entityID: 1084
-  entityName: 
-  edata:
-    entityType: 6
-    collisionState: 1
-    collidable: 1
-    drawable: 1
-    position: {x: 0, y: 0, z: 0}
---- !u!212 &489358127
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21217690, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489358124}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4cebc1b004b9d25459a6cd277de08d2d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &489358128
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 417690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489358124}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
 --- !u!1 &490980193
 GameObject:
   m_ObjectHideFlags: 0
@@ -7234,14 +7143,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1085
+  entityID: 1086
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &490980197
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7319,14 +7229,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1086
+  entityID: 1087
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &493049869
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7404,14 +7315,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1087
+  entityID: 1088
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &496318123
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7489,14 +7401,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1088
+  entityID: 1089
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &499330191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7574,14 +7487,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1089
+  entityID: 1090
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &508665344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7659,14 +7573,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1090
+  entityID: 1091
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &556364631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7744,14 +7659,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1091
+  entityID: 1092
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &573735375
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7829,14 +7745,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1092
+  entityID: 1093
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &582338342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7902,14 +7819,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1093
+  entityID: 1094
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &586326616
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7973,14 +7891,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1094
+  entityID: 1095
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &602969190
 Transform:
   m_ObjectHideFlags: 0
@@ -7996,7 +7915,7 @@ Transform:
   - {fileID: 732231919}
   - {fileID: 1553780099}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 17
 --- !u!1 &605581153
 GameObject:
   m_ObjectHideFlags: 0
@@ -8051,14 +7970,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1095
+  entityID: 1096
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &605581157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8124,14 +8044,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1096
+  entityID: 1097
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &607022603
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8221,14 +8142,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1097
+  entityID: 1098
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &615213828
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8306,14 +8228,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1098
+  entityID: 1099
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &619108872
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8391,14 +8314,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1099
+  entityID: 1100
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &628888532
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8464,14 +8388,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1100
+  entityID: 1101
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &639019644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8561,14 +8486,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1101
+  entityID: 1102
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &640589125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8646,14 +8572,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1102
+  entityID: 1103
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &644222153
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8731,14 +8658,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1103
+  entityID: 1104
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &647553466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8816,14 +8744,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1104
+  entityID: 1105
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &653627649
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8901,14 +8830,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1105
+  entityID: 1106
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &659760150
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8963,7 +8893,7 @@ Transform:
   - {fileID: 1086342312}
   - {fileID: 1664827104}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 36
 --- !u!114 &663244051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8976,14 +8906,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1106
+  entityID: 1107
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &668290141
 GameObject:
   m_ObjectHideFlags: 0
@@ -9026,14 +8957,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1107
+  entityID: 1108
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &668290144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9123,14 +9055,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1108
+  entityID: 1109
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &673580527
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9208,14 +9141,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1109
+  entityID: 1110
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &673593775
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9281,14 +9215,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1110
+  entityID: 1111
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &677646885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9378,14 +9313,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1111
+  entityID: 1112
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &678954036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9440,7 +9376,7 @@ Transform:
   - {fileID: 1927185833}
   - {fileID: 1626259704}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 26
 --- !u!114 &679224748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9453,14 +9389,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1112
+  entityID: 1113
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &684234925
 GameObject:
   m_ObjectHideFlags: 0
@@ -9492,7 +9429,7 @@ Transform:
   - {fileID: 1006908888}
   - {fileID: 224601679}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
 --- !u!114 &684234927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9505,14 +9442,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1113
+  entityID: 1114
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &693951702
 GameObject:
   m_ObjectHideFlags: 0
@@ -9555,14 +9493,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1114
+  entityID: 1115
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &693951705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9652,14 +9591,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1115
+  entityID: 1116
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &697642867
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9714,7 +9654,7 @@ Transform:
   - {fileID: 367914329}
   - {fileID: 1355819146}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 33
 --- !u!114 &711760512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9727,14 +9667,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1116
+  entityID: 1117
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &714789560
 GameObject:
   m_ObjectHideFlags: 0
@@ -9789,14 +9730,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1117
+  entityID: 1118
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &714789564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9874,14 +9816,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1118
+  entityID: 1119
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &714813179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9959,14 +9902,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1119
+  entityID: 1120
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &717098337
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10044,14 +9988,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1120
+  entityID: 1121
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &726474780
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10129,14 +10074,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1121
+  entityID: 1122
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &732231922
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10214,14 +10160,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1122
+  entityID: 1123
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &737611512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10299,14 +10246,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1123
+  entityID: 1124
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &740302240
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10384,14 +10332,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1124
+  entityID: 1125
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &741767868
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10469,14 +10418,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1125
+  entityID: 1126
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &749746469
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10554,14 +10504,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1126
+  entityID: 1127
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &751441669
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10639,14 +10590,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1127
+  entityID: 1128
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &755598867
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10724,14 +10676,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1128
+  entityID: 1129
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &759881828
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10809,14 +10762,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1129
+  entityID: 1130
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &764824568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10879,7 +10833,7 @@ Transform:
   - {fileID: 307660281}
   - {fileID: 1218204737}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 25
 --- !u!114 &766350260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10892,14 +10846,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1130
+  entityID: 1131
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &766966054
 GameObject:
   m_ObjectHideFlags: 0
@@ -10954,14 +10909,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1131
+  entityID: 1132
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &766966058
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11039,14 +10995,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1132
+  entityID: 1133
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &768656384
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11124,14 +11081,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1133
+  entityID: 1134
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &770521655
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11209,14 +11167,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1134
+  entityID: 1135
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &782825552
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11284,14 +11243,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1135
+  entityID: 1136
   entityName: 
   edata:
     entityType: 6
+    childEntityType: 4
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &795684903
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11326,7 +11286,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
 --- !u!1 &829684562
 GameObject:
   m_ObjectHideFlags: 0
@@ -11366,7 +11326,7 @@ Transform:
   - {fileID: 444257623}
   - {fileID: 2099571133}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 34
 --- !u!114 &829684564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11379,14 +11339,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1136
+  entityID: 1137
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &840679998
 GameObject:
   m_ObjectHideFlags: 0
@@ -11415,14 +11376,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1137
+  entityID: 1138
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &840680000
 Transform:
   m_ObjectHideFlags: 0
@@ -11438,7 +11400,7 @@ Transform:
   - {fileID: 881922765}
   - {fileID: 1664871403}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 35
 --- !u!1 &841836173
 GameObject:
   m_ObjectHideFlags: 0
@@ -11493,14 +11455,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1138
+  entityID: 1139
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &841836177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11578,14 +11541,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1139
+  entityID: 1140
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &849917982
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11663,14 +11627,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1140
+  entityID: 1141
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &856566732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11736,14 +11701,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1141
+  entityID: 1142
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &867033679
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11779,6 +11745,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1072338472}
   m_RootOrder: 2
+--- !u!1 &868196454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 117690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 868196458}
+  - 212: {fileID: 868196457}
+  - 114: {fileID: 868196456}
+  - 114: {fileID: 868196455}
+  m_Layer: 9
+  m_Name: QuestionSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &868196455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11417692, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868196454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e0691efdab6d24db9835ff24e18252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPrefab: {fileID: 117666, guid: 757cfc1406a3e4949a9956931becb678, type: 2}
+  worldEntity: {fileID: 0}
+--- !u!114 &868196456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11417690, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868196454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityID: 1003
+  entityName: 
+  edata:
+    entityType: 6
+    childEntityType: 2
+    collisionState: 1
+    position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
+--- !u!212 &868196457
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21217690, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868196454}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4cebc1b004b9d25459a6cd277de08d2d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &868196458
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 417690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868196454}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &874955955
 GameObject:
   m_ObjectHideFlags: 0
@@ -11833,14 +11887,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1142
+  entityID: 1143
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &874955959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11918,14 +11973,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1143
+  entityID: 1144
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &879440129
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12003,14 +12059,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1144
+  entityID: 1145
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &881922768
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12088,14 +12145,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1145
+  entityID: 1146
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &888474202
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12173,14 +12231,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1146
+  entityID: 1147
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &888712641
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12258,14 +12317,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1147
+  entityID: 1148
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &889927400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12343,14 +12403,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1148
+  entityID: 1149
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &894599680
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12428,14 +12489,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1149
+  entityID: 1150
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &895857560
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12513,14 +12575,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1150
+  entityID: 1151
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &897919682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12598,14 +12661,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1151
+  entityID: 1152
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &898370906
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12660,7 +12724,7 @@ Transform:
   - {fileID: 310554860}
   - {fileID: 1576652787}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 15
 --- !u!114 &907861789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12673,14 +12737,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1152
+  entityID: 1153
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &908986633
 GameObject:
   m_ObjectHideFlags: 0
@@ -12735,14 +12800,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1153
+  entityID: 1154
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &908986637
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12807,14 +12873,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1154
+  entityID: 1155
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &914702878
 Transform:
   m_ObjectHideFlags: 0
@@ -12866,7 +12933,7 @@ Transform:
   - {fileID: 1457693892}
   - {fileID: 1457435636}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 27
 --- !u!114 &919272875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12879,14 +12946,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1155
+  entityID: 1156
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &921780978
 GameObject:
   m_ObjectHideFlags: 0
@@ -12929,14 +12997,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1156
+  entityID: 1157
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &921780981
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13026,14 +13095,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1157
+  entityID: 1158
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &926674682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13111,14 +13181,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1158
+  entityID: 1159
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &928516233
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13196,14 +13267,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1159
+  entityID: 1160
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &930571571
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13281,14 +13353,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1160
+  entityID: 1161
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &931557085
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13366,14 +13439,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1161
+  entityID: 1162
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &934879116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13425,14 +13499,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1162
+  entityID: 1163
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &940066487
 Transform:
   m_ObjectHideFlags: 0
@@ -13448,7 +13523,7 @@ Transform:
   - {fileID: 1222367699}
   - {fileID: 1399829625}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 38
 --- !u!1 &970786867
 GameObject:
   m_ObjectHideFlags: 0
@@ -13503,14 +13578,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1163
+  entityID: 1164
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &970786871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13588,14 +13664,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1164
+  entityID: 1165
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &976920512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13661,14 +13738,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1165
+  entityID: 1166
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &986586743
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13758,14 +13836,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1166
+  entityID: 1167
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &994426040
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13820,7 +13899,7 @@ Transform:
   - {fileID: 83647023}
   - {fileID: 316240202}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 23
 --- !u!114 &995554428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13833,14 +13912,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1167
+  entityID: 1168
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1004181674
 GameObject:
   m_ObjectHideFlags: 0
@@ -13895,14 +13975,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1168
+  entityID: 1169
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1004181678
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13968,14 +14049,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1169
+  entityID: 1170
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1006908887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14039,14 +14121,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1170
+  entityID: 1171
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &1008501637
 Transform:
   m_ObjectHideFlags: 0
@@ -14062,7 +14145,7 @@ Transform:
   - {fileID: 382021051}
   - {fileID: 232463535}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 24
 --- !u!1 &1014481809
 GameObject:
   m_ObjectHideFlags: 0
@@ -14102,7 +14185,7 @@ Transform:
   - {fileID: 1756424001}
   - {fileID: 782825549}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 28
 --- !u!114 &1014481811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14115,14 +14198,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1171
+  entityID: 1172
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1026247249
 GameObject:
   m_ObjectHideFlags: 0
@@ -14177,14 +14261,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1172
+  entityID: 1173
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1026247253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14262,14 +14347,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1173
+  entityID: 1174
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1035620347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14293,6 +14379,94 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3edd4e17c6df3ad48baf29b4f20f27ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1042777853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 117690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1042777857}
+  - 212: {fileID: 1042777856}
+  - 114: {fileID: 1042777855}
+  - 114: {fileID: 1042777854}
+  m_Layer: 9
+  m_Name: QuestionSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1042777854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11417692, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042777853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e0691efdab6d24db9835ff24e18252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPrefab: {fileID: 117666, guid: 757cfc1406a3e4949a9956931becb678, type: 2}
+  worldEntity: {fileID: 0}
+--- !u!114 &1042777855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11417690, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042777853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityID: 1001
+  entityName: 
+  edata:
+    entityType: 6
+    childEntityType: 2
+    collisionState: 1
+    position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
+--- !u!212 &1042777856
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21217690, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042777853}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4cebc1b004b9d25459a6cd277de08d2d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1042777857
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 417690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042777853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &1045072909
 GameObject:
   m_ObjectHideFlags: 0
@@ -14347,14 +14521,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1174
+  entityID: 1175
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1045072913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14432,14 +14607,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1175
+  entityID: 1176
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1053540920
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14502,7 +14678,7 @@ Transform:
   - {fileID: 874955956}
   - {fileID: 1004181675}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 19
 --- !u!114 &1059038355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14515,14 +14691,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1176
+  entityID: 1177
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1062961441
 GameObject:
   m_ObjectHideFlags: 0
@@ -14577,14 +14754,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1177
+  entityID: 1178
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1062961445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14662,14 +14840,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1178
+  entityID: 1179
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1067647729
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14723,7 +14902,7 @@ Transform:
   - {fileID: 205097189}
   - {fileID: 867033680}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
 --- !u!114 &1072338473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14736,14 +14915,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1179
+  entityID: 1180
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1080778961
 GameObject:
   m_ObjectHideFlags: 0
@@ -14798,14 +14978,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1180
+  entityID: 1181
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1080778965
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14883,14 +15064,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1181
+  entityID: 1182
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1086342315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14968,14 +15150,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1182
+  entityID: 1183
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1102562663
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15053,14 +15236,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1183
+  entityID: 1184
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1108782879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15138,14 +15322,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1184
+  entityID: 1185
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1153012226
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15223,14 +15408,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1185
+  entityID: 1186
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1158416888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15308,14 +15494,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1186
+  entityID: 1187
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1160249599
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15378,7 +15565,7 @@ Transform:
   - {fileID: 74583458}
   - {fileID: 147078784}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 43
 --- !u!114 &1161493240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15391,14 +15578,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1187
+  entityID: 1188
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1169282930
 GameObject:
   m_ObjectHideFlags: 0
@@ -15453,14 +15641,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1188
+  entityID: 1189
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1169282934
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15538,14 +15727,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1189
+  entityID: 1190
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1178886877
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15623,14 +15813,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1190
+  entityID: 1191
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1180011700
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15708,14 +15899,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1191
+  entityID: 1192
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1181928085
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15793,14 +15985,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1192
+  entityID: 1193
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1184039244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15878,14 +16071,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1193
+  entityID: 1194
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1187397470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15940,7 +16134,7 @@ Transform:
   - {fileID: 1535686919}
   - {fileID: 677646886}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 16
 --- !u!114 &1187611987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15953,14 +16147,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1194
+  entityID: 1195
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1203353125
 GameObject:
   m_ObjectHideFlags: 0
@@ -16015,14 +16210,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1195
+  entityID: 1196
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1203353129
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16100,14 +16296,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1196
+  entityID: 1197
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1211384944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16185,14 +16382,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1197
+  entityID: 1198
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1211467832
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16270,14 +16468,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1198
+  entityID: 1199
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1216476472
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16355,14 +16554,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1199
+  entityID: 1200
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1218204740
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16440,14 +16640,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1200
+  entityID: 1201
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1219596577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16525,14 +16726,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1201
+  entityID: 1202
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1222367702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16610,14 +16812,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1202
+  entityID: 1203
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1242755689
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16695,14 +16898,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1203
+  entityID: 1204
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1256124065
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16780,14 +16984,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1204
+  entityID: 1205
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1268481114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16865,14 +17070,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1205
+  entityID: 1206
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1276853586
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16924,14 +17130,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1206
+  entityID: 1207
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &1284232366
 Transform:
   m_ObjectHideFlags: 0
@@ -17002,14 +17209,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1207
+  entityID: 1208
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1284644753
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17087,14 +17295,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1208
+  entityID: 1209
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1295964741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17172,14 +17381,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1209
+  entityID: 1210
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1299345084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17257,14 +17467,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1210
+  entityID: 1211
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1307286497
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17330,14 +17541,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1211
+  entityID: 1212
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1332092850
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17427,14 +17639,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1212
+  entityID: 1213
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1332227170
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17512,14 +17725,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1213
+  entityID: 1214
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1333649895
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17597,14 +17811,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1214
+  entityID: 1215
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1334386624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17682,14 +17897,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1215
+  entityID: 1216
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1334547404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17755,14 +17971,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1216
+  entityID: 1217
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1342619191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17852,14 +18069,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1217
+  entityID: 1218
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1346668689
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17937,14 +18155,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1218
+  entityID: 1219
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1346939677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18007,7 +18226,7 @@ Transform:
   - {fileID: 1584146199}
   - {fileID: 1102562660}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 29
 --- !u!114 &1347575117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18020,101 +18239,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityID: 1219
-  entityName: 
-  edata:
-    entityType: 0
-    collisionState: 0
-    collidable: 0
-    drawable: 0
-    position: {x: 0, y: 0, z: 0}
---- !u!1 &1352663397
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 117690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1352663401}
-  - 212: {fileID: 1352663400}
-  - 114: {fileID: 1352663399}
-  - 114: {fileID: 1352663398}
-  m_Layer: 9
-  m_Name: QuestionSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1352663398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11417692, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1352663397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43e0691efdab6d24db9835ff24e18252, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPrefab: {fileID: 117666, guid: 757cfc1406a3e4949a9956931becb678, type: 2}
-  worldEntity: {fileID: 0}
---- !u!114 &1352663399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11417690, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1352663397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   entityID: 1220
   entityName: 
   edata:
-    entityType: 6
-    collisionState: 1
-    collidable: 1
-    drawable: 1
+    entityType: 0
+    childEntityType: 0
+    collisionState: 0
     position: {x: 0, y: 0, z: 0}
---- !u!212 &1352663400
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21217690, guid: 7cfe68b351c29514d8f526b248fc717c,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1352663397}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4cebc1b004b9d25459a6cd277de08d2d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &1352663401
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 417690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1352663397}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 44
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1353329985
 GameObject:
   m_ObjectHideFlags: 0
@@ -18173,10 +18306,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1353329989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18258,10 +18392,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1354145327
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18343,10 +18478,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1355819149
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18428,10 +18564,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1373052985
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18513,10 +18650,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1377732443
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18579,7 +18717,7 @@ Transform:
   - {fileID: 573735372}
   - {fileID: 928516230}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 21
 --- !u!114 &1380576961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18596,10 +18734,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1385710103
 GameObject:
   m_ObjectHideFlags: 0
@@ -18658,10 +18797,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1385710107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18743,10 +18883,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1388013471
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18828,10 +18969,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1388883897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18913,10 +19055,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1390831048
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18998,10 +19141,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1399829628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19083,10 +19227,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1410212869
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19168,10 +19313,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1410836551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19253,10 +19399,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1411298563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19326,10 +19473,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1416526267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19423,10 +19571,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1417069580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19481,7 +19630,7 @@ Transform:
   - {fileID: 1730963085}
   - {fileID: 1637317371}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 6
 --- !u!114 &1418245723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19498,10 +19647,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1426117813
 GameObject:
   m_ObjectHideFlags: 0
@@ -19560,10 +19710,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1426117817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19645,10 +19796,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1443550514
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19730,10 +19882,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1457435639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19815,10 +19968,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1457693895
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19900,10 +20054,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1460264760
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19958,7 +20113,7 @@ Transform:
   - {fileID: 159497018}
   - {fileID: 2057073820}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 40
 --- !u!114 &1465078202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19975,10 +20130,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1480594645
 GameObject:
   m_ObjectHideFlags: 0
@@ -20037,10 +20193,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1480594649
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20122,10 +20279,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1481458242
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20207,10 +20365,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1489728289
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20292,10 +20451,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1500779441
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20377,10 +20537,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1522058846
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20462,10 +20623,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1526079851
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20547,10 +20709,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1535686922
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20574,6 +20737,94 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3edd4e17c6df3ad48baf29b4f20f27ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1539267543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 117690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1539267547}
+  - 212: {fileID: 1539267546}
+  - 114: {fileID: 1539267545}
+  - 114: {fileID: 1539267544}
+  m_Layer: 9
+  m_Name: QuestionSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1539267544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11417692, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539267543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e0691efdab6d24db9835ff24e18252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPrefab: {fileID: 117666, guid: 757cfc1406a3e4949a9956931becb678, type: 2}
+  worldEntity: {fileID: 0}
+--- !u!114 &1539267545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11417690, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539267543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d3731ec8f4464469df33209f21b984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityID: 1002
+  entityName: 
+  edata:
+    entityType: 6
+    childEntityType: 2
+    collisionState: 1
+    position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
+--- !u!212 &1539267546
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21217690, guid: 7cfe68b351c29514d8f526b248fc717c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539267543}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4cebc1b004b9d25459a6cd277de08d2d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1539267547
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 417690, guid: 7cfe68b351c29514d8f526b248fc717c, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539267543}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!1 &1549932040
 GameObject:
   m_ObjectHideFlags: 0
@@ -20632,10 +20883,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1549932044
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20717,10 +20969,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1553780102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20776,10 +21029,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &1569883318
 Transform:
   m_ObjectHideFlags: 0
@@ -20803,7 +21057,7 @@ Transform:
   - {fileID: 1026247250}
   - {fileID: 1754187603}
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 44
 --- !u!1 &1571225512
 GameObject:
   m_ObjectHideFlags: 0
@@ -20852,10 +21106,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 6
+    childEntityType: 5
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1571225515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20890,7 +21145,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
 --- !u!1 &1573705532
 GameObject:
   m_ObjectHideFlags: 0
@@ -20949,10 +21204,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1573705536
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21034,10 +21290,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1576652790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21119,10 +21376,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1577744822
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21204,10 +21462,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1584146202
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21289,10 +21548,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1584891763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21355,7 +21615,7 @@ Transform:
   - {fileID: 1740540426}
   - {fileID: 2095906984}
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 41
 --- !u!114 &1586645331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21372,10 +21632,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1599896045
 GameObject:
   m_ObjectHideFlags: 0
@@ -21434,10 +21695,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1599896049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21492,7 +21754,7 @@ Transform:
   - {fileID: 1924485336}
   - {fileID: 490980194}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 42
 --- !u!114 &1616159581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21509,10 +21771,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1621250898
 GameObject:
   m_ObjectHideFlags: 0
@@ -21571,10 +21834,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1621250902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21644,10 +21908,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1626259703
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21741,10 +22006,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1631921223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21826,10 +22092,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1635758656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21885,10 +22152,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &1636416629
 Transform:
   m_ObjectHideFlags: 0
@@ -21951,10 +22219,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1637317370
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22048,10 +22317,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1640386067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22121,10 +22391,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1648034413
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22218,10 +22489,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1659840122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22303,10 +22575,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1664827107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22388,10 +22661,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1664871406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22463,10 +22737,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 6
+    childEntityType: 3
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1681896598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22501,7 +22776,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
 --- !u!1 &1686021644
 GameObject:
   m_ObjectHideFlags: 0
@@ -22560,10 +22835,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1686021648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22644,10 +22920,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1689801802
 GameObject:
   m_ObjectHideFlags: 0
@@ -22706,10 +22983,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1689801806
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22772,7 +23050,7 @@ Transform:
   - {fileID: 2011462414}
   - {fileID: 889927397}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 18
 --- !u!114 &1696641588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22789,10 +23067,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1710479084
 GameObject:
   m_ObjectHideFlags: 0
@@ -22839,10 +23118,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1710479087
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22917,7 +23197,7 @@ Transform:
   - {fileID: 1295964738}
   - {fileID: 647553463}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 20
 --- !u!114 &1711099530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22934,10 +23214,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1728115308
 GameObject:
   m_ObjectHideFlags: 0
@@ -22984,10 +23265,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1728115311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23081,10 +23363,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1730963088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23166,10 +23449,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1733901541
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23251,10 +23535,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1740540429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23336,10 +23621,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1747459393
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23421,10 +23707,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1754187606
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23506,10 +23793,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1756424004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23565,10 +23853,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &1773866586
 Transform:
   m_ObjectHideFlags: 0
@@ -23584,7 +23873,7 @@ Transform:
   - {fileID: 931557082}
   - {fileID: 1333649892}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 37
 --- !u!1 &1773963956
 GameObject:
   m_ObjectHideFlags: 0
@@ -23643,10 +23932,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1773963960
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23728,10 +24018,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1795432855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23813,10 +24104,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1800202320
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23898,10 +24190,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1809860448
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23983,10 +24276,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1812285912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24041,7 +24335,7 @@ Transform:
   - {fileID: 914702878}
   - {fileID: 2023948268}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
 --- !u!114 &1818107574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24058,10 +24352,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1835645749
 GameObject:
   m_ObjectHideFlags: 0
@@ -24120,10 +24415,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1835645753
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24205,10 +24501,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1839711926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24290,10 +24587,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1880747148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24375,10 +24673,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1886412405
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24460,10 +24759,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1896518358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24545,10 +24845,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1897174147
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24630,10 +24931,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1910825057
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24715,10 +25017,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1924485339
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24800,10 +25103,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1927185836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24885,10 +25189,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1927916732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24970,10 +25275,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1938297855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25055,10 +25361,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1941060531
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25113,7 +25420,7 @@ Transform:
   - {fileID: 1035620344}
   - {fileID: 154067217}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 39
 --- !u!114 &1944951349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25130,10 +25437,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1946872354
 GameObject:
   m_ObjectHideFlags: 0
@@ -25192,10 +25500,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1946872358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25277,10 +25586,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1952109637
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25346,7 +25656,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
 --- !u!1 &1978971319
 GameObject:
   m_ObjectHideFlags: 0
@@ -25405,10 +25715,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1978971323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25490,10 +25801,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1983958402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25556,7 +25868,7 @@ Transform:
   - {fileID: 1053540917}
   - {fileID: 193360698}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 30
 --- !u!114 &1988252787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25573,10 +25885,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1992366334
 GameObject:
   m_ObjectHideFlags: 0
@@ -25635,10 +25948,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &1992366338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25720,10 +26034,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2002406286
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25805,10 +26120,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2011462417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25890,10 +26206,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2023948271
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25975,10 +26292,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2034755613
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26060,10 +26378,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2057073823
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26145,10 +26464,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2076294888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26230,10 +26550,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2080688024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26315,10 +26636,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2095906987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26374,10 +26696,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &2096755847
 Transform:
   m_ObjectHideFlags: 0
@@ -26401,7 +26724,7 @@ Transform:
   - {fileID: 166553293}
   - {fileID: 193993241}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 31
 --- !u!1 &2099571129
 GameObject:
   m_ObjectHideFlags: 0
@@ -26448,10 +26771,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2099571132
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26545,10 +26869,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2103730541
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26604,10 +26929,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!4 &2105955010
 Transform:
   m_ObjectHideFlags: 0
@@ -26623,7 +26949,7 @@ Transform:
   - {fileID: 1522058843}
   - {fileID: 1388883894}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 22
 --- !u!1 &2108777559
 GameObject:
   m_ObjectHideFlags: 0
@@ -26682,10 +27008,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2108777563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26767,10 +27094,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2110048519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26840,10 +27168,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2113628583
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26937,10 +27266,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2130847852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27003,7 +27333,7 @@ Transform:
   - {fileID: 2130847849}
   - {fileID: 102887063}
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 45
 --- !u!114 &2132034834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27020,10 +27350,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 0
+    childEntityType: 0
     collisionState: 0
-    collidable: 0
-    drawable: 0
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &2133817896
 GameObject:
   m_ObjectHideFlags: 0
@@ -27082,10 +27413,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2133817900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27167,10 +27499,11 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 1
+    childEntityType: 0
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &2140447749
 SpriteRenderer:
   m_ObjectHideFlags: 0

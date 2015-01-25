@@ -45,10 +45,13 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 6
+    childEntityType: 2
     collisionState: 1
     collidable: 1
     drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!114 &11417692
 MonoBehaviour:
   m_ObjectHideFlags: 1

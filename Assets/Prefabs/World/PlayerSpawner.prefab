@@ -58,10 +58,13 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 6
+    childEntityType: 5
     collisionState: 1
     collidable: 1
     drawable: 1
     position: {x: 0, y: 0, z: 0}
+  spawned: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!212 &21269936
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -46,14 +46,22 @@ public class Level : MonoBehaviour
 
 	public void AddEntity(GameEntity entity)
 	{
+		if( entity.edata.entityType == EntityType.DONTSAVE )
+		{
+			return;
+		}
 		entities.Add(entity);
 		if( entity.edata.entityType == EntityType.MAINCHARACTER )
 		{
 			mainCharacterEntity = entity;	
 		}
 	}
-
 	public void SaveAndPurge(LevelData levelData)
+	{
+		StartCoroutine(SaveAndPurgeRoutine(levelData));
+	}
+
+	IEnumerator SaveAndPurgeRoutine(LevelData levelData)
 	{
 		for( int i=entities.Count-1; i>=0; --i )
 		{
@@ -67,13 +75,16 @@ public class Level : MonoBehaviour
 			{
 				Debug.Log("didnt save"+entity);
 			}
+			entity.gameObject.SetActive(false);
 		}
+		Debug.LogWarning("Finish Save");
+		yield return new WaitForSeconds(0.5f);
 		for( int i=entities.Count-1; i>=0; --i )
 		{
-			entities[i].Destroy();
+			entities[i].FinishDestroy();
 		}
 		entities.Clear();
-
+		Debug.LogWarning("Finish Purge");
 		Destroy(gameObject);
 
 	}

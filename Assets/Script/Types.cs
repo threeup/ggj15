@@ -12,6 +12,7 @@ public enum EntityType
 	COIN = 4,
 	MAINCHARACTER = 5,
 	SPAWNER = 6,
+	DONTSAVE = 7,
 }
 
 public enum CollisionState
@@ -26,9 +27,8 @@ public enum CollisionState
 public struct EntityData
 {
 	public EntityType entityType;
+	public EntityType childEntityType;
 	public CollisionState collisionState;
-	public bool collidable;
-	public bool drawable;
 	public Vector3 position;
 	
 }

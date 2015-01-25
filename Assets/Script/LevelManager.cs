@@ -72,6 +72,11 @@ public class LevelManager : MonoBehaviour
 	public void Trash(GameObject gameObject)
 	{
 		gameObject.SetActive(false);
+		GameEntity ge = gameObject.GetComponent<GameEntity>();
+		if ( ge != null )
+		{
+			ge.edata.collisionState = CollisionState.DEAD;
+		}
 		if( currentLevel != null )
 		{
 			gameObject.name = "TRASH-"+gameObject.name;

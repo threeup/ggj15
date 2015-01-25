@@ -5,6 +5,7 @@ public class Spawner : MonoBehaviour {
 
 	public GameObject spawnPrefab;
 	public WorldEntity worldEntity;
+	private bool canSpawn = true;
 
 	public void Awake()
 	{
@@ -13,11 +14,29 @@ public class Spawner : MonoBehaviour {
 
 	public void Activate()
 	{
-		GameObject go = GameObject.Instantiate(spawnPrefab, this.transform.position, Quaternion.identity) as GameObject;	
-		GameEntity ge = go.GetComponent<GameEntity>();
-		this.worldEntity.AssociateSpawn(ge);
+		canSpawn = false;
+		if( worldEntity.edata.collisionState == CollisionState.ACTIVE )
+		{
+			canSpawn = true;
+		}
+		if( worldEntity.edata.collisionState == CollisionState.DISABL && 
+			worldEntity.edata.childEntityType == EntityType.COINBRICK )
+		{
+			canSpawn = true;
+		}
+		if( canSpawn )
+		{
+			GameObject go = GameObject.Instantiate(spawnPrefab, this.transform.position, Quaternion.identity) as GameObject;	
+			GameEntity ge = go.GetComponent<GameEntity>();
+			this.worldEntity.AssociateSpawn(ge);
+			ge.SendActivate();
+		}
+		else
+		{
+			Debug.Log("cantspawn"+worldEntity.edata.collisionState +" "+worldEntity.edata.childEntityType);
+		}
 		this.worldEntity.Deactivate();
 
-		ge.SendActivate();
+		
 	}
 }

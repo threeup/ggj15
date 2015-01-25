@@ -20,16 +20,10 @@ public class Coin : Item
             {
                 colliders[i].enabled = false;
             }
-            StartCoroutine("EnterRoutine");
+            LevelManager.Instance.Trash(this.gameObject);
         }
     }
 
-    IEnumerator EnterRoutine()
-    {
-        yield return new WaitForSeconds(1f);
-
-        GameObject.Destroy(this.gameObject);
-    }
 
     public void HandleProjectile(Vector3 dir)
 	{
