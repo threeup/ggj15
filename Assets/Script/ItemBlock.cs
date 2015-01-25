@@ -23,31 +23,35 @@ public class ItemBlock : MonoBehaviour
 
     void OnCollide(CharacterController2D.CollisionState collisionState)
     {
-        if( collisionState.CollideAbove )
+        NavAgent otherNavAgent = collisionState.gameObject.GetComponent<NavAgent>();
+        if( otherNavAgent != null )
         {
-            if( hitCount < numOfHits )
+            if( collisionState.CollideAbove || (otherNavAgent.IsSliding && (collisionState.CollideRight || collisionState.CollideLeft)) )
             {
-                GameObject go = GameObject.Instantiate(itemPrefab) as GameObject;
-                go.transform.position = spawnPoint.position;
-
-
-                Rigidbody2D rigidbody = go.GetComponentInChildren<Rigidbody2D>();
-                if( rigidbody != null )
+                if( hitCount < numOfHits )
                 {
-                    rigidbody.gravityScale = 0.5f;
-                    rigidbody.AddForce(new Vector2(Random.Range(-150f, 150f), Random.Range(100f, 200f)));
-                }
-                go.collider2D.isTrigger = false;
+                    GameObject go = GameObject.Instantiate(itemPrefab) as GameObject;
+                    go.transform.position = spawnPoint.position;
 
-                audio.PlayOneShot(spawnSound);
 
-                ++hitCount;
+                    Rigidbody2D rigidbody = go.GetComponentInChildren<Rigidbody2D>();
+                    if( rigidbody != null )
+                    {
+                        rigidbody.gravityScale = 0.5f;
+                        rigidbody.AddForce(new Vector2(Random.Range(-150f, 150f), Random.Range(100f, 200f)));
+                    }
+                    go.collider2D.isTrigger = false;
 
-                if( hitCount == numOfHits )
-                {
-                    spriter.SwitchState(spriter.secondarySet, false);
-                    GameEntity blockEntity = this.gameObject.GetComponent<GameEntity>();
-                    blockEntity.edata.collisionState = CollisionState.DISABL;
+                    audio.PlayOneShot(spawnSound);
+
+                    ++hitCount;
+
+                    if( hitCount == numOfHits )
+                    {
+                        spriter.SwitchState(spriter.secondarySet, false);
+                        GameEntity blockEntity = this.gameObject.GetComponent<GameEntity>();
+                        blockEntity.edata.collisionState = CollisionState.DISABL;
+                    }
                 }
             }
         }
