@@ -11,18 +11,21 @@ public class Coin : Item
         if( actor != null )
         {
             Director.Instance.AddCoin(actor, 1);
+            audio.PlayOneShot(pickupSound);
+            SpriteRenderer renderer = GetComponentInChildren<SpriteRenderer>();
+            if( renderer != null )
+                renderer.enabled = false;
+            Collider2D[] colliders = GetComponentsInChildren<Collider2D>();
+            for( int i = 0; i < colliders.Length; ++i )
+            {
+                colliders[i].enabled = false;
+            }
             StartCoroutine("EnterRoutine");
         }
     }
 
     IEnumerator EnterRoutine()
     {
-        audio.PlayOneShot(pickupSound);
-        SpriteRenderer renderer = GetComponentInChildren<SpriteRenderer>();
-        if( renderer != null )
-            renderer.enabled = false;
-        collider2D.enabled = false;
-
         yield return new WaitForSeconds(1f);
 
         GameObject.Destroy(transform.parent.gameObject);
