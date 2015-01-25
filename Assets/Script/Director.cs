@@ -9,6 +9,8 @@ public class Director : MonoBehaviour
 	public UIManager uiMgr;
 	public LevelManager levelMgr;
 	public CameraFollow camFollow;
+	public AudioClip musicClip;
+	public bool mainMusicPlaying = false;
 
 	public GameEntity mainCharacter;
 	private int mainScore = 0;
@@ -44,6 +46,13 @@ public class Director : MonoBehaviour
 		uiMgr.SetMenuVisible(false);
 		uiMgr.SetHudVisible(true);
 		uiMgr.HudUpdate();
+		if( !mainMusicPlaying )
+		{
+
+			audio.clip = musicClip;
+			audio.Play();
+			mainMusicPlaying = true;
+		}
 	}
 
 	public void SetAction(bool val, GameEntity mainCharacter)
