@@ -13,17 +13,20 @@ public class ActorEntity : GameEntity
 
     public Faction faction;
     private int health = 0;
-    private int maxHealth = 0;
+    private int maxHealth = 1;
     public int Health { get { return health; } }
     public bool invincible;
 
     public NavAgent thisNavAgent;
+    public Brain thisBrain;
 
     private SpriteSequencer activeSpriter;
     public SpriteSequencer[] bodySpriters;
     public SpriteSequencer wingFrontSpriter;
     public SpriteSequencer wingBackSpriter;
     public SpriteSequencer slideSpriter;
+
+    private bool isSetup = false;
 
     public bool FacingRight { get { return activeSpriter.baseScale.x > 0f; } }
     public bool HasShell { get { return Health >= 2; } }
@@ -33,6 +36,7 @@ public class ActorEntity : GameEntity
 	{
 		base.Awake();
         thisNavAgent = GetComponent<NavAgent>();
+        thisBrain = GetComponent<Brain>();
 		entityName = "ACTOR-"+this.gameObject.name+"_"+this.GetHashCode();
         if( bodySpriters.Length > 1 )
         {
@@ -48,17 +52,26 @@ public class ActorEntity : GameEntity
         {
             slideSpriter.mainRenderer.enabled = false;
         }
-        if( edata.entityType == EntityType.ENEMY )
+
+        if( edata.entityType == EntityType.MAINCHARACTER)
         {
-            maxHealth = 1;
-            SetHealth(maxHealth);
-        }
-        else if( edata.entityType == EntityType.MAINCHARACTER)
-        {
-            maxHealth = Director.Instance.MainStartHealth;
-            SetHealth(maxHealth);
+            SetupParameters(Director.Instance.MainStartHealth, 1f);
         }
 		this.name = entityName;
+	}	
+
+	public void SetupParameters(int health, float walkMultiplier)
+	{
+		if( isSetup )
+		{
+			return;
+		}
+		maxHealth = health;
+		SetHealth(maxHealth);
+
+		thisNavAgent.ModifyWalkSpeed(walkMultiplier);
+
+		isSetup = true;
 	}
 
     public bool IsAlly(ActorEntity other)
@@ -85,7 +98,7 @@ public class ActorEntity : GameEntity
 
     public void Damage()
     {
-        if( invincible )
+    	if( invincible )
             return;
 
         SetHealth(health - 1);
@@ -112,6 +125,12 @@ public class ActorEntity : GameEntity
         activeSpriter.mainRenderer.enabled = false;
         activeSpriter = bodySpriters[Mathf.Clamp(health-1, 0, bodySpriters.Length-1)];
         activeSpriter.mainRenderer.enabled = true;
+
+        if( thisBrain != null )
+        {
+        	thisBrain.isMoveable = health > 0;
+        	thisBrain.isJumpable = HasWings;
+        }
     }
 
     void OnDeath()
@@ -131,6 +150,9 @@ public class ActorEntity : GameEntity
         if( wingFrontSpriter != null )
         {
             wingFrontSpriter.SetFacingRight(thisNavAgent.WalkVelocity.x);
+        }
+        if( wingBackSpriter != null )
+        {
             wingBackSpriter.SetFacingRight(thisNavAgent.WalkVelocity.x);
         }
 
@@ -139,13 +161,25 @@ public class ActorEntity : GameEntity
         {
             if( flying )
             {
-                wingFrontSpriter.SwitchState(wingFrontSpriter.secondarySet, true);
-                wingBackSpriter.SwitchState(wingBackSpriter.secondarySet, true);
+            	if( wingFrontSpriter != null )
+            	{
+                	wingFrontSpriter.SwitchState(wingFrontSpriter.secondarySet, true);
+                }
+                if( wingBackSpriter != null)
+                {
+                	wingBackSpriter.SwitchState(wingBackSpriter.secondarySet, true);
+                }
             }
             else
             {
-                wingFrontSpriter.SwitchState(wingFrontSpriter.idleSet, true);
-                wingBackSpriter.SwitchState(wingBackSpriter.idleSet, true);
+            	if( wingFrontSpriter != null )
+            	{
+            		wingFrontSpriter.SwitchState(wingFrontSpriter.idleSet, true);	
+            	}
+                if( wingBackSpriter != null )
+                {
+                	wingBackSpriter.SwitchState(wingBackSpriter.idleSet, true);
+                }
             }
         }
         else
@@ -153,24 +187,28 @@ public class ActorEntity : GameEntity
             if( wingFrontSpriter != null )
             {
                 wingFrontSpriter.SwitchState(wingFrontSpriter.disabledSet, true);
+            }
+            if( wingBackSpriter != null )
+            {
                 wingBackSpriter.SwitchState(wingBackSpriter.disabledSet, true);
             }
         }
         if( flying )
         {
-            activeSpriter.SwitchState(activeSpriter.secondarySet, true);
-        }
-        else if ( Mathf.Abs(thisNavAgent.WalkVelocity.x)  < 0.1f )
-        {
-            activeSpriter.SwitchState(activeSpriter.idleSet, true);
+        	activeSpriter.SwitchState(activeSpriter.secondarySet, true);
         }
         else if( health == 0 )
         {
-            activeSpriter.SwitchState(activeSpriter.disabledSet, true);
+        	activeSpriter.canScale = true;
+        	activeSpriter.SwitchState(activeSpriter.disabledSet, false);
+        }
+        else if ( Mathf.Abs(thisNavAgent.WalkVelocity.x)  < 0.02f )
+        {
+        	activeSpriter.SwitchState(activeSpriter.idleSet, true);
         }
         else
         {
-            activeSpriter.SwitchState(activeSpriter.primarySet, true);
+        	activeSpriter.SwitchState(activeSpriter.primarySet, true);
         }
     }
 }

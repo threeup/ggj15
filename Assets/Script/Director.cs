@@ -9,6 +9,7 @@ public class Director : MonoBehaviour
 	public UIManager uiMgr;
 	public LevelManager levelMgr;
 	public CameraFollow camFollow;
+	public AudioClip introOverWorldCap;
 	public AudioClip musicClip;
 	public bool mainMusicPlaying = false;
 
@@ -17,6 +18,8 @@ public class Director : MonoBehaviour
 	public int MainScore { get { return mainScore; } }
 	private int mainStartHealth = 3;
 	public int MainStartHealth { get { return mainStartHealth; } }
+
+	public StoreProductChanger productChanger;
 
 	void Awake()
 	{
@@ -77,5 +80,22 @@ public class Director : MonoBehaviour
 
 			uiMgr.HudUpdate();
 		}
+	}
+
+	public void SetProgress(int i, bool canBuy)
+	{
+		if(!canBuy)
+		{
+			productChanger.currentState = StoreProductChanger.StoreStates.noProduct;
+			return;
+		}
+		switch(i)
+		{
+			case 0: productChanger.currentState = StoreProductChanger.StoreStates.intro; break;
+			case 1: productChanger.currentState = StoreProductChanger.StoreStates.shell; break;
+			case 2: productChanger.currentState = StoreProductChanger.StoreStates.wings; break;
+			case 3: productChanger.currentState = StoreProductChanger.StoreStates.finished; break;
+		}
+		
 	}
 }

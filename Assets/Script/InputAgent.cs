@@ -28,7 +28,7 @@ public class InputAgent : MonoBehaviour
         bool doFire = false;
         if( thisBrain != null )
         {
-            thisBrain.DecideInput(out moveX, out doJump);
+            thisBrain.DecideInput(thisNavAgent.IsGrounded, out moveX, out doJump);
         }
         else
         {

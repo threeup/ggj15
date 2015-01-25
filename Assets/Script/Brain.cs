@@ -5,13 +5,24 @@ public class Brain : MonoBehaviour {
 
 	public float lastMoveX = 1f;
 	public bool lastDoJump = false;
+	public bool isMoveable = true;
+	public bool isJumpable = false;
 
 	private BasicTimer changeDirTimer;
 	
-	public void DecideInput( out float moveX, out bool doJump )
+	public void DecideInput( bool isGrounded, out float moveX, out bool doJump )
 	{
+		if( !isMoveable )
+		{
+			moveX = 0f;
+			doJump = false;
+			return;
+		}
 		moveX = lastMoveX;
-		doJump = lastDoJump;
+		doJump = isJumpable && isGrounded;
+
+		lastMoveX = moveX;
+		lastDoJump = doJump;
 	}
 
 	public void SideCollide(bool left)
