@@ -15,12 +15,11 @@ public class NavAgent : MonoBehaviour
     float jumpVelocity = 100f;
     [SerializeField]
     float walkSpeed = 10f;
-    [SerializeField]
-    bool isGrounded;
 
     public AnimationCurve walkSpeedMultiplier = new AnimationCurve(new Keyframe(0f, 0f), new Keyframe(1f, 1f));
-    Vector3 walkVelocity;
+    public bool isGrounded;
 
+    Vector3 walkVelocity;
     CharacterController2D thisController;
 
     void Awake()
@@ -37,18 +36,14 @@ public class NavAgent : MonoBehaviour
         acceleration = gravity;
         velocity += acceleration;
 
-        thisController.Move((velocity + walkVelocity) * Time.deltaTime * scalar);
+        CharacterController2D.CollisionState collisionState = thisController.Move((velocity + walkVelocity) * Time.deltaTime * scalar);
 
-        if( thisController.CollideBelow || thisController.CollideAbove )
+        if( collisionState.CollideBelow || collisionState.CollideAbove )
             velocity.y = 0f;
-        if( thisController.CollideRight || thisController.CollideLeft )
+        if( collisionState.CollideRight || collisionState.CollideLeft )
             velocity.x = 0f;
 
-        isGrounded = thisController.IsGrounded;
-        if( isGrounded )
-        {
-            // Grounded
-        }
+        isGrounded = collisionState.IsGrounded;
     }
 
     public void Walk(float moveX)

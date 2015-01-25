@@ -4,14 +4,12 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController2D), typeof(NavAgent))]
 public class InputAgent : MonoBehaviour
 {
-    CharacterController2D thisController;
     NavAgent thisNavAgent;
     Brain thisBrain;
     
     void Awake()
     {
         thisBrain = GetComponent<Brain>();
-        thisController = GetComponent<CharacterController2D>();
         thisNavAgent = GetComponent<NavAgent>();
     }
 
@@ -31,7 +29,7 @@ public class InputAgent : MonoBehaviour
         
         thisNavAgent.Walk(moveX);
 
-        if( thisController.IsGrounded && doJump )
+        if( thisNavAgent.isGrounded && doJump )
             thisNavAgent.Jump();
     }
 }
