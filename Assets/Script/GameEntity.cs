@@ -7,7 +7,8 @@ public class GameEntity : MonoBehaviour {
 	public string entityName = string.Empty;
 	protected Transform thisTransform;
 	public EntityData edata;
-
+	public GameEntity spawned = null;
+	public GameEntity spawner = null;
 
 	public virtual void Awake()
 	{
@@ -46,16 +47,6 @@ public class GameEntity : MonoBehaviour {
 		gameObject.SendMessage("Activate");
 	}
 
-	public void SendDeactivate()
-	{
-		gameObject.SendMessage("Deactivate");
-	}
-
-	public void Activate()
-	{
-		
-	}
-
 	public void Deactivate()
 	{
 		if( edata.drawable )
@@ -68,9 +59,24 @@ public class GameEntity : MonoBehaviour {
 		}
 	}
 
+	public void Activate()
+	{
+		
+	}
+
 	public void SaveToData()
 	{
-		edata.position = thisTransform.position;
+		if( spawned != null )
+		{
+			this.edata = spawned.edata;
+			Debug.Log(this+" "+spawned+" copied edata"+edata.collisionState);
+		}
+		GrabPosition();
+	}
+
+	public void GrabPosition()
+	{
+		edata.position = this.transform.position;
 	}
 
 	public void LoadFromData()
@@ -90,6 +96,13 @@ public class GameEntity : MonoBehaviour {
 				case CollisionState.DISABL: collider2D.enabled = false; break;
 			}
 		}
+	}
+
+	public void AssociateSpawn(GameEntity spawned)
+	{
+		this.spawned = spawned;
+		spawned.spawner = this;
+		spawned.edata = this.edata;
 	}
 
 	

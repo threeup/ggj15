@@ -58,6 +58,6 @@ public class Goomba : MonoBehaviour
             yield return null;
         }
 
-        GameObject.Destroy(gameObject);
+        LevelManager.Instance.Trash(gameObject);
     }
 }

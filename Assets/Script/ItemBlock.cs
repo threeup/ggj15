@@ -10,6 +10,16 @@ public class ItemBlock : MonoBehaviour
 
     int hitCount;
 
+    public void Activate()
+    {
+        GameEntity blockEntity = this.gameObject.GetComponent<GameEntity>();
+        if( blockEntity.edata.collisionState == CollisionState.DISABL )
+        {
+            hitCount = numOfHits;
+            spriter.SwitchState(spriter.disabledSet, false);
+        }
+    }
+
     void OnCollide(CharacterController2D.CollisionState collisionState)
     {
         if( collisionState.CollideAbove )
@@ -33,6 +43,8 @@ public class ItemBlock : MonoBehaviour
                 if( hitCount == numOfHits )
                 {
                     spriter.SwitchState(spriter.secondarySet, false);
+                    GameEntity blockEntity = this.gameObject.GetComponent<GameEntity>();
+                    blockEntity.edata.collisionState = CollisionState.DISABL;
                 }
             }
         }

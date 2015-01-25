@@ -19,6 +19,7 @@ public enum CollisionState
 	DISABL = 0,
 	ACTIVE = 1,
 	MOVING = 2,
+	DEAD = 3,
 }
 
 [System.Serializable]

@@ -42,6 +42,6 @@ public class Player : MonoBehaviour
     {
         // GameOver
         yield return new WaitForSeconds(2f);
-        GameObject.Destroy(gameObject);
+        LevelManager.Instance.Trash(gameObject);
     }
 }

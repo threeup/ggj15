@@ -53,8 +53,21 @@ public class Level : MonoBehaviour
 		}
 	}
 
-	public void Purge()
+	public void SaveAndPurge(LevelData levelData)
 	{
+		for( int i=entities.Count-1; i>=0; --i )
+		{
+			GameEntity entity = entities[i];
+			entity.SaveToData();
+			if( levelData.entityDataMap.ContainsKey(entity.entityID) )
+			{
+				levelData.entityDataMap[entity.entityID] = entity.edata;
+			}
+			else
+			{
+				Debug.Log("didnt save"+entity);
+			}
+		}
 		for( int i=entities.Count-1; i>=0; --i )
 		{
 			entities[i].Destroy();
@@ -106,8 +119,9 @@ public class Level : MonoBehaviour
 				continue;
 			}
 			gameEntity.SaveToData();
+			gameEntity.edata.collisionState = CollisionState.ACTIVE;
 			entityDataMap.Add( gameEntity.entityID, gameEntity.edata);
-			gameEntity.SendDeactivate();
+			gameEntity.Deactivate();
 		}
 		return entityDataMap;
 	}
@@ -133,7 +147,7 @@ public class Level : MonoBehaviour
 			gameEntity.entityID = this.levelUID*1000 + this.nextUID;
 			this.nextUID++;
 		}
-	}
+	}	
 
 	public void ScanAlign()
 	{

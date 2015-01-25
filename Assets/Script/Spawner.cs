@@ -13,7 +13,11 @@ public class Spawner : MonoBehaviour {
 
 	public void Activate()
 	{
-		GameObject.Instantiate(spawnPrefab, this.transform.position, Quaternion.identity);	
-		this.worldEntity.SendDeactivate();
+		GameObject go = GameObject.Instantiate(spawnPrefab, this.transform.position, Quaternion.identity) as GameObject;	
+		GameEntity ge = go.GetComponent<GameEntity>();
+		this.worldEntity.AssociateSpawn(ge);
+		this.worldEntity.Deactivate();
+
+		ge.SendActivate();
 	}
 }

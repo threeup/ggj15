@@ -33,7 +33,7 @@ public class Director : MonoBehaviour
 
 	public void UnloadLevel()
 	{	
-		levelMgr.Purge();
+		levelMgr.SaveAndPurge();
 		uiMgr.SetMenuVisible(true);
 		uiMgr.SetHudVisible(false);
 	}

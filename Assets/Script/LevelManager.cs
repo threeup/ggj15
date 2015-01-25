@@ -62,11 +62,23 @@ public class LevelManager : MonoBehaviour
 		}
 	}
 
-	public void Purge()
+	public void SaveAndPurge()
 	{
-		currentLevel.Purge();
+		currentLevel.SaveAndPurge(currentLevelData);
 		currentLevel = null;
 
+	}
+
+	public void Trash(GameObject gameObject)
+	{
+		gameObject.SetActive(false);
+		if( currentLevel != null )
+		{
+			gameObject.name = "TRASH-"+gameObject.name;
+			gameObject.transform.parent = currentLevel.gameObject.transform;
+			gameObject.transform.position = 999f*Vector3.one;
+		}
+		
 	}
 
 	
