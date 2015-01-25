@@ -5,6 +5,7 @@ public class ItemBlock : MonoBehaviour
 {
     public GameObject itemPrefab;
     public Transform spawnPoint;
+    public AudioClip spawnSound;
     public int numOfHits;
     public SpriteSequencer spriter;
 
@@ -37,6 +38,8 @@ public class ItemBlock : MonoBehaviour
                     rigidbody.AddForce(new Vector2(Random.Range(-150f, 150f), Random.Range(100f, 200f)));
                 }
                 go.collider2D.isTrigger = false;
+
+                audio.PlayOneShot(spawnSound);
 
                 ++hitCount;
 
