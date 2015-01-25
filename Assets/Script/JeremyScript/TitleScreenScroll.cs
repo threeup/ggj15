@@ -22,7 +22,7 @@ public class TitleScreenScroll : MonoBehaviour {
 
 	public float speed;
 
-	void Start()
+	void Awake()
 	{
 		self= this.gameObject;
 		Debug.Log (self);
