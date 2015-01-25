@@ -15,6 +15,11 @@ public class UIStoreManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		bool gameOver = Input.GetButtonDown("Cancel");
+		if( gameOver )
+		{
+			Director.Instance.UnloadScene();
+			return;
+		}
 	}
 }
