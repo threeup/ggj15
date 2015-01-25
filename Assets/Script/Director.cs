@@ -32,7 +32,9 @@ public class Director : MonoBehaviour
 		Instance = this;
 		DontDestroyOnLoad(this);
 		uiMgr.HandleLevelSelect = LoadLevel;
-		DOTween.Init(true, true, LogBehaviour.Verbose).SetCapacity(200, 10);
+		DOTween.Init(true, true, LogBehaviour.ErrorsOnly).SetCapacity(200, 10);
+
+		Application.LoadLevelAdditive( "LevelSelect" );
 	}
 
 	void Start() 
@@ -49,6 +51,7 @@ public class Director : MonoBehaviour
 		}
 		else
 		{
+			uiMgr.SetOverworldVisible(true);
 			uiMgr.SetMenuVisible(true);
 		}
 		uiMgr.SetHudVisible(false);
@@ -58,6 +61,7 @@ public class Director : MonoBehaviour
 	public void UnloadLevel()
 	{	
 		levelMgr.SaveAndPurge();
+		uiMgr.SetOverworldVisible(true);
 		uiMgr.SetMenuVisible(true);
 		uiMgr.SetHudVisible(false);
 		isInGame = false;
@@ -67,6 +71,7 @@ public class Director : MonoBehaviour
 	{
 		isInGame = true;
 		levelMgr.LoadLevel( index );
+		uiMgr.SetOverworldVisible(false);
 		uiMgr.SetMenuVisible(false);
 		uiMgr.SetHudVisible(true);
 		uiMgr.HudUpdate();

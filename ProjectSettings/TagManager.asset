@@ -41,3 +41,11 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
+  - name: Front
+    userID: 1
+    uniqueID: 2951101089
+    locked: 0
+  - name: Back
+    userID: 2
+    uniqueID: 2748786021
+    locked: 0

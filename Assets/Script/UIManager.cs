@@ -15,11 +15,27 @@ public class UIManager : MonoBehaviour
 	public Canvas hudCanvas;
 	public Text coinCount;
 
+	public UIOverworldManager overworldMgr = null;
+	public UIStoreManager storeMgr = null;
+
 	void Awake()
 	{
 		DontDestroyOnLoad(this);
 		menuCanvas.gameObject.SetActive(false);
 	}
+
+
+	public void SetOverworldVisible(bool val)
+	{
+		overworldMgr.gameObject.SetActive(val);
+	}
+
+
+	public void SetStoreVisible(bool val)
+	{
+		storeMgr.gameObject.SetActive(val);
+	}
+
 
 	public void SetMenuVisible(bool val)
 	{
