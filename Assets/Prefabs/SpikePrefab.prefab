@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .980000019, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 417222}
@@ -104,32 +104,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainRenderer: {fileID: 21217224}
-  defaultSprite: {fileID: 21300000, guid: d39217cc36ac3ba4da22134fa53bf46c, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 1bbf6c82b85d091498eab33976a081d9, type: 3}
   canScale: 0
   mainTransform: {fileID: 417222}
   idleSet:
-  - sprite: {fileID: 21300000, guid: d39217cc36ac3ba4da22134fa53bf46c, type: 3}
+  - sprite: {fileID: 21300000, guid: 1bbf6c82b85d091498eab33976a081d9, type: 3}
     hasTween: 0
     translation: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     duration: .100000001
   primarySet:
-  - sprite: {fileID: 21300000, guid: d39217cc36ac3ba4da22134fa53bf46c, type: 3}
+  - sprite: {fileID: 21300000, guid: 1bbf6c82b85d091498eab33976a081d9, type: 3}
     hasTween: 0
     translation: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     duration: .100000001
   secondarySet:
-  - sprite: {fileID: 21300000, guid: d39217cc36ac3ba4da22134fa53bf46c, type: 3}
+  - sprite: {fileID: 21300000, guid: 1bbf6c82b85d091498eab33976a081d9, type: 3}
     hasTween: 0
     translation: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     duration: .100000001
   disabledSet:
-  - sprite: {fileID: 21300000, guid: d39217cc36ac3ba4da22134fa53bf46c, type: 3}
+  - sprite: {fileID: 21300000, guid: 1bbf6c82b85d091498eab33976a081d9, type: 3}
     hasTween: 0
     translation: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
@@ -177,7 +177,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d39217cc36ac3ba4da22134fa53bf46c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bbf6c82b85d091498eab33976a081d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
