@@ -104,6 +104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastMoveX: 1
   lastDoJump: 0
+  isMoveable: 1
+  isJumpable: 0
 --- !u!114 &11422326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,7 +166,7 @@ MonoBehaviour:
   walkSpeed: 1
   jumpSpeed: 14
   jumpButtonTime: .100000001
-  slideSpeed: 5
+  slideSpeed: 2
   slideTime: .5
   flapSpeed: 10
   terminalVelocity: 20
@@ -234,9 +236,11 @@ MonoBehaviour:
     position: {x: 0, y: 0, z: 0}
   spawned: {fileID: 0}
   spawner: {fileID: 0}
+  snapToBounds: 1
   faction: 3
   invincible: 0
   thisNavAgent: {fileID: 0}
+  thisBrain: {fileID: 0}
   bodySpriters:
   - {fileID: 11475294}
   wingFrontSpriter: {fileID: 0}
