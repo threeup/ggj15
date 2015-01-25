@@ -27,13 +27,13 @@ public class UIManager : MonoBehaviour
 
 	public void SetOverworldVisible(bool val)
 	{
-		overworldMgr.gameObject.SetActive(val);
+		overworldMgr.canvas.enabled = val;
 	}
 
 
 	public void SetStoreVisible(bool val)
 	{
-		storeMgr.gameObject.SetActive(val);
+		storeMgr.canvas.enabled = val;
 	}
 
 

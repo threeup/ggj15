@@ -16,6 +16,7 @@ public class Director : MonoBehaviour
 	public bool hasSeenIntro = false;
 	public bool isInGame = false;
 	public bool isInLevelSelect = false;
+	public bool isInStore = false;
 
 	public GameEntity mainCharacter;
 	private int mainScore = 0;
@@ -36,6 +37,7 @@ public class Director : MonoBehaviour
 		DOTween.Init(true, true, LogBehaviour.ErrorsOnly).SetCapacity(200, 10);
 
 		Application.LoadLevelAdditive( "LevelSelect" );
+		Application.LoadLevelAdditive( "StoreScreen" );
 	}
 
 	void Start() 
@@ -75,6 +77,14 @@ public class Director : MonoBehaviour
 	{
 		if( index == -1 )
 		{
+			return;
+		}
+		if( index == 0 )
+		{
+			isInLevelSelect = false;
+			isInStore = true;
+			uiMgr.SetOverworldVisible(false);
+			uiMgr.SetStoreVisible(true);
 			return;
 		}
 		isInGame = true;

@@ -1075,6 +1075,8 @@ MonoBehaviour:
   mainMusicPlaying: 0
   hasSeenIntro: 0
   isInGame: 0
+  isInLevelSelect: 0
+  isInStore: 0
   mainCharacter: {fileID: 0}
   productChanger: {fileID: 0}
 --- !u!4 &1025792922

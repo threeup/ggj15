@@ -807,7 +807,7 @@ GameObject:
   - 114: {fileID: 728635538}
   - 114: {fileID: 728635540}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: StoreCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -884,6 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672e1148dabec264a88d2ff19e245668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 728635536}
 --- !u!114 &728635539
 MonoBehaviour:
   m_ObjectHideFlags: 0

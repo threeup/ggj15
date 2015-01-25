@@ -3,10 +3,14 @@ using System.Collections;
 
 public class UIStoreManager : MonoBehaviour {
 
+	public Canvas canvas;
 	// Use this for initialization
 	void Awake () {
-		this.gameObject.SetActive(false);
-		Director.Instance.uiMgr.storeMgr = this;
+		if( Director.Instance != null)
+		{
+			Director.Instance.uiMgr.storeMgr = this;
+			this.canvas.enabled = false;
+		}
 	}
 	
 	// Update is called once per frame

@@ -418,7 +418,7 @@ GameObject:
   - 114: {fileID: 728635539}
   - 114: {fileID: 728635538}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: OverworldCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -503,6 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 727803568}
   desiredWaypoint: 0
+  canvas: {fileID: 728635536}
 --- !u!1 &767044891
 GameObject:
   m_ObjectHideFlags: 0

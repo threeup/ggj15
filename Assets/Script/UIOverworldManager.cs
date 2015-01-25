@@ -6,13 +6,14 @@ public class UIOverworldManager : MonoBehaviour {
 	public LevelSelectPath path;
 	public int desiredWaypoint = 0;
 
+	public Canvas canvas;
 	// Use this for initialization
 	void Awake () {
 		
 		if( Director.Instance != null)
 		{
-			this.gameObject.SetActive(false);
 			Director.Instance.uiMgr.overworldMgr = this;
+			this.canvas.enabled = false;
 		}
 	}
 	
