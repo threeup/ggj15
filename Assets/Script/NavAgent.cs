@@ -20,19 +20,26 @@ public class NavAgent : MonoBehaviour
     [SerializeField]
     float jumpButtonTime = 0.1f;
     [SerializeField]
+    float flapSpeed = 40f;
+    [SerializeField]
     bool startGrounded = true;
 
     public AnimationCurve walkSpeedMultiplier = new AnimationCurve(new Keyframe(0f, 0f), new Keyframe(1f, 1f));
     public AnimationCurve jumpSpeedMultiplier = new AnimationCurve(new Keyframe(0f, 0.01f), new Keyframe(1f, 0.066f));
     public bool isGrounded;
+    public bool CanFlap { get { return thisActor.Health >= 3; } }
 
     Vector3 walkVelocity;
-    Vector3 jumpVelocity;
+    ActorEntity thisActor;
     CharacterController2D thisController;
     InputAgent thisInputAgent;
 
     void Awake()
     {
+        thisActor = GetComponent<ActorEntity>();
+        if( thisActor == null )
+            Debug.LogWarning("NavAgent: Missing ActorEntity");
+
         thisController = GetComponent<CharacterController2D>();
         if( thisController == null )
             Debug.LogWarning("NavAgent: Missing CharacterController2D");
@@ -102,6 +109,33 @@ public class NavAgent : MonoBehaviour
 
             time += Time.deltaTime;
 
+            yield return null;
+        }
+    }
+
+    public void Flap()
+    {
+        StopCoroutine("FlapRoutine");
+        StartCoroutine("FlapRoutine");
+    }
+    
+    IEnumerator FlapRoutine()
+    {
+        float time = 0f;
+
+        SetVelocityY(0f);
+        AddVelocity(Vector3.up * flapSpeed * 0.5f);
+        BroadcastMessage("OnFlap", SendMessageOptions.DontRequireReceiver);
+        
+        yield return null;
+        
+        while( time < jumpButtonTime )
+        {
+            if( thisInputAgent.JumpDown && !thisController.State.CollideAbove )
+                AddVelocity(Vector3.up * jumpSpeedMultiplier.Evaluate(time / jumpButtonTime) * flapSpeed);
+            
+            time += Time.deltaTime;
+            
             yield return null;
         }
     }

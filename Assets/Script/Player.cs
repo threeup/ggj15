@@ -6,10 +6,16 @@ public class Player : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip hurtSound;
     public AudioClip deathSound;
+    public AudioClip flapSound;
 
     void OnJump()
     {
         audio.PlayOneShot(jumpSound);
+    }
+
+    void OnFlap()
+    {
+        audio.PlayOneShot(flapSound);
     }
 
     void OnDamage()

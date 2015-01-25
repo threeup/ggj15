@@ -38,6 +38,9 @@ public class InputAgent : MonoBehaviour
         if( thisNavAgent.isGrounded && doJump )
             thisNavAgent.Jump();
 
+        if( !thisNavAgent.isGrounded && doJump && thisNavAgent.CanFlap )
+            thisNavAgent.Flap();
+
         if( thisWeapon != null && doFire )
             thisWeapon.Fire(moveX);
     }
