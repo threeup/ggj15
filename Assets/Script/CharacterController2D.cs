@@ -50,6 +50,7 @@ public class CharacterController2D : MonoBehaviour
         public bool CollideLeft { get { return CheckFlag(CollisionFlags.Left); } }
         public bool CollideBelow { get { return CheckFlag(CollisionFlags.Below); } }
         public bool CollideAbove { get { return CheckFlag(CollisionFlags.Above); } }
+        public bool HasCollision { get { return collisions.Count > 0; } }
         public bool WasGrounded { get { return CheckFlag(CollisionFlags.WasGrounded); } }
         public bool IsGrounded { get { return CollideBelow; } }
         public bool BecameGrounded { get { return !WasGrounded && IsGrounded; } }
@@ -109,6 +110,9 @@ public class CharacterController2D : MonoBehaviour
 
         if( delta.y != 0f )
             VerticalMove(ref delta, ref origin2D);
+
+        if( !collisionState.HasCollision && delta.x != 0f && delta.y != 0f )
+            DiagonalMove(ref delta, ref origin2D);
 
         thisTransform.Translate(delta, Space.World);
 
@@ -208,6 +212,40 @@ public class CharacterController2D : MonoBehaviour
                 delta.y = (hit.point.y + thisCollider.size.y * 0.5f + skin) - origin2D.y;
                 delta.x *= slopeMultiplier;
             }
+        }
+    }
+
+    void DiagonalMove(ref Vector3 delta, ref Vector2 origin2D)
+    {
+        LayerMask mask = platformMask;
+        mask &= ~oneWayPlatformMask;
+
+        RaycastHit2D hit = Physics2D.BoxCast(origin2D, thisCollider.size, thisTransform.rotation.z, delta.normalized, delta.magnitude, mask.value);
+        if( hit )
+        {
+            Debug.Log("DiagonalMove: " + hit.normal);
+            if( hit.normal.x < 0f )
+            {
+                delta.x = (hit.point.x - thisCollider.size.x * 0.5f - skin) - origin2D.x;
+                collisionState.SetFlag(CollisionFlags.Right);
+            }
+            else if( hit.normal.x > 0f )
+            {
+                delta.x = (hit.point.x + thisCollider.size.x * 0.5f + skin) - origin2D.x;
+                collisionState.SetFlag(CollisionFlags.Left);
+            }
+            else if( hit.normal.y < 0f )
+            {
+                delta.y = (hit.point.y - thisCollider.size.y * 0.5f - skin) - origin2D.y;
+                collisionState.SetFlag(CollisionFlags.Above);
+            }
+            else if( hit.normal.y > 0f )
+            {
+                delta.y = (hit.point.y + thisCollider.size.y * 0.5f + skin) - origin2D.y;
+                collisionState.SetFlag(CollisionFlags.Below);
+            }
+
+            collisionState.collisions.Add(hit);
         }
     }
 
