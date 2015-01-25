@@ -11,6 +11,7 @@ public enum EntityType
 	ENEMY = 3,
 	COIN = 4,
 	MAINCHARACTER = 5,
+	SPAWNER = 6,
 }
 
 public enum CollisionState

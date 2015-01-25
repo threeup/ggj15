@@ -44,11 +44,11 @@ MonoBehaviour:
   entityID: 1016
   entityName: 
   edata:
-    entityType: 3
-    collisionState: 2
+    entityType: 6
+    collisionState: 1
     collidable: 1
     drawable: 1
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!114 &11408210
 MonoBehaviour:
   m_ObjectHideFlags: 1

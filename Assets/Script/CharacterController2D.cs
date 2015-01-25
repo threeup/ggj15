@@ -250,9 +250,11 @@ public class CharacterController2D : MonoBehaviour
 
     public void WarpToGrounded()
     {
+		int timeout = 100;
         do
         {
             Move(Vector3.down);
-        } while( !collisionState.IsGrounded );
+			timeout--;
+        } while( !collisionState.IsGrounded && timeout > 0 );
     }
 }

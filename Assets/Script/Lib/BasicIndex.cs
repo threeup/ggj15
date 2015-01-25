@@ -52,4 +52,9 @@ public class BasicIndex
         this.maxVal = maxVal;
         this.idxVal = Mathf.Min(idxVal, maxVal);
     }
+
+    public void SetLooping(bool val)
+    {
+        this.isLooping = val;
+    }
 }

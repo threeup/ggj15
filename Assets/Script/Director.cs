@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class Director : MonoBehaviour 
 {
@@ -14,6 +15,7 @@ public class Director : MonoBehaviour
 		Instance = this;
 		DontDestroyOnLoad(this);
 		uiMgr.HandleLevelSelect = LoadLevel;
+		DOTween.Init(true, true, LogBehaviour.Verbose).SetCapacity(200, 10);
 	}
 
 	void Start() 

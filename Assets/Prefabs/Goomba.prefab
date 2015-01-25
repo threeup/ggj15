@@ -46,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.95499992, y: .662, z: 0}
+  m_LocalPosition: {x: 13, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 422326}
@@ -207,7 +207,7 @@ MonoBehaviour:
     collisionState: 0
     collidable: 0
     drawable: 0
-    position: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
 --- !u!114 &11475294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -221,9 +221,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainRenderer: {fileID: 21222324}
   defaultSprite: {fileID: 21300000, guid: be2e9fa49d68fde438b4bdfa67edea9d, type: 3}
-  walkSet:
-  - {fileID: 21300000, guid: be2e9fa49d68fde438b4bdfa67edea9d, type: 3}
-  - {fileID: 21300000, guid: 9d741ccc93a2aae4eb88ed9d5afc485d, type: 3}
+  idleSet:
+  - sprite: {fileID: 21300000, guid: be2e9fa49d68fde438b4bdfa67edea9d, type: 3}
+    hasTween: 0
+    translation: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    duration: .100000001
+  primarySet:
+  - sprite: {fileID: 21300000, guid: be2e9fa49d68fde438b4bdfa67edea9d, type: 3}
+    hasTween: 0
+    translation: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    duration: .100000001
+  secondarySet:
+  - sprite: {fileID: 21300000, guid: be2e9fa49d68fde438b4bdfa67edea9d, type: 3}
+    hasTween: 0
+    translation: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    duration: .100000001
+  disabledSet:
+  - sprite: {fileID: 21300000, guid: be2e9fa49d68fde438b4bdfa67edea9d, type: 3}
+    hasTween: 0
+    translation: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    duration: .100000001
 --- !u!212 &21222324
 SpriteRenderer:
   m_ObjectHideFlags: 1
