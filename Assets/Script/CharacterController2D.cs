@@ -77,6 +77,7 @@ public class CharacterController2D : MonoBehaviour
     BoxCollider2D thisCollider;
     //Rigidbody2D thisRigidbody;
     CollisionState collisionState = new CollisionState();
+    public CollisionState State { get { return collisionState; } }
 
     void Awake()
     {

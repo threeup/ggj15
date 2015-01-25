@@ -4,7 +4,7 @@ using System.Collections;
 public class NavAgent : MonoBehaviour
 {
     [SerializeField]
-    Vector3 gravity = new Vector3(0f, -9.8f, 0f);
+    Vector3 gravity = new Vector3(0f, -4.9f, 0f);
     [SerializeField]
 	Vector3 velocity;
 	public Vector3 Velocity { get { return velocity; } }
@@ -14,23 +14,32 @@ public class NavAgent : MonoBehaviour
     [SerializeField]
     float scalar = 0.256f;
     [SerializeField]
-    float jumpVelocity = 100f;
+    float walkSpeed = 20f;
     [SerializeField]
-    float walkSpeed = 10f;
+    float jumpSpeed = 120f;
+    [SerializeField]
+    float jumpButtonTime = 0.1f;
     [SerializeField]
     bool startGrounded = true;
 
     public AnimationCurve walkSpeedMultiplier = new AnimationCurve(new Keyframe(0f, 0f), new Keyframe(1f, 1f));
+    public AnimationCurve jumpSpeedMultiplier = new AnimationCurve(new Keyframe(0f, 0.01f), new Keyframe(1f, 0.066f));
     public bool isGrounded;
 
     Vector3 walkVelocity;
+    Vector3 jumpVelocity;
     CharacterController2D thisController;
+    InputAgent thisInputAgent;
 
     void Awake()
     {
         thisController = GetComponent<CharacterController2D>();
         if( thisController == null )
             Debug.LogWarning("NavAgent: Missing CharacterController2D");
+
+        thisInputAgent = GetComponent<InputAgent>();
+        if( thisInputAgent == null )
+            Debug.LogWarning("NavAgent: Missing InputAgent");
 
         if( startGrounded )
             thisController.WarpToGrounded();
@@ -39,7 +48,7 @@ public class NavAgent : MonoBehaviour
     void FixedUpdate()
     {
         acceleration = gravity;
-        velocity += acceleration;
+        AddVelocity(acceleration);
 
         CharacterController2D.CollisionState collisionState = thisController.Move((velocity + walkVelocity) * Time.deltaTime * scalar);
 
@@ -73,7 +82,27 @@ public class NavAgent : MonoBehaviour
 
     public void Jump()
     {
-        AddVelocity(Vector3.up * jumpVelocity);
+        StopCoroutine("JumpRoutine");
+        StartCoroutine("JumpRoutine");
+    }
+
+    IEnumerator JumpRoutine()
+    {
+        float time = 0f;
+
+        AddVelocity(Vector3.up * jumpSpeed * 0.5f);
         BroadcastMessage("OnJump", SendMessageOptions.DontRequireReceiver);
+
+        yield return null;
+
+        while( time < jumpButtonTime )
+        {
+            if( thisInputAgent.JumpDown && !thisController.State.CollideAbove )
+                AddVelocity(Vector3.up * jumpSpeedMultiplier.Evaluate(time / jumpButtonTime) * jumpSpeed);
+
+            time += Time.deltaTime;
+
+            yield return null;
+        }
     }
 }

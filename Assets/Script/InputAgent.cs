@@ -7,6 +7,8 @@ public class InputAgent : MonoBehaviour
     NavAgent thisNavAgent;
     Brain thisBrain;
     Weapon thisWeapon;
+
+    public bool JumpDown { get { return Input.GetButton("Jump"); } }
     
     void Awake()
     {

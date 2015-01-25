@@ -650,8 +650,9 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
   scalar: .256000012
-  jumpVelocity: 82
-  walkSpeed: 15
+  walkSpeed: 20
+  jumpSpeed: 120
+  jumpButtonTime: .100000001
   startGrounded: 1
   walkSpeedMultiplier:
     serializedVersion: 2
@@ -663,6 +664,21 @@ MonoBehaviour:
       tangentMode: 0
     - time: 1
       value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  jumpSpeedMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .00999999978
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: .0659999996
       inSlope: 0
       outSlope: 0
       tangentMode: 0
