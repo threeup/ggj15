@@ -55,7 +55,7 @@ public class ActorEntity : GameEntity
         {
             slideSpriter.mainRenderer.enabled = false;
         }
-        SetupParameters(1, 1f);
+        //SetupParameters(1, 1f);
         
 		this.name = entityName;
 	}	
