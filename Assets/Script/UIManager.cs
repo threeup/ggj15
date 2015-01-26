@@ -55,7 +55,7 @@ public class UIManager : MonoBehaviour
 
 	public void HudUpdate()
 	{
-		coinCount.text = Director.Instance.MainScore+" COINS";
+		coinCount.text = Director.Instance.MainScore.ToString();
 		switch(Director.Instance.MainStartHealth)
 		{
 			case 1: maxHealth.text = "TURTLE";	break;
