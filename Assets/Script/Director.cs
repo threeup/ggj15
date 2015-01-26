@@ -27,6 +27,8 @@ public class Director : MonoBehaviour
 	public bool hasSeenIntro = false;
 	public bool hasSeenTitle = false;
 
+	public CameraFx cameraFx = null;
+
 	public DirectorState dState = DirectorState.CUTSCENE;
 
 	public ActorEntity mainCharacter;
@@ -40,6 +42,7 @@ public class Director : MonoBehaviour
 
 	private BasicTimer unloadSceneTimer = null;
 	private BasicTimer gameOverTimer = new BasicTimer(300f);
+	private BasicTimer pixelateTimer;
 
 	public StoreProductChanger productChanger;
 
@@ -95,6 +98,8 @@ public class Director : MonoBehaviour
 		this.dState = dState;
 		if( this.dState == DirectorState.GAME )
 		{
+			pixelateTimer = new BasicTimer(2f);
+			cameraFx.enabled = true;
 			if( !mainMusicPlaying )
 			{
 				introMusicPlaying = false;
@@ -212,6 +217,17 @@ public class Director : MonoBehaviour
 		{
 			unloadSceneTimer = null;	
 		}
+
+		if( pixelateTimer != null )
+		{
+			cameraFx.SetPixelState(pixelateTimer.TimeVal);
+			if( pixelateTimer.Tick(deltaTime) )
+			{
+				pixelateTimer = null;	
+				cameraFx.enabled = false;
+			}
+		}
+
 	}
 
 	public void UnloadScene()

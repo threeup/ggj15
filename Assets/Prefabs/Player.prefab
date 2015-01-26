@@ -392,13 +392,13 @@ MonoBehaviour:
     translation: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
-    duration: .100000001
+    duration: .00999999978
   - sprite: {fileID: 21300000, guid: 722a2297037bd7545a018ad0c5e6c12c, type: 3}
     hasTween: 1
     translation: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: .100000001, z: 1}
-    duration: .300000012
+    duration: .200000003
   srcTranslation: {x: 0, y: 0, z: 0}
   srcRotation: {x: 0, y: 0, z: 0}
   srcScale: {x: 0, y: 0, z: 0}
@@ -572,13 +572,13 @@ MonoBehaviour:
     translation: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
-    duration: .100000001
+    duration: .00999999978
   - sprite: {fileID: 21300000, guid: f386fdf61a5dbd141b44d50cee943dc0, type: 3}
     hasTween: 1
     translation: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: .100000001, z: 1}
-    duration: .300000012
+    duration: .200000003
   srcTranslation: {x: 0, y: 0, z: 0}
   srcRotation: {x: 0, y: 0, z: 0}
   srcScale: {x: 0, y: 0, z: 0}
@@ -797,6 +797,7 @@ MonoBehaviour:
     childEntityType: 0
     collisionState: 1
     position: {x: 0, y: 0, z: 0}
+    hitByHuman: 0
   spawned: {fileID: 0}
   spawner: {fileID: 0}
   snapToBounds: 1
