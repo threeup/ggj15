@@ -113,6 +113,11 @@ public class Director : MonoBehaviour
 				audio.Play();
 			}
 		}
+
+		if( this.dState == DirectorState.STORE )
+		{
+			uiMgr.storeMgr.BeginScreen();
+		}
 	}
 
 	public void UnloadLevel()
@@ -137,8 +142,10 @@ public class Director : MonoBehaviour
 		if( index == 0 )
 		{
 			SetState(DirectorState.STORE);
+
 			uiMgr.SetOverworldVisible(false);
 			uiMgr.SetStoreVisible(true);
+			uiMgr.SetHudVisible(true);
 			return;
 		}
 		uiMgr.SetStoreVisible(false);
@@ -193,13 +200,7 @@ public class Director : MonoBehaviour
 		bool cheat = dState == DirectorState.GAME && Input.GetButtonDown("Fire3");
 		if( cheat )
 		{
-			mainStartHealth++;
-			if( mainCharacter != null )
-			{
-				mainCharacter.SetMaxHealth(mainStartHealth);
-			}
-		
-			uiMgr.HudUpdate();
+			IncreaseStartHealth();
 		}
 
 		if(gameOver || gameOverTimer.Tick(deltaTime))
@@ -238,7 +239,7 @@ public class Director : MonoBehaviour
 		if( mainScore > coinCost )
 		{
 			mainScore -= coinCost;
-			mainStartHealth++;
+			IncreaseStartHealth();
 			return true;
 		}
 		return false;
@@ -247,6 +248,18 @@ public class Director : MonoBehaviour
 	public void FinishLevel()
 	{
 		SetProgress(mainStartHealth, true);
+	}
+
+	public void IncreaseStartHealth()
+	{
+
+		mainStartHealth++;
+		if( mainCharacter != null )
+		{
+			mainCharacter.SetMaxHealth(mainStartHealth);
+		}
+	
+		uiMgr.HudUpdate();
 	}
 
 	public void SetProgress(int i, bool canBuy)
@@ -266,6 +279,7 @@ public class Director : MonoBehaviour
 				case 3: productChanger.currentState = StoreProductChanger.StoreStates.finished; break;
 			}
 		}
+		uiMgr.storeMgr.Refresh();
 		productChanger.updateProduct();
 		Debug.Log("set progress"+i+" ="+productChanger.currentState);
 		

@@ -885,6 +885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672e1148dabec264a88d2ff19e245668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jjStore: {fileID: 728635539}
   canvas: {fileID: 728635536}
 --- !u!114 &728635539
 MonoBehaviour:

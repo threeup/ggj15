@@ -9013,7 +9013,7 @@ MonoBehaviour:
   entityName: 
   edata:
     entityType: 6
-    childEntityType: 0
+    childEntityType: 5
     collisionState: 1
     position: {x: 0, y: 0, z: 0}
   spawned: {fileID: 0}

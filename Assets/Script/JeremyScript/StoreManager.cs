@@ -23,7 +23,22 @@ public class StoreManager : MonoBehaviour {
 
 	public string[] phraseList;
 
+	public BasicTimer waitToTalk = null;
+	public bool canBuy = false;
+
 	public void Start()
+	{
+		Refresh();
+	}
+
+	public void BeginScreen()
+	{
+		waitToTalk = new BasicTimer(1f);
+		canBuy = true;
+		Refresh();
+	}
+
+	public void Refresh()
 	{
 		Director.Instance.productChanger = product;
 		bubble.SetActive(false);
@@ -56,6 +71,16 @@ public class StoreManager : MonoBehaviour {
 		}else{
 			mouthOpen=false;
 			shopkeeper.sprite=closedMouth;
+		}
+		if( waitToTalk != null && waitToTalk.Tick(Time.deltaTime) )
+		{
+			waitToTalk = null;
+		}
+
+		bool buy = Input.GetButtonDown("Jump");
+		if( canBuy && buy && waitToTalk == null)
+		{
+			BuyButton();
 		}
 	}
 
@@ -97,6 +122,7 @@ public class StoreManager : MonoBehaviour {
 		else
 		{
 			bool success = Director.Instance.PurchaseProgress(product.currentProductPrice);
+			Debug.Log("Buy Success"+success);
 		}
 	}
 

@@ -10,9 +10,13 @@ public class Goal : Item
         ActorEntity actor = other.GetComponent<ActorEntity>();
         if( actor != null )
         {
-            audio.PlayOneShot(pickupSound);
-            Director.Instance.ActorHitGoal(actor);
-            this.collider2D.enabled = false;
+            bool success = Director.Instance.ActorHitGoal(actor);
+            if( success )
+            {
+                audio.PlayOneShot(pickupSound);
+                this.collider2D.enabled = false;
+            }
+            Debug.Log("Goal Hit" +success);
         }
     }
 

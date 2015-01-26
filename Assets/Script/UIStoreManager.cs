@@ -3,6 +3,7 @@ using System.Collections;
 
 public class UIStoreManager : MonoBehaviour {
 
+	public StoreManager jjStore;
 	public Canvas canvas;
 	// Use this for initialization
 	void Awake () {
@@ -21,5 +22,15 @@ public class UIStoreManager : MonoBehaviour {
 			Director.Instance.UnloadScene();
 			return;
 		}
+	}
+
+	public void BeginScreen()
+	{
+		jjStore.BeginScreen();
+	}
+
+	public void Refresh()
+	{
+		jjStore.Refresh();
 	}
 }
