@@ -47,11 +47,11 @@ MonoBehaviour:
     entityType: 6
     childEntityType: 4
     collisionState: 1
-    collidable: 1
-    drawable: 1
     position: {x: 0, y: 0, z: 0}
+    hitByHuman: 0
   spawned: {fileID: 0}
   spawner: {fileID: 0}
+  snapToBounds: 1
 --- !u!114 &11404216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -63,8 +63,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e0691efdab6d24db9835ff24e18252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPrefab: {fileID: 140676, guid: cf3d547e7c4c36e4b95c56821ce74169, type: 2}
+  spawnPrefab: {fileID: 188982, guid: cf3d547e7c4c36e4b95c56821ce74169, type: 2}
   worldEntity: {fileID: 0}
+  spawnHealth: 1
+  spawnWalkVelocityMultiplier: 1
 --- !u!212 &21204216
 SpriteRenderer:
   m_ObjectHideFlags: 1
