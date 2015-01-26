@@ -4,10 +4,14 @@ using System.Collections;
 public class CameraFx : MonoBehaviour {
 
 	public Material mat;
+
 	void OnRenderImage (RenderTexture source, RenderTexture destination){
 	 
-		//mat is the material containing your shader
-		Graphics.Blit(source,destination,mat);
+		if( Application.HasProLicense() )
+		{
+			//mat is the material containing your shader
+			Graphics.Blit(source,destination,mat);
+		}
 	}
 
 	public void SetPixelState(float remaining)
