@@ -21,6 +21,10 @@ public class Spawner : MonoBehaviour {
 		{
 			canSpawn = true;
 		}
+		if( !worldEntity.edata.hitByHuman )
+		{
+			canSpawn = true;
+		}
 		if( worldEntity.edata.collisionState == CollisionState.DISABL && 
 			worldEntity.edata.childEntityType == EntityType.COINBRICK )
 		{

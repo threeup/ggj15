@@ -20,16 +20,17 @@ public class Coin : Item
             {
                 colliders[i].enabled = false;
             }
-
-            StartCoroutine("EnterRoutine");
+            bool hitByHuman = actor.edata.entityType == EntityType.MAINCHARACTER;
+            Debug.Log("hit by hitByHuman"+hitByHuman);
+            StartCoroutine(EnterRoutine(hitByHuman));
         }
     }
 
-    IEnumerator EnterRoutine()
+    IEnumerator EnterRoutine(bool hitByHuman)
     {
         yield return new WaitForSeconds(1f);
 
-        LevelManager.Instance.Trash(this.gameObject);
+        LevelManager.Instance.Trash(this.gameObject, hitByHuman);
     }
 
     public void HandleProjectile(Vector3 dir)

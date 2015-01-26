@@ -55,12 +55,13 @@ public class LevelManager : MonoBehaviour
 
 	}
 
-	public void Trash(GameObject gameObject)
+	public void Trash(GameObject gameObject, bool hitByHuman)
 	{
 		gameObject.SetActive(false);
 		GameEntity ge = gameObject.GetComponent<GameEntity>();
 		if ( ge != null )
 		{
+			ge.edata.hitByHuman = hitByHuman;
 			ge.edata.collisionState = CollisionState.DEAD;
 		}
 		if( currentLevel != null )

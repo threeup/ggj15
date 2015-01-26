@@ -68,6 +68,7 @@ public class GameEntity : MonoBehaviour {
 		if( spawned != null )
 		{
 			this.edata.collisionState = spawned.edata.collisionState;
+			this.edata.hitByHuman = spawned.edata.hitByHuman;
 		}
 		GrabPosition();
 	}
@@ -101,6 +102,7 @@ public class GameEntity : MonoBehaviour {
 		this.spawned = spawned;
 		spawned.spawner = this;
 		spawned.edata.collisionState = this.edata.collisionState;
+		spawned.edata.hitByHuman = this.edata.hitByHuman;
 	}
 
 	

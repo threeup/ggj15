@@ -30,5 +30,6 @@ public struct EntityData
 	public EntityType childEntityType;
 	public CollisionState collisionState;
 	public Vector3 position;
+	public bool hitByHuman;
 	
 }

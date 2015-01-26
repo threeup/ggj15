@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(2f);
         ActorEntity ge = GetComponent<ActorEntity>();
         Director.Instance.ActorDied(ge);
-        LevelManager.Instance.Trash(gameObject);
+        LevelManager.Instance.Trash(gameObject, false);
         
     }
 }
