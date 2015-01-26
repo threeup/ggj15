@@ -151,6 +151,11 @@ public class ActorEntity : GameEntity
     public void Update()
     {
     	UpdateRender();
+
+        if( this.transform.position.y < -10 )
+        {
+            Damage();
+        }
     }
 
     public void SetShouldRender(bool isVis)
