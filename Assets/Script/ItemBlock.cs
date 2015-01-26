@@ -50,7 +50,9 @@ public class ItemBlock : MonoBehaviour
                     {
                         spriter.SwitchState(spriter.secondarySet, false);
                         GameEntity blockEntity = this.gameObject.GetComponent<GameEntity>();
+                        GameEntity otherEntity = collisionState.gameObject.GetComponent<GameEntity>();
                         blockEntity.edata.collisionState = CollisionState.DISABL;
+                        blockEntity.edata.hitByHuman = otherEntity.edata.entityType == EntityType.MAINCHARACTER;
                     }
                 }
             }
